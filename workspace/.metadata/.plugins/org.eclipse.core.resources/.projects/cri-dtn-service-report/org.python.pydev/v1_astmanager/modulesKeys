@@ -1,9 +1,0 @@
-MODULES_MANAGER_V2
-cri_date_modified_non_support|/home/aarunachalam/workspace/cri-dtn-service-report/cri_date_modified_non_support.py
-cri_date_modified_support|/home/aarunachalam/workspace/cri-dtn-service-report/cri_date_modified_support.py
-daily_cri_report|/home/aarunachalam/workspace/cri-dtn-service-report/daily_cri_report.py
-individual_mail|/home/aarunachalam/workspace/cri-dtn-service-report/individual_mail.py
-mail|/home/aarunachalam/workspace/cri-dtn-service-report/mail.py
-new_date_modified_cri|/home/aarunachalam/workspace/cri-dtn-service-report/new_date_modified_cri.py
-test|/home/aarunachalam/workspace/cri-dtn-service-report/test.py
-test_mail|/home/aarunachalam/workspace/cri-dtn-service-report/test_mail.py
