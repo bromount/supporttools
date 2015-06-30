@@ -1,0 +1,61 @@
+-- VERSION_4
+-- START DISKCACHE
+/home/aarunachalam/workspace/.metadata/.plugins/org.eclipse.core.resources/.projects/cri-dtn-service-report/com.python.pydev.analysis/v2_indexcache
+test_mail|1435479238000|/home/aarunachalam/workspace/cri-dtn-service-report/test_mail.py
+mail|1435297712000|/home/aarunachalam/workspace/cri-dtn-service-report/mail.py
+test|1435479721000|/home/aarunachalam/workspace/cri-dtn-service-report/test.py
+cri_date_modified_support|1435558151000|/home/aarunachalam/workspace/cri-dtn-service-report/cri_date_modified_support.py
+daily_cri_report|1435212770000|/home/aarunachalam/workspace/cri-dtn-service-report/daily_cri_report.py
+cri_date_modified_non_support|1435560004000|/home/aarunachalam/workspace/cri-dtn-service-report/cri_date_modified_non_support.py
+individual_mail|1434806165000|/home/aarunachalam/workspace/cri-dtn-service-report/individual_mail.py
+new_date_modified_cri|1435379530000|/home/aarunachalam/workspace/cri-dtn-service-report/new_date_modified_cri.py
+-- END DISKCACHE
+-- START DICTIONARY
+8
+3=test_mail
+2=mail
+8=test
+4=cri_date_modified_support
+7=daily_cri_report
+1=individual_mail
+5=new_date_modified_cri
+6=cri_date_modified_non_support
+-- END DICTIONARY
+-- START TREE 1
+32
+art|1|artifacts!11@
+att|1|attachment!19@
+bod|1|body!19@
+con|2|content!11@content!27@
+cou|1|counter!11@
+ctf|10|ctfWsdl!35@ctf!11@ctfWsdl!43@ctfWsdl!51@ctf!51@ctfWsdl!59@ctf!59@ctfWsdl!11@ctf!43@ctf!35@
+dat|4|data!43@data!59@data!51@data!35@
+f|1|f!19@
+f1|1|f1!19@
+fil|1|filter!11@
+get|7|get_user_artifact!50@get_user_artifact!42@get_user_artifact!58@get_user_artifact!34@get_submitted_team!42@get_submitted_team!50@get_cri_count!10@
+gma|2|gmail_pwd!19@gmail_user!19@
+htm|2|html!11@html!27@
+ifi|7|ifile1!35@ifile!59@ifile1!43@ifile!35@ifile!51@ifile!43@ifile1!59@
+lin|2|lines!27@lines!67@
+log|5|login!51@login!35@login!59@login!11@login!43@
+mai|1|mail!18@
+msg|3|msg!11@msg!67@msg!27@
+par|1|part!67@
+pro|5|projects!51@projects!35@projects!43@projects!11@projects!59@
+rea|7|reader!59@reader!35@reader1!43@reader!51@reader1!59@reader1!35@reader!43@
+rec|2|receiever!67@receiever!27@
+sen|9|sendmail2!42@sendmail_individual!34@sendmail_managers!34@sender!67@sendmail!58@sender!11@sendmail!50@sendmail!42@sender!27@
+set|1|set_name!10@
+smt|2|smtpObj!11@smtpObj!27@
+sub|4|subjectline!27@subjectline!67@subject!19@subjectline!11@
+sup|2|supportlist!11@support_team!11@
+tab|1|table!11@
+tim|3|timeStamp!50@timeStamp!42@timeStamp!34@
+to_|1|to_mail_id!19@
+tra|10|trackerWsdl!43@tracker!43@tracker!51@trackerlist!11@trackerWsdl!35@trackerWsdl!11@tracker!11@tracker_id!11@trackerWsdl!51@tracker!35@
+use|6|userid!35@userdata!11@userWsdl!11@userid!59@userid!51@userid!43@
+-- END TREE
+-- START TREE 2
+0
+-- END TREE

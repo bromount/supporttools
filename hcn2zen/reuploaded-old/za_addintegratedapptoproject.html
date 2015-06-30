@@ -1,0 +1,160 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en-us" lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="copyright" content="(C) Copyright 2005"/>
+<meta name="DC.rights.owner" content="(C) Copyright 2005"/>
+<meta name="DC.Type" content="task"/>
+<meta name="DC.Title" content="Integrate an external application into your project"/>
+<meta name="abstract" content="To make an application or site outside of CollabNet TeamForge available to your users seamlessly from inside your TeamForge project, bring it in as an integrated application."/>
+<meta name="description" content="To make an application or site outside of CollabNet TeamForge available to your users seamlessly from inside your TeamForge project, bring it in as an integrated application."/>
+<meta name="DC.Coverage" content="Integrated Applications"/>
+<meta name="DC.subject" content="integrate application, add integrated applications"/>
+<meta name="keywords" content="integrate application, add integrated applications"/>
+<meta name="indexterms" content="integrate application, add integrated applications"/>
+<meta name="prodname" content="TeamForge"/>
+<meta name="version" content="7.2"/>
+<meta name="version" content="8.0"/>
+<meta name="release" content=""/>
+<meta name="DC.Format" content="XHTML"/>
+<meta name="DC.Identifier" content="xxx"/>
+<meta name="DC.Language" content="en-us"/>
+<link rel="stylesheet" type="text/css" href="oxygen-webhelp/resources/css/commonltr.css"/>
+<link rel="stylesheet" type="text/css" href="oxygen-webhelp/resources/css/webhelp_topic.css"/>
+<title>Integrate an external application into your project</title>
+<script type="text/javascript" src="oxygen-webhelp/resources/js/jquery.js"> </script>
+<script type="text/javascript" src="oxygen-webhelp/resources/js/jquery-ui.custom.min.js"> </script>
+<script type="text/javascript" src="oxygen-webhelp/resources/js/frames_redirect.js"> </script>
+<script type="text/javascript"><!--
+    var prefix = "../index.html";
+    
+    function highlightSearchTerm(){
+        if(parent.termsToHighlight != null){
+        // highlight each term in the content view  
+          for(i = 0 ; i < parent.termsToHighlight.length ; i++){        
+              $('*', window.parent.contentwin.document).highlight(parent.termsToHighlight[i]);
+          }
+        }
+    }
+   $(document).ready(function(){
+     $('#permalink').show();
+     $('#printlink').show();
+      if ($('#permalink').length>0){
+        if (window.top !== window.self){                    
+          if (window.parent.location.protocol!='file:' && typeof window.parent.location.protocol != 'undefined'){     
+            $('#permalink>a').attr('href',window.parent.location.pathname+'?q='+window.location.pathname);
+            $('#permalink>a').attr('target','_blank');
+          }else{
+          $('#permalink').hide();  
+          }
+        }else{
+          $('#permalink').hide();
+        }
+      }
+    });     
+//--></script></head>
+<body onload="highlightSearchTerm()" id="xxx">
+<table class="nav"><tbody><tr><td colspan="2"><script type="text/javascript"><!--                  
+                    if (top === self) {
+                      document.write("<div class='frames'>");
+							        document.write("<div class='wFrames'><a href=" + getPath(location.pathname) + ">With Frames</a></div>");							
+							        document.write("</div>");
+						        } else {
+						          //document.write("<div class='wFramesPerma'><a href=" + getPath(location.pathname) + " target='_top' title='link to this page'>Link</a></div>");						
+						        }                      
+                  --></script><div id="permalink"><a href="#">Link to this page</a></div><div id="printlink"><a href="javascript:printPage();">Print this page</a></div></td></tr><tr><td><div class="navheader"/></td><td width="50%"/></tr></tbody></table>
+
+    <h1 class="title topictitle1">Integrate an external application into your project</h1>
+
+    
+    
+    
+    
+    
+    <div class="body taskbody"><p class="shortdesc">To make an application or site outside of <span class="keyword">CollabNet</span>
+        <span class="keyword">TeamForge</span> available to your users seamlessly from
+        inside your <span class="keyword">TeamForge</span> project, bring it in as an
+        integrated application.</p>
+
+        <div class="section prereq p">If the application you want to use is not yet available for your project, ask your
+            site administrator to set it up. <p class="p">You can use as many integrated applications as you
+                wish, after your site administrator has made them available.</p>
+</div>
+
+        <ol class="ol steps"><li class="li step stepexpand">
+				<span class="ph cmd">Click <span class="ph uicontrol">Project Admin</span> in the project navigation bar.</span>
+			</li>
+<li class="li step stepexpand">
+                <span class="ph cmd">On the <span class="ph uicontrol">Project Admin</span> menu, click <span class="ph uicontrol">Project
+                        Toolbar</span>.</span>
+                 The <span class="keyword wintitle">Integrated Applications</span> tab displays the list
+                    of all currently integrated applications in the project.
+            </li>
+<li class="li step stepexpand">
+                <span class="ph cmd">On the <span class="keyword wintitle">Integrated Applications</span> page, click
+                        <span class="ph uicontrol">Add</span>.</span>
+            </li>
+<li class="li step stepexpand">
+                <span class="ph cmd">On the <span class="keyword wintitle">Add Integrated Applications</span> page, select the
+                    desired application and click <span class="ph uicontrol">Configure and Add </span>.</span>
+                <ol type="a" class="ol substeps">
+                    <li class="li substep substepexpand">
+                        <span class="ph cmd">If your site administrator has made it possible, specify a prefix for
+                            the resources created by the application you are setting up. </span>
+                         A prefix enables <span class="keyword">TeamForge</span> to provide handy links
+                            between objects managed by this application and other <span class="keyword">TeamForge</span> objects. For example, if
+                            you are bringing in a blogging application: <ul class="ul">
+                                <li class="li">You can connect a blog post with a <span class="keyword">TeamForge</span> artifact using a
+                                    special link called an "association."</li>
+
+                                <li class="li">For each blog post, you can give readers a simplified address,
+                                    known as a "go URL."</li>
+
+                            </ul>
+<div class="note note"><span class="notetitle">Note:</span> For project-level associations and go URLs the application's
+                                prefix is permanent after you save it.</div>
+
+                    </li>
+
+                    <li class="li substep substepexpand">
+                        <span class="ph cmd">Set any other configuration parameters you need and save your
+                            changes.</span>
+                         
+                            <ul class="ul">
+                                <li class="li">Click <span class="ph uicontrol">Save</span> to return to the
+                                        <span class="keyword wintitle">Configure Integrated Application</span>
+                                    page.</li>
+
+                                <li class="li">Click <span class="ph uicontrol">Save and Add More</span> to keep adding
+                                    integrated applications.</li>
+
+                            </ul>
+
+                        
+                    </li>
+
+                </ol>
+
+            </li>
+</ol>
+
+        <div class="section result">An icon for the integrated application is added to your project navigation bar.
+            Clicking it launches the application in the main <span class="keyword">CollabNet</span>
+            <span class="keyword">TeamForge</span> project window.</div>
+
+    </div>
+
+<div class="navfooter"><!----></div>
+    <script type="text/javascript">
+        <!--
+          if (top !== self && window.parent.tocwin){
+            if (typeof window.parent.tocwin.expandToTopic === 'function'){
+                    window.parent.tocwin.expandToTopic(window.location.href);
+                }         
+         }         
+        -->
+    </script> 
+      </body>
+</html>

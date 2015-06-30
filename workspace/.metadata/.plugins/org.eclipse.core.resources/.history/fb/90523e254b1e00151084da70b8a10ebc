@@ -1,0 +1,56 @@
+'''
+Created on 29-Jun-2015
+
+@author: aarunachalam
+'''
+
+import sys
+import re
+import string
+import SOAPpy
+import smtplib
+import time
+import datetime
+from datetime import date
+from datetime import datetime
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
+import csv
+from operator import itemgetter
+from docutils.nodes import line
+
+ifile  = open('team.csv', "rb")
+reader = csv.reader(ifile)
+
+ifile1  = open('team.csv', "rb")
+reader1 = csv.reader(ifile)
+
+ctfWsdl = 'https://forge.collab.net/ce-soap60/services/CollabNet?wsdl'
+
+ctf = SOAPpy.SOAPProxy(ctfWsdl)     
+
+login = ctf.login('annamalai','Openthis22@!')
+print "Logged in to Forge"
+
+userid= ctf.getUserSessionBySoapId(login)
+
+projects = ctf.getProjectList(login,False)
+
+trackerWsdl = 'https://forge.collab.net/ce-soap60/services/TrackerApp?wsdl'
+tracker = SOAPpy.SOAPProxy(trackerWsdl)
+
+#This is to parse the SOAPPy output
+#for item in projects:
+#    for value in item:
+#        print value[2],"=",value[4]
+
+#This will print the project id and project name
+
+data =     []
+
+def timeStamp():
+    timestr = time.strftime("%Y%m%d")
+    #print timestr
+    return timestr
+
+#this function will send mail to individual in team.csv

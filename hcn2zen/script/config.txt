@@ -1,0 +1,12 @@
+[settings]
+
+zendesk_url = https://cspl2.zendesk.com
+zendesk_username = annamalai@collab.net
+zendesk_password = Collabnet1!
+
+
+category_ctf = 200405241
+category_faq = 200422812
+
+forums_ctf_file = forums-ctf.txt
+forums_faq_file = forums-faq.txt

@@ -1,0 +1,86 @@
+'''
+Created on 29-Jun-2015
+
+@author: aarunachalam
+'''
+
+import sys
+import re
+import string
+import SOAPpy
+import smtplib
+import time
+import datetime
+from datetime import date
+from datetime import datetime
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
+import csv
+from operator import itemgetter
+from docutils.nodes import line
+
+ifile  = open('team.csv', "rb")
+reader = csv.reader(ifile)
+
+ifile1  = open('team.csv', "rb")
+reader1 = csv.reader(ifile)
+
+ctfWsdl = 'https://forge.collab.net/ce-soap60/services/CollabNet?wsdl'
+
+ctf = SOAPpy.SOAPProxy(ctfWsdl)     
+
+login = ctf.login('annamalai','Openthis22@!')
+print "Logged in to Forge"
+
+userid= ctf.getUserSessionBySoapId(login)
+
+projects = ctf.getProjectList(login,False)
+
+trackerWsdl = 'https://forge.collab.net/ce-soap60/services/TrackerApp?wsdl'
+tracker = SOAPpy.SOAPProxy(trackerWsdl)
+
+#This is to parse the SOAPPy output
+#for item in projects:
+#    for value in item:
+#        print value[2],"=",value[4]
+
+#This will print the project id and project name
+
+data =     []
+
+def timeStamp():
+    timestr = time.strftime("%Y%m%d")
+    #print timestr
+    return timestr
+
+#this function will send mail to individual in team.csv
+
+def sendmail_individual(table,total_artifacts,receiver_email,username):
+    subjectline = username + ", you have " +  str(total_artifacts) + "  issue(s) in CRI Tracker"
+                
+    table =  "<h2>" + subjectline + "</h2>" + table
+              
+    copied = ['annamalai@collab.net']
+    
+    sender = "annamalai@collab.net"
+        
+    msg = MIMEMultipart('alternative')
+    msg['Subject'] = subjectline
+    msg['From'] = sender
+    msg['To'] = receiver_email
+    msg['Cc'] = ",".join(copied)
+    emails=receiver_email.split()+copied
+    html = table
+        
+    content = MIMEText(html, 'html')
+        
+    msg.attach(content)
+    try:
+        smtpObj = smtplib.SMTP('mail-qa1.sp.collab.net')
+        if total_artifacts > 0:
+            smtpObj.sendmail(sender, emails, msg.as_string())         
+            print "Successfully sent email"
+    except:
+        print "Error: unable to send email"
+        
+#This function will send mail to the managers

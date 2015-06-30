@@ -1,0 +1,25 @@
+Associations
+Board
+Build and Test
+Document
+Discussions
+Getting Started
+Integrated Applications
+Lab Management 
+Migration
+News
+Planning Folder
+Project Administrator
+Project
+References
+Reports
+Roles and Permissions
+Search
+Site Administrator
+Source Code
+Task
+Tracker
+Wiki
+Security
+General
+Reference Library

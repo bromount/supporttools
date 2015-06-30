@@ -1,0 +1,147 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en-us" lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="copyright" content="(C) Copyright 2005"/>
+<meta name="DC.rights.owner" content="(C) Copyright 2005"/>
+<meta name="DC.Type" content="task"/>
+<meta name="DC.Title" content="Add a new cloud"/>
+<meta name="abstract" content="When you pool the physical resources into a cloud, they can be partitioned in to different virtual machines and used in any project on the domain that needs them."/>
+<meta name="description" content="When you pool the physical resources into a cloud, they can be partitioned in to different virtual machines and used in any project on the domain that needs them."/>
+<meta name="DC.Coverage" content="Lab Management"/>
+<meta name="DC.subject" content="add new cloud, manage clouds"/>
+<meta name="keywords" content="add new cloud, manage clouds"/>
+<meta name="indexterms" content="add new cloud, manage clouds"/>
+<meta name="prodname" content="TeamForge"/>
+<meta name="version" content="7.2"/>
+<meta name="version" content="8.0"/>
+<meta name="release" content=""/>
+<meta name="DC.Format" content="XHTML"/>
+<meta name="DC.Identifier" content="xxx"/>
+<meta name="DC.Language" content="en-us"/>
+<link rel="stylesheet" type="text/css" href="oxygen-webhelp/resources/css/commonltr.css"/>
+<link rel="stylesheet" type="text/css" href="oxygen-webhelp/resources/css/webhelp_topic.css"/>
+<title>Add a new cloud</title>
+<script type="text/javascript" src="oxygen-webhelp/resources/js/jquery.js"> </script>
+<script type="text/javascript" src="oxygen-webhelp/resources/js/jquery-ui.custom.min.js"> </script>
+<script type="text/javascript" src="oxygen-webhelp/resources/js/frames_redirect.js"> </script>
+<script type="text/javascript"><!--
+    var prefix = "../index.html";
+    
+    function highlightSearchTerm(){
+        if(parent.termsToHighlight != null){
+        // highlight each term in the content view  
+          for(i = 0 ; i < parent.termsToHighlight.length ; i++){        
+              $('*', window.parent.contentwin.document).highlight(parent.termsToHighlight[i]);
+          }
+        }
+    }
+   $(document).ready(function(){
+     $('#permalink').show();
+     $('#printlink').show();
+      if ($('#permalink').length>0){
+        if (window.top !== window.self){                    
+          if (window.parent.location.protocol!='file:' && typeof window.parent.location.protocol != 'undefined'){     
+            $('#permalink>a').attr('href',window.parent.location.pathname+'?q='+window.location.pathname);
+            $('#permalink>a').attr('target','_blank');
+          }else{
+          $('#permalink').hide();  
+          }
+        }else{
+          $('#permalink').hide();
+        }
+      }
+    });     
+//--></script></head>
+<body onload="highlightSearchTerm()" id="xxx">
+<table class="nav"><tbody><tr><td colspan="2"><script type="text/javascript"><!--                  
+                    if (top === self) {
+                      document.write("<div class='frames'>");
+							        document.write("<div class='wFrames'><a href=" + getPath(location.pathname) + ">With Frames</a></div>");							
+							        document.write("</div>");
+						        } else {
+						          //document.write("<div class='wFramesPerma'><a href=" + getPath(location.pathname) + " target='_top' title='link to this page'>Link</a></div>");						
+						        }                      
+                  --></script><div id="permalink"><a href="#">Link to this page</a></div><div id="printlink"><a href="javascript:printPage();">Print this page</a></div></td></tr><tr><td><div class="navheader"/></td><td width="50%"/></tr></tbody></table>
+
+    <h1 class="title topictitle1">Add a new cloud</h1>
+
+    
+    
+    
+    
+    
+    <div class="body taskbody"><p class="shortdesc">When you pool the physical resources into a cloud, they can be partitioned in to
+        different virtual machines and used in any project on the domain that needs
+        them.</p>
+
+        <ol class="ol steps"><li class="li step stepexpand">
+                <span class="ph cmd">Select <span class="ph menucascade"><span class="ph uicontrol">Administration</span> &gt; <span class="ph uicontrol">Clouds</span></span>
+                </span>
+            </li>
+<li class="li step stepexpand">
+                <span class="ph cmd">In the <span class="keyword wintitle">Manage Clouds</span> page, click <span class="ph uicontrol">New
+                        Cloud</span>.</span>
+            </li>
+<li class="li step stepexpand">
+                <span class="ph cmd">Enter a name and brief summary for the cloud.</span>
+            </li>
+<li class="li step stepexpand">
+                <span class="ph cmd">Enter any additional details in the <span class="ph uicontrol">Description</span>.</span>
+            </li>
+<li class="li step stepexpand">
+                <span class="ph cmd">Select an owning project for the cloud.</span>
+                 The owning project allows the physical source systems in the cloud to be from
+                    that project. If you don't specify an owning project, the sources for the cloud
+                    can only be systems that are unallocated and don't belong to any project .
+                
+            </li>
+<li class="li step stepexpand">
+                <span class="ph cmd">Specify whether this is a public or private cloud.</span>
+                 
+                    <ul class="ul">
+                        <li class="li">A public cloud appears in any project on the site that allows clouds,
+                            and is available for other project administrators to include in their
+                            list.</li>
+
+                        <li class="li">A private cloud appears only in the project that owns it, so that only
+                            the users in that project can allocate systems from it. </li>
+
+                    </ul>
+
+                
+            </li>
+<li class="li step stepexpand">
+                <span class="ph cmd">Specify whether hosts allocated from this cloud should be deleted when they are
+                    deallocated.</span>
+            </li>
+<li class="li step stepexpand">
+                <span class="ph cmd">Specify the maximum time (in days) for which a host can be allocated from this
+                    cloud.</span>
+                 The default value is 0 and indicates that there is no limit.
+            </li>
+<li class="li step stepexpand">
+                <span class="ph cmd">Click <span class="ph uicontrol">New Cloud</span>.</span>
+            </li>
+</ol>
+
+        <div class="section result"/>
+
+        <div class="section postreq">When your cloud gets created, you can proceed to add hosts to it. </div>
+
+    </div>
+
+<div class="navfooter"><!----></div>
+    <script type="text/javascript">
+        <!--
+          if (top !== self && window.parent.tocwin){
+            if (typeof window.parent.tocwin.expandToTopic === 'function'){
+                    window.parent.tocwin.expandToTopic(window.location.href);
+                }         
+         }         
+        -->
+    </script> 
+      </body>
+</html>

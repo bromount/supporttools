@@ -1,0 +1,223 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en-us" lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="copyright" content="(C) Copyright 2005" />
+<meta name="DC.rights.owner" content="(C) Copyright 2005" />
+<meta name="DC.Type" content="concept" />
+<meta name="DC.Title" content="An overview of Release Burn Down Chart" />
+<meta name="abstract" content="Add the Release Burn Down Chart to your project's home page to track your project's progress on a daily basis." />
+<meta name="description" content="Add the Release Burn Down Chart to your project's home page to track your project's progress on a daily basis." />
+<meta name="DC.Coverage" content="Reports" />
+<meta name="DC.subject" content="release burn down chart" />
+<meta name="keywords" content="release burn down chart" />
+<meta name="indexterms" content="release burn down chart" />
+<meta name="DC.Format" content="XHTML" />
+<meta name="DC.Identifier" content="releaseburndownchart" />
+<meta name="DC.Language" content="en-us" />
+<meta name="prodname" content="TeamForge" />
+<meta name="version" content="7.2" />
+<meta name="release" content="" />
+<link rel="stylesheet" type="text/css" href="oxygen-webhelp/resources/css/commonltr.css" />
+<link rel="stylesheet" type="text/css" href="oxygen-webhelp/resources/css/webhelp_topic.css" />
+<title>An overview of Release Burn Down Chart</title>
+<script type="text/javascript" src="oxygen-webhelp/resources/js/jquery.js"> </script>
+<script type="text/javascript" src="oxygen-webhelp/resources/js/jquery-ui.custom.min.js"> </script>
+<script type="text/javascript" src="oxygen-webhelp/resources/js/frames_redirect.js"> </script>
+<script type="text/javascript">&lt;!--
+    var prefix = "../index.html";
+    
+    function highlightSearchTerm(){
+        if(parent.termsToHighlight != null){
+        // highlight each term in the content view  
+          for(i = 0 ; i &lt; parent.termsToHighlight.length ; i++){        
+              $('*', window.parent.contentwin.document).highlight(parent.termsToHighlight[i]);
+          }
+        }
+    }
+   $(document).ready(function(){
+     $('#permalink').show();
+     $('#printlink').show();
+      if ($('#permalink').length&gt;0){
+        if (window.top !== window.self){                    
+          if (window.parent.location.protocol!='file:' &amp;&amp; typeof window.parent.location.protocol != 'undefined'){     
+            $('#permalink&gt;a').attr('href',window.parent.location.pathname+'?q='+window.location.pathname);
+            $('#permalink&gt;a').attr('target','_blank');
+          }else{
+          $('#permalink').hide();  
+          }
+        }else{
+          $('#permalink').hide();
+        }
+      }
+    });     
+//--&gt;</script></head>
+<body onload="highlightSearchTerm()" id="releaseburndownchart">
+<table class="nav"><tbody><tr><td colspan="2"><script type="text/javascript">&lt;!--                  
+                    if (top === self) {
+                      document.write("&lt;div class='frames'&gt;");
+							        document.write("&lt;div class='wFrames'&gt;&lt;a href=" + getPath(location.pathname) + "&gt;With Frames&lt;/a&gt;&lt;/div&gt;");							
+							        document.write("&lt;/div&gt;");
+						        } else {
+						          //document.write("&lt;div class="wFramesPerma"&gt;&lt;a href=" + getPath(location.pathname) + " target="_top" title="link to this page"&gt;Link&lt;/a&gt;&lt;/div&gt;");						
+						        }                      
+                  --&gt;</script><div id="permalink"><a href="#">Link to this page</a></div><div id="printlink"><a href="javascript:printPage();">Print this page</a></div></td></tr><tr><td><div class="navheader"></div></td><td width="50%"></td></tr></tbody></table>
+<h1 class="title topictitle1">An overview of Release Burn Down Chart</h1>
+<div class="body conbody"><p class="shortdesc">Add the <span class="keyword">Release Burn Down Chart</span> to your project's home page to
+		track your project's progress on a daily basis.</p>
+<div class="p">As work gets completed sprint-by-sprint for a release, your backlog tends to decrease.
+			The burn down chart tells the story of how much work is left to be done versus how much
+			time is left. With time along the X axis, the amount of work (backlog) measured in story
+			points is on the Y axis. You can also see the average velocity per sprint in the release
+			burn down chart. In addition to creating burn down charts by release, you can configure
+			this report for a selected sprint planning folder to see its progress on a day-to-day
+				basis.<ul class="ul" id="releaseburndownchart__ul_fqj_lhr_km">
+<li class="li">The story told in your burn down chart is only as reliable as the underlying
+					data.</li>
+<li class="li">You must have the planning folder's start and end dates defined to generate this
+					chart.</li>
+<li class="li">You can have the <span class="ph uicontrol">Points</span> field enabled or disabled for a
+					tracker. If a release planning folder consists of both "points-enabled" and
+					"points-disabled" trackers, the release burn down chart shows grey-colored bars
+					for all sprints, meaning, there are work items without points estimation data.
+					This is because, the "points-disabled" tracker work items are considered as
+					unestimated backlog items as they don’t have points data. As a workaround, while
+					configuring the release burn down chart, you can include "points-enabled"
+					trackers alone to have the release burn down chart behave as expected.</li>
+</ul>
+</div>
+<div class="section"><h2 class="title sectiontitle">Things to consider if you are generating burn down chart for a release planning
+				folder</h2>
+<div class="fig fignone">
+<img class="image" id="releaseburndownchart__image_syr_l43_3m" src="../images/releaseburndownchart.PNG" />
+</div>
+<div class="p">
+<ul class="ul" id="releaseburndownchart__ul_f5g_lrz_km">
+<li class="li">It is recommended to have all your sprint planning folders organized
+						hierarchically within your release planning folder. Release burn down chart
+						can be generated only if that planning folder has child (sprint) planning
+						folders.</li>
+<li class="li">Within a selected release planning folder, all immediate child planning
+						folders are considered as sprint planning folders.</li>
+<li class="li">The bar chart shows the work left to be done (estimated as points) on the
+						first day of every sprint.</li>
+<li class="li">The release burn down calculation is based on (story) points and no effort
+						data is considered. Meaning, the release burn down will not behave as
+						expected if you have effort data alone and no points data.</li>
+</ul>
+</div>
+</div>
+<div class="section"><h2 class="title sectiontitle">Things to consider if you are generating burn down chart for a sprint planning
+				folder</h2>
+<div class="fig fignone">
+<img class="image" id="releaseburndownchart__image_g2v_jym_lm" src="../images/sprintburndownchart.PNG" />
+</div>
+<div class="p">
+<ul class="ul" id="releaseburndownchart__ul_nyh_qrz_km">
+<li class="li">The sprint burn down calculation is based on remaining effort data and no
+						(story) points data is considered. Meaning, the sprint burn down will not
+						behave as expected if you have points data alone and no remaining effort
+						data.</li>
+<li class="li">You can exclude weekends or specific days from your report if you are
+						creating a burn down chart for a sprint planning folder.</li>
+<li class="li">The sprint burn down chart shows the number of tasks and hours remaining for
+						a selected sprint planning folder.</li>
+</ul>
+</div>
+<p class="p">The following table lists the reporting parameters for release burn down charts.</p>
+<div class="p">
+<table cellpadding="4" cellspacing="0" summary="" id="releaseburndownchart__simpletable_g5g_lsb_yl" border="1" class="simpletable"><tr class="sthead">
+<th valign="bottom" align="left" id="d134559e117" class="stentry" width="14.598540145985401%">Reporting parameter</th>
+<th valign="bottom" align="left" id="d134559e120" class="stentry" width="43.649635036496356%"><span class="ph uicontrol">Description</span></th>
+</tr>
+<tr class="strow">
+<td valign="top" headers="d134559e117" class="stentry">Planning Folder ID</td>
+<td valign="top" headers="d134559e120" class="stentry">Select a planning folder for which you want to see the burn down
+							chart.</td>
+</tr>
+<tr class="strow">
+<td valign="top" headers="d134559e117" class="stentry">Tracker ID</td>
+<td valign="top" headers="d134559e120" class="stentry">If you are interested in specific trackers, you can narrow down the
+							scope of the report by adding one or more trackers.</td>
+</tr>
+<tr class="strow">
+<td valign="top" headers="d134559e117" class="stentry">Burn Down By: <span class="ph uicontrol">Release</span> or
+								<span class="ph uicontrol">Sprint</span></td>
+<td valign="top" headers="d134559e120" class="stentry">Select one of the options, <span class="ph uicontrol">Release</span> or
+								<span class="ph uicontrol">Sprint</span>, to create burn down chart for either
+							a release planning folder or a sprint planning folder.</td>
+</tr>
+<tr class="strow">
+</tr></table>
+</div>
+</div>
+<div class="section"><h2 class="title sectiontitle">Output options</h2>
+<p class="p">You may create charts with the default chart output options or modify them as
+				required. The following table lists the chart output options for the
+					<span class="keyword">Release Burn Down Chart</span>.</p>
+<div class="p">
+<table cellpadding="4" cellspacing="0" summary="" id="releaseburndownchart__simpletable_i32_yzb_yl" border="1" class="simpletable"><tr class="sthead">
+<th valign="bottom" align="left" id="d134559e185" class="stentry">Output options</th>
+<th valign="bottom" align="left" id="d134559e188" class="stentry">Description</th>
+</tr>
+<tr class="strow">
+<td valign="top" headers="d134559e185" class="stentry">Output Type</td>
+<td valign="top" headers="d134559e188" class="stentry">The type of chart you want to create such as a burn down
+							chart.</td>
+</tr>
+<tr class="strow">
+<td valign="top" headers="d134559e185" class="stentry">Title</td>
+<td valign="top" headers="d134559e188" class="stentry">The chart title.</td>
+</tr>
+<tr class="strow">
+<td valign="top" headers="d134559e185" class="stentry">Height</td>
+<td valign="top" headers="d134559e188" class="stentry">The height of the chart in number of pixels.</td>
+</tr>
+<tr class="strow">
+<td valign="top" headers="d134559e185" class="stentry">Width</td>
+<td valign="top" headers="d134559e188" class="stentry">The width of the chart in number of pixels.</td>
+</tr>
+<tr class="strow">
+</tr><tr class="strow">
+</tr></table>
+</div>
+</div>
+<div class="section"><h2 class="title sectiontitle">Notes</h2>
+<p class="p" id="releaseburndownchart__d696e869">If you plan to save a project as a template, export
+				the project, and import it via pitchfork on another <span class="keyword">TeamForge</span> instance, you must select the <span class="ph uicontrol">Show
+					Sample Report</span> check box for every report you save as part of the
+				project template, failing which the sample charts would not show up post import.</p>
+<p class="p" id="releaseburndownchart__d696e877">Once you have added the life cycle metric charts to
+				your project page, use the quick function icons on the chart's title bar to edit the
+				title and visibility of the charts, move the charts up or down and delete the charts
+				from your project page.</p>
+<p class="p"><strong class="ph b">Quick function icons</strong></p>
+<div class="p">
+<div class="fig fignone">
+<br /><img class="image" id="releaseburndownchart__d696e888" src="../shared/../images/icons/lifecyclereportsicons.png" /><br />
+</div>
+</div>
+<p class="p"><strong class="ph b">Print or download charts</strong></p>
+<p class="p">You can print charts or download them as .PNG, .JPG, .SVG or .PDF files using the
+				print/download quick function icon.</p>
+<div class="p">
+<div class="fig fignone">
+<img class="image" id="releaseburndownchart__d696e904" src="../shared/../images/printdownloadreport.png" />
+</div>
+</div>
+</div>
+</div>
+<div class="navfooter"><!-- --></div>
+<script type="text/javascript">
+        &lt;!--
+          if (top !== self &amp;&amp; window.parent.tocwin){
+            if (typeof window.parent.tocwin.expandToTopic === 'function'){
+                    window.parent.tocwin.expandToTopic(window.location.href);
+                }         
+         }         
+        --&gt;
+    </script>
+</body>
+</html>

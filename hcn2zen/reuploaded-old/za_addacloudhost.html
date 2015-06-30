@@ -1,0 +1,142 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en-us" lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="copyright" content="(C) Copyright 2005"/>
+<meta name="DC.rights.owner" content="(C) Copyright 2005"/>
+<meta name="DC.Type" content="task"/>
+<meta name="DC.Title" content="Add a cloud host"/>
+<meta name="abstract" content="When you've created a cloud, you can add hosts from physical sources or Amazon EC2 sources."/>
+<meta name="description" content="When you've created a cloud, you can add hosts from physical sources or Amazon EC2 sources."/>
+<meta name="DC.Coverage" content="Lab Management"/>
+<meta name="DC.subject" content="add cloud host, manage clouds"/>
+<meta name="keywords" content="add cloud host, manage clouds"/>
+<meta name="indexterms" content="add cloud host, manage clouds"/>
+<meta name="prodname" content="TeamForge"/>
+<meta name="version" content="7.2"/>
+<meta name="version" content="8.0"/>
+<meta name="release" content=""/>
+<meta name="DC.Format" content="XHTML"/>
+<meta name="DC.Identifier" content="xxx"/>
+<meta name="DC.Language" content="en-us"/>
+<link rel="stylesheet" type="text/css" href="oxygen-webhelp/resources/css/commonltr.css"/>
+<link rel="stylesheet" type="text/css" href="oxygen-webhelp/resources/css/webhelp_topic.css"/>
+<title>Add a cloud host</title>
+<script type="text/javascript" src="oxygen-webhelp/resources/js/jquery.js"> </script>
+<script type="text/javascript" src="oxygen-webhelp/resources/js/jquery-ui.custom.min.js"> </script>
+<script type="text/javascript" src="oxygen-webhelp/resources/js/frames_redirect.js"> </script>
+<script type="text/javascript"><!--
+    var prefix = "../index.html";
+    
+    function highlightSearchTerm(){
+        if(parent.termsToHighlight != null){
+        // highlight each term in the content view  
+          for(i = 0 ; i < parent.termsToHighlight.length ; i++){        
+              $('*', window.parent.contentwin.document).highlight(parent.termsToHighlight[i]);
+          }
+        }
+    }
+   $(document).ready(function(){
+     $('#permalink').show();
+     $('#printlink').show();
+      if ($('#permalink').length>0){
+        if (window.top !== window.self){                    
+          if (window.parent.location.protocol!='file:' && typeof window.parent.location.protocol != 'undefined'){     
+            $('#permalink>a').attr('href',window.parent.location.pathname+'?q='+window.location.pathname);
+            $('#permalink>a').attr('target','_blank');
+          }else{
+          $('#permalink').hide();  
+          }
+        }else{
+          $('#permalink').hide();
+        }
+      }
+    });     
+//--></script></head>
+<body onload="highlightSearchTerm()" id="xxx">
+<table class="nav"><tbody><tr><td colspan="2"><script type="text/javascript"><!--                  
+                    if (top === self) {
+                      document.write("<div class='frames'>");
+							        document.write("<div class='wFrames'><a href=" + getPath(location.pathname) + ">With Frames</a></div>");							
+							        document.write("</div>");
+						        } else {
+						          //document.write("<div class='wFramesPerma'><a href=" + getPath(location.pathname) + " target='_top' title='link to this page'>Link</a></div>");						
+						        }                      
+                  --></script><div id="permalink"><a href="#">Link to this page</a></div><div id="printlink"><a href="javascript:printPage();">Print this page</a></div></td></tr><tr><td><div class="navheader"/></td><td width="50%"/></tr></tbody></table>
+
+    <h1 class="title topictitle1">Add a cloud host</h1>
+
+    
+    
+    
+    
+    
+    <div class="body taskbody"><p class="shortdesc">When you've created a cloud, you can add hosts from physical sources or Amazon EC2
+        sources. </p>
+
+        <ol class="ol steps"><li class="li step">
+                <span class="ph cmd">On the <span class="keyword wintitle">Manage Clouds</span> page, click a cloud name and select
+                        <span class="ph uicontrol">Admin</span>.</span>
+            </li>
+<li class="li step">
+                <span class="ph cmd">Add a cloud source using either of these options:</span>
+                <ol type="a" class="ol substeps">
+                    <li class="li substep substepexpand">
+                        <span class="ph cmd">To add a physical host source, select one from the drop-down and click
+                                <span class="ph uicontrol">Add Host</span>.</span>
+                         Physical hosts can be partitioned into virtual machines that can be
+                            allocated into different projects on the site.
+                    </li>
+
+                    <li class="li substep substepexpand">
+                        <span class="ph cmd">To add an Amazon EC2 source, click <span class="ph uicontrol">Add EC2
+                                Source</span>.</span>
+                         
+                            <div class="note note"><span class="notetitle">Note:</span> You will need information from your <a class="xref" href="http://aws.amazon.com" target="_blank">Amazon Web Services</a> account to complete this
+                                task.</div>
+
+                            <ol class="ol" type="i">
+                                <li class="li">Add a description for the source.</li>
+
+                                <li class="li">Specify the maximum number of hosts that may exist at any given
+                                    time from the set of EC2 credentials specified on this
+                                    page.</li>
+
+                                <li class="li">Fill in the EC2 credentials from the information in your Amazon
+                                    Web Services account. See <a class="xref" href="za_setupEC2credentials.html" title="To be able to create an EC2 cloud source in Lab Management, you need to set up an Amazon Web Services account and supply the EC2 credentials to Lab Management.">Set up Amazon EC2 credentials</a> for details on how to
+                                    get this information - you'll need to provide the API Key, API
+                                    Secret, and the Keypair Name and Keypair Value (your RSA private
+                                    key). </li>
+
+                            </ol>
+
+                        
+                    </li>
+
+                </ol>
+
+            </li>
+<li class="li step">
+                <span class="ph cmd">Click <span class="ph uicontrol">Save</span>.</span>
+            </li>
+</ol>
+
+        <div class="section postreq"> When you add an EC2 source, make sure that one or both EC2 profiles -
+            Amazon_EC2_FC4_base_i386, Amazon_EC2_FC8_base_i386 - are enabled for your <span class="keyword">Lab Management</span> projects. </div>
+
+    </div>
+
+<div class="navfooter"><!----></div>
+    <script type="text/javascript">
+        <!--
+          if (top !== self && window.parent.tocwin){
+            if (typeof window.parent.tocwin.expandToTopic === 'function'){
+                    window.parent.tocwin.expandToTopic(window.location.href);
+                }         
+         }         
+        -->
+    </script> 
+      </body>
+</html>

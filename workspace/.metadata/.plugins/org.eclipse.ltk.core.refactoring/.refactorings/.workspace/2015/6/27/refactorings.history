@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;cri-report&apos; to &apos;cri-dtn-service-report&apos;" description="Rename resource &apos;cri-report&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/cri-report" name="cri-dtn-service-report" stamp="1435574106319" updateReferences="true"/>&#x0A;<refactoring comment="Delete resource &apos;cri-dtn-service-report/dtn-report-support.py&apos;" deleteContents="false" description="Delete resource &apos;cri-dtn-service-report/dtn-report-support.py&apos;" element1="/cri-dtn-service-report/dtn-report-support.py" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1435574283252"/>
+</session>
