@@ -1,8 +1,0 @@
-Manifest-Version: 1.0
-Archiver-Version: Plexus Archiver
-Built-By: bharatwaj
-CTF-Customization-Name: add-topmenu
-CTF-JS-Customization: js/addTopMenu.js
-Created-By: Apache Maven
-Build-Jdk: 1.8.0_45
-
