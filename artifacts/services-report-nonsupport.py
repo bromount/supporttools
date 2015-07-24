@@ -49,6 +49,12 @@ def get_submitted_team(artf_id):
     print team_name 
     return team_name
 
+def get_categrory(artf_id):
+    
+    category = tracker.getArtifactData2(login,artf_id)['category']
+    print category
+    return category
+
 data =     []
 
 def timeStamp():
@@ -95,7 +101,7 @@ def sendmail_managers():
         print lines
 
     subjectline = "Service Request Tracker Report - Services"
-    receiever = ['support-managers@collab.net','bdawson@collab.net','jlibby@collab.net','jnichols@collab.net']
+    receiever = ['support-managers@collab.net','bdawson@collab.net','jlibby@collab.net','jnichols@collab.net','sivaramakrishnan@collab.net','anandakumar@collab.net']
     sender = "annamalai@collab.net"
     msg = MIMEMultipart('alternative')
     msg['Subject'] = subjectline
@@ -156,7 +162,7 @@ for row in reader:
                 print artifact_id
                 #get_submitted_team(artifact_id)
                 #sys.exit()
-                if get_submitted_team(artifact_id)=='Support':
+                if get_submitted_team(artifact_id)=='Support' or get_categrory(artifact_id)=='Support Issues':
                     #print type(item)
                     #counter = counter + 1
                     modified_time_list = list(value['lastModifiedDate'])

@@ -80,6 +80,9 @@ def get_user_artifact(user):
     filter = SOAPpy.Types.structType()
     filter._addItem('SoapFilter', { 'name' : 'submittedBy', 'value' : user})
     filter._addItem('SoapFilters',{'name':'status' ,'value': 'Open'})
+    filter._addItem('SoapFilters1',{'name': 'assignedTo','value': 'anandm'})
+    filter._addItem('SoapFilters2',{'name': 'assignedTo','value': 'srose'})
+    filter._addItem('SoapFilters3',{'name': 'assignedTo','value': 'prodmgmt'})
       
     #tracker2175 is the CRUS tracker
     tracker_id = "tracker2175" 

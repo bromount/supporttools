@@ -105,7 +105,7 @@ for row in reader:
         <th> Artifact </th>
         <th> Title </th>
         <th> Submitted On </th>
-	    <th> Priority </th>
+	    <th> Urgency </th>
         </tr>
         """
         
@@ -119,6 +119,8 @@ for row in reader:
                 print value['submittedDate']
                 #print type(item)
                 #counter = counter + 1
+		urgency = tracker.getArtifactData2(login,artifact_id)['flexFields']['values'][2]
+                print urgency
                 modified_time_list = list(value['submittedDate'])
                 modified_time_list=map(int, modified_time_list)
                 print modified_time_list
@@ -141,14 +143,14 @@ for row in reader:
                 date_difference =  dt_obj.toordinal() - datetime.today().toordinal()
                 print date_difference
                 #sys.exit()
-                priority=value['priority']
-                priority=str(priority)
-                print priority
+                #priority=value['priority']
+                #priority=str(priority)
+                #print priority
                 #sys.exit()
                 
                 if date_difference >= -1:
                     counter=counter+1
-                    table = table + "<tr><td><b><font color='black'>" + str(counter) + "</font></b></td><td><b><font color='black'><a href=https://forge.collab.net/sf/go/" + value['id'] + ">" + value['id'] +"</a></b></font> </td> <td> <b><font color='black'> " + value['title'].encode("utf-8") + "</font></b></td><td> <b><font color='black'>"  + modified_time + "</font></b></td><td><b><font color='black'>"+ priority + "</font></b></td></tr>"
+                    table = table + "<tr><td><b><font color='black'>" + str(counter) + "</font></b></td><td><b><font color='black'><a href=https://forge.collab.net/sf/go/" + value['id'] + ">" + value['id'] +"</a></b></font> </td> <td> <b><font color='black'> " + value['title'].encode("utf-8") + "</font></b></td><td> <b><font color='black'>"  + modified_time + "</font></b></td><td><b><font color='black'>"+ urgency + "</font></b></td></tr>"
 
         #table = table + "</table> <br> Note: Artifacts which is not updated more than 'three' days will be in <font color='red'><b>RED</b></font>."
         print table
