@@ -1,0 +1,286 @@
+shrinivasan@shrinivasan-laptop:~/CollabNet/supporttools/sync-salesforce-ocn-zendesk-contacts/trunk$ python search_ocn_users.py 
+/home/shrinivasan/CollabNet/supporttools/sync-salesforce-ocn-zendesk-contacts/trunk/cee.py:17: UserWarning: gzip transfer encoding is experimental!
+  br.set_handle_gzip(True)
+<cee.cee instance at 0x7f595c929248>
+Email not Found it@laserfiche.com
+thirionj
+Jacob Thirion
+Jacob.Thirion@CommerceBank.com
+Foundjacob.thirion@commercebank.com
+Email not Found bradley.williams@commercebank.com
+Email not Found dwestnedge@yodlee.com
+Email not Found mjean@line6.com
+Email not Found hdurand@line6.com
+Email not Found ytaljard@minerpsolutions.com
+Email not Found veikko.juusola@m-files.com
+Email not Found petteri.heinonen@m-files.com
+Email not Found andreas.bredesen@kongsberg.com
+Email not Found arne.goderstad@kongsberg.com
+Email not Found stoyan.angelov@comptel.com
+pe60denev
+Peter Denev
+peter.denev@comptel.com
+Foundpeter.denev@comptel.com
+gdurisch
+Gion Durisch
+gdurisch@hamilton-medical.ch
+Foundgdurisch@hamilton-medical.ch
+Email not Found tim.johns@dashwire.com
+mlitcofsky
+Michael Litcofsky
+michael.litcofsky@draeger.com
+Foundmichael.litcofsky@draeger.com
+Email not Found luis.diaz@draeger.com
+Email not Found sroushani@brslabs.com
+Email not Found chickox@caci.com
+rywatson
+Ryan Watson
+rywatson@caci.com
+Foundrywatson@caci.com
+Email not Found plueders@caci.com
+skashfi
+Sameen Kashfi
+skashfi@caci.com
+Foundskashfi@caci.com
+Email not Found robert.martino@ngc.com
+Email not Found stephen.sheard@dyson.com
+Email not Found lcurrier@irobot.com
+Email not Found rmcfatter@irobot.com
+Email not Found tj@thermoanalytics.com
+Email not Found mark.tudor@termana.com
+rgeorge
+Regis George
+rgeorge@alung.com
+Foundrgeorge@alung.com
+stephanelachaud
+Stephane Lachaud
+stephane.lachaud@schneider-electric.com
+Foundstephane.lachaud@schneider-electric.com
+zhangli_ya
+Li Zhang
+li-lilian.zhang@schneider-electric.com
+Foundli-lilian.zhang@schneider-electric.com
+kthompso
+Kimberly Flynn
+kimberly.flynn@schneider-electric.com
+Foundkimberly.flynn@schneider-electric.com
+Email not Found tobias.hofmann@schneider-electric.com
+sesa160717
+frederique digeon
+frederique.digeon@schneider-electric.com
+Foundfrederique.digeon@schneider-electric.com
+ashwin30
+Ashwin R
+Ashwin2.kumar@schneider-electric.com
+Foundashwin2.kumar@schneider-electric.com
+Email not Found christine.smith@seemis.gov.uk
+Email not Found gagan.arora@surfcam.com
+mtowler
+Matthew Towler
+towler@ccdc.cam.ac.uk
+Foundtowler@ccdc.cam.ac.uk
+Email not Found ktaylor@ccdc.cam.ac.uk
+Email not Found ralph.goebel@raiffeisen.ch
+mlorenzix
+Michael Lorenzi
+michael.lorenzi@raiffeisen.ch
+Foundmichael.lorenzi@raiffeisen.ch
+Email not Found gerbert.orasche@avl.com
+Email not Found ricklin.nelson@lfg.com
+steve_byers
+Steve Byers
+steve.byers@lfg.com
+Foundsteve.byers@lfg.com
+Email not Found sandra.kendrick@lmco.com
+phianh
+Phi Anh
+anh.phi@lifetech.com
+Foundanh.phi@lifetech.com
+randy_lagman
+Randy Lagman
+randy.lagman@lifetech.com
+Foundrandy.lagman@lifetech.com
+Email not Found conrad.berg@lifetech.com
+dalessi
+Domenico Alessi
+domenico.alessi@ericsson.com
+Founddomenico.alessi@ericsson.com
+dpartain
+David Partain
+david.partain@ericsson.com
+Founddavid.partain@ericsson.com
+eisacam
+Isaac Campbell
+isaac.campbell@ericsson.com
+Foundisaac.campbell@ericsson.com
+erezcha
+Reza Charghi
+reza.charghi@ericsson.com
+Foundreza.charghi@ericsson.com
+lmcempa
+Emilio Palmiero
+emilio.palmiero@ericsson.com
+Foundemilio.palmiero@ericsson.com
+Email not Found payel.chowdhury@ericsson.com
+michaelabramov
+Michael Abramov
+michael.abramov@ericsson.com
+Foundmichael.abramov@ericsson.com
+esondas
+Sonal Das
+sonal.das@ericsson.com
+Foundsonal.das@ericsson.com
+Email not Found sandip.r.roy@ericsson.com
+dickersonp
+Pete Dickerson
+dickersonp@dhw.idaho.gov
+Founddickersonp@dhw.idaho.gov
+Email not Found deborah_teng@ontla.ola.org
+Email not Found kbye@mimillers.com
+twinegar
+Todd Winegar
+todd.winegar@unisys.com
+Foundtodd.winegar@unisys.com
+lizvoss
+Liz Voss
+liz.voss@simplot.com
+Foundliz.voss@simplot.com
+jadam12
+Tony Adams
+tony.adams@simplot.com
+Foundtony.adams@simplot.com
+Email not Found heather.ingram@probuild.com
+Email not Found ken.conway@probuild.com
+probuild
+jeff crawford
+jeff.crawford@probuild.com
+Foundjeff.crawford@probuild.com
+Email not Found tom.witmer@probuild.com
+Email not Found rob.ford@probuild.com
+Email not Found softwareprocurement@ge.com
+Email not Found jocelyn@pinger.com
+Email not Found mra@mjolner.dk
+Email not Found david.cavender@digimarc.com
+Email not Found curtis.childs@int.com
+Email not Found hugues.thevoux@int.com
+Email not Found s.jarratt@samsung.com
+Email not Found outey.ky@sanofi.com
+fr58434
+Laurent THOMASSIN
+laurent.thomassin@sanofi.com
+Foundlaurent.thomassin@sanofi.com
+Email not Found pdolemieux@esri.com
+Email not Found charlton.kao@oracle.com
+Email not Found jon.busconi@oracle.com
+Email not Found ryan.cleary@oracle.com
+Email not Found nathan.moreau@oracle.com
+Email not Found rick.catalano@oracle.com
+Email not Found andreas.horvath@daimler.com
+Email not Found philip.worsley@gunnebo.com
+Email not Found fred.schiffer@bayer.com
+Email not Found thomas.joos@bayer.com
+Email not Found ingar.eide@daldata.no
+Email not Found dwierenga@valueclick.com
+Email not Found rdunn@valueclick.com
+Email not Found gdangelo@wrberkley.com
+Email not Found gdangelo@wrberkley.com
+Email not Found tcollins@wrberkley.com
+Email not Found jzghaib@sabis.net
+Email not Found msamaha@sabis.net
+Email not Found jbolen@mcmcg.com
+Email not Found nnauroth@mcmcg.com
+Email not Found cbarton@mcmcg.com
+Email not Found randel.basore@mcmcg.com
+bolry
+Bo Rydberg
+bo.rydberg@saabgroup.com
+Foundbo.rydberg@saabgroup.com
+Email not Found samuli.kiviniemi@elisa.fi
+Email not Found phayes.evana@psi-corp.com
+Email not Found tgriffith.evana@psi-corp.com
+Email not Found rwire.evana@psi-corp.com
+Email not Found mark.jean@internetbrands.com
+Email not Found mduduzi.keswa@bconv.com
+Email not Found shawn.sechrist@adeccona.com
+Email not Found piotr.dziedziel@assaabloy.com
+Email not Found marcus.alexandersson@assaabloy.com
+Email not Found sjennings@navigationsolutions.com
+Email not Found shahp@zhi.com
+ewtorres
+Edgard Torres
+edgard.torres@ngc.com
+Foundedgard.torres@ngc.com
+Email not Found oschwartz@break.com
+sk8rs_dad
+Karl Wagner
+karl_wagner@mitel.com
+Foundkarl_wagner@mitel.com
+Email not Found trevor_poole@mitel.com
+Email not Found jmeyer@omnipless.com
+bobschen
+Bob Chen
+bchen@gt-global.com
+Foundbchen@gt-global.com
+mgardner
+Mike Gardner
+michael.gardner@crowncastle.com
+Foundmichael.gardner@crowncastle.com
+klinck
+Kenneth Linck
+ken.linck@crowncastle.com
+Foundken.linck@crowncastle.com
+Email not Found cp7964@att.com
+robertstagg
+Robert Stagg
+robertstagg@ruggedcom.com
+Foundrobertstagg@ruggedcom.com
+Email not Found jan.sall@logica.com
+Email not Found brian.clulow@navy.mil
+Email not Found dan.carr@navy.mil
+salvetjx
+Jeff Salveter-Taylor
+jeffrey.salveter-taylor@interdigital.com
+Foundjeffrey.salveter-taylor@interdigital.com
+Email not Found anne.jones@schneider-electric.com
+artwynans
+Art Wynans
+art.wynans@schneider-electric.com
+Foundart.wynans@schneider-electric.com
+ronniedepriest
+Ronnie DePriest
+rdepriest@dstsystems.com
+Foundrdepriest@dstsystems.com
+Email not Found twestervelt@dsttechnologies.com
+Email not Found rlvanbelkum@dsttechnologies.com
+Email not Found dpjones@dstsystems.com
+pcbarkman
+Paul Barkman
+pcbarkman@dstsystems.com
+Foundpcbarkman@dstsystems.com
+sveskerna
+Sharon Veskerna
+skveskerna@dstsystems.com
+Foundskveskerna@dstsystems.com
+Email not Found marobertson@dstsystems.com
+tmcmullin
+Tim McMullin
+trmcmullin@dsttechnologies.com
+Foundtrmcmullin@dsttechnologies.com
+Email not Found kgmiller@dsttechnologies.com
+ronniedepriest
+Ronnie DePriest
+rdepriest@dstsystems.com
+Foundrdepriest@dstsystems.com
+gbarthel
+Guillaume Barthelemy
+guillaume.barthelemy@csr.com
+Foundguillaume.barthelemy@csr.com
+Email not Found glen.horton@pointright.com
+Email not Found robert.underwood@pointright.com
+Email not Found paramesha.k@samsung.com
+Email not Found mohamed.sadakkathulla-a@schneider-electric.com
+Email not Found ajay.bk@schneider-electric.com
+Email not Found michael.lorsbach@cms.hhs.gov
+Email not Found glenn.radcliffe@cms.hhs.gov
+Email not Found nikoleta.lelis@cms.hhs.gov
+Email not Found beth_allred@rmic.com

@@ -1,0 +1,17 @@
+[settings]
+#edit this settings if required
+
+salesforce_username = support@collab.net.fullcopyqa
+salesforce_password = Collabnet1
+#salesforce_security_token = BnJhsRRzG6HtWdvugPrH7ZlQ7
+#salesforce_security_token = FwICqdppRz3dF32qDNGIaaYXJ
+salesforce_security_token = 5PvxJZm6wEHfKw8VC5cxkT5f
+
+
+ocn_username = aamalai
+ocn_password = Openthis22@
+
+
+zendesk_sitename = https://csplapitest.zendesk.com
+zendesk_username = shrinivasan@collab.net
+zendesk_password = Collabnet1!

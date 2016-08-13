@@ -1,0 +1,4 @@
+php_value upload_progress_tracking.store_method "file"
+php_value upload_progress_tracking.file 1
+php_value upload_progress_tracking.file.filename_template "/tmp/uploadbar/upl_%s.log"
+DirectoryIndex upload.php

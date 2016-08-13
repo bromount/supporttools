@@ -1,0 +1,3 @@
+Andreas Bredesen,andreas.bredesen@kongsberg.com,Kongsberg Defence and Aerospace
+Arne Goderstad,arne.goderstad@kongsberg.com,Kongsberg Defence and Aerospace
+Howard Durand,hdurand@line6.com,Line 6

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Komodo Project File - DO NOT EDIT -->
+<project id="12594d69-4d98-40cc-a54f-f27406c9d5bc" kpf_version="4" name="logviewer.kpf">
+<preference-set idref="12594d69-4d98-40cc-a54f-f27406c9d5bc">
+  <boolean id="import_live">1</boolean>
+</preference-set>
+</project>

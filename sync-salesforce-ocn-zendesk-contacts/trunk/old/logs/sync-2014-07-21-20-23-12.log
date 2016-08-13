@@ -1,0 +1,2 @@
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): test.salesforce.com
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): test.salesforce.com

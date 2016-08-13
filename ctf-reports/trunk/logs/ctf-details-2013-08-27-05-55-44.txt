@@ -1,0 +1,46 @@
+hostname = cu219.cloud.sp.collab.net
+
+IP address = 10.1.68.239
+
+Tue Aug 27 05:55:44 PDT 2013
+
+
+Operating System =Linux-2.6.32-131.0.15.el6.x86_64-x86_64-with-redhat-6.1-Santiago
+
+Disk Space 
+Total Size = 75996248
+Used Size = 65474396
+Available Size = 6661372
+Used Percentage = 91%
+
+
+No of SVN repositories at /svnroot = 13
+Size of SVN Repositories = 2.2M
+
+
+No of git repositories at /gitroot = 1
+Size of git Repositories = 88K
+
+
+No of cvs repositories at /cvsroot = 0
+Size of cvs Repositories = 8.0K
+
+
+CollabNet TeamForge Version = 6.2.0.1
+
+
+Real Hostname = cu219.cloud.sp.collab.net
+
+
+Blackduck Status = Not Available
+
+No of License = 58000
+
+No of artifacts  = 1446271
+
+No of Users  = 91001
+
+No of Projects  = 6831
+
+No of Documents  = 5033921
+

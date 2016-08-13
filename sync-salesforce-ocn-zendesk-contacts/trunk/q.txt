@@ -1,0 +1,451 @@
+select Name, Email from User where  IsPortalEnabled=true and Email Like 'trevor.monk@ca.schneider-electric.com'
+{u'totalSize': 0, u'records': [], u'done': True}
+totalSize
+records
+done
+select Name, Email from User where  IsPortalEnabled=true and Email Like 'jesper.poulsen@dk.schneider-electric.com'
+{u'totalSize': 0, u'records': [], u'done': True}
+totalSize
+records
+done
+select Name, Email from User where  IsPortalEnabled=true and Email Like 'peter.x.larsson@tdc.se'
+{u'totalSize': 0, u'records': [], u'done': True}
+totalSize
+records
+done
+select Name, Email from User where  IsPortalEnabled=true and Email Like 'diana.tearle@evault.com'
+{u'totalSize': 0, u'records': [], u'done': True}
+totalSize
+records
+done
+select Name, Email from User where  IsPortalEnabled=true and Email Like 'denise.janse@i365.com'
+{u'totalSize': 0, u'records': [], u'done': True}
+totalSize
+records
+done
+select Name, Email from User where  IsPortalEnabled=true and Email Like 'jeanie.conner@laserfiche.com'
+{u'totalSize': 0, u'records': [], u'done': True}
+totalSize
+records
+done
+select Name, Email from User where  IsPortalEnabled=true and Email Like 'it@laserfiche.com'
+{u'totalSize': 0, u'records': [], u'done': True}
+totalSize
+records
+done
+select Name, Email from User where  IsPortalEnabled=true and Email Like 'jacob.thirion@commercebank.com'
+{u'totalSize': 0, u'records': [], u'done': True}
+totalSize
+records
+done
+select Name, Email from User where  IsPortalEnabled=true and Email Like 'bradley.williams@commercebank.com'
+{u'totalSize': 0, u'records': [], u'done': True}
+totalSize
+records
+done
+select Name, Email from User where  IsPortalEnabled=true and Email Like 'rsoni1@yodlee.com'
+{u'totalSize': 0, u'records': [], u'done': True}
+totalSize
+records
+done
+select Name, Email from User where  IsPortalEnabled=true and Email Like 'dwestnedge@yodlee.com'
+{u'totalSize': 0, u'records': [], u'done': True}
+totalSize
+records
+done
+select Name, Email from User where  IsPortalEnabled=true and Email Like 'sreedhar@yodlee.com'
+{u'totalSize': 0, u'records': [], u'done': True}
+totalSize
+records
+done
+select Name, Email from User where  IsPortalEnabled=true and Email Like 'ssebastian@yodlee.com'
+{u'totalSize': 0, u'records': [], u'done': True}
+totalSize
+records
+done
+select Name, Email from User where  IsPortalEnabled=true and Email Like 'rchachare@yodlee.com'
+{u'totalSize': 0, u'records': [], u'done': True}
+totalSize
+records
+done
+select Name, Email from User where  IsPortalEnabled=true and Email Like 'mjean@line6.com'
+{u'totalSize': 0, u'records': [], u'done': True}
+totalSize
+records
+done
+select Name, Email from User where  IsPortalEnabled=true and Email Like 'hdurand@line6.com'
+{u'totalSize': 0, u'records': [], u'done': True}
+totalSize
+records
+done
+select Name, Email from User where  IsPortalEnabled=true and Email Like 'ytaljard@minerpsolutions.com'
+{u'totalSize': 0, u'records': [], u'done': True}
+totalSize
+records
+done
+select Name, Email from User where  IsPortalEnabled=true and Email Like 'wenze.hu@orange-ftgroup.com'
+{u'totalSize': 0, u'records': [], u'done': True}
+totalSize
+records
+done
+select Name, Email from User where  IsPortalEnabled=true and Email Like 'scampbell@enercon.com'
+{u'totalSize': 0, u'records': [], u'done': True}
+totalSize
+records
+done
+select Name, Email from User where  IsPortalEnabled=true and Email Like 'veikko.juusola@m-files.com'
+{u'totalSize': 0, u'records': [], u'done': True}
+totalSize
+records
+done
+select Name, Email from User where  IsPortalEnabled=true and Email Like 'petteri.heinonen@m-files.com'
+{u'totalSize': 0, u'records': [], u'done': True}
+totalSize
+records
+done
+select Name, Email from User where  IsPortalEnabled=true and Email Like 'andreas.bredesen@kongsberg.com'
+{u'totalSize': 0, u'records': [], u'done': True}
+totalSize
+records
+done
+select Name, Email from User where  IsPortalEnabled=true and Email Like 'arne.goderstad@kongsberg.com'
+{u'totalSize': 0, u'records': [], u'done': True}
+totalSize
+records
+done
+select Name, Email from User where  IsPortalEnabled=true and Email Like 'stoyan.angelov@comptel.com'
+{u'totalSize': 0, u'records': [], u'done': True}
+totalSize
+records
+done
+select Name, Email from User where  IsPortalEnabled=true and Email Like 'peter.denev@comptel.com'
+{u'totalSize': 0, u'records': [], u'done': True}
+totalSize
+records
+done
+select Name, Email from User where  IsPortalEnabled=true and Email Like 'gdurisch@hamilton-medical.ch'
+{u'totalSize': 0, u'records': [], u'done': True}
+totalSize
+records
+done
+select Name, Email from User where  IsPortalEnabled=true and Email Like 'tim.johns@dashwire.com'
+{u'totalSize': 0, u'records': [], u'done': True}
+totalSize
+records
+done
+select Name, Email from User where  IsPortalEnabled=true and Email Like 'tholman@dashwire.com'
+{u'totalSize': 0, u'records': [], u'done': True}
+totalSize
+records
+done
+select Name, Email from User where  IsPortalEnabled=true and Email Like 'sforde@amazon.com'
+{u'totalSize': 0, u'records': [], u'done': True}
+totalSize
+records
+done
+select Name, Email from User where  IsPortalEnabled=true and Email Like 'nigelp@amazon.com'
+{u'totalSize': 0, u'records': [], u'done': True}
+totalSize
+records
+done
+select Name, Email from User where  IsPortalEnabled=true and Email Like 'topham@amazon.com'
+{u'totalSize': 0, u'records': [], u'done': True}
+totalSize
+records
+done
+select Name, Email from User where  IsPortalEnabled=true and Email Like 'amy.preston@synopsys.com'
+{u'totalSize': 0, u'records': [], u'done': True}
+totalSize
+records
+done
+select Name, Email from User where  IsPortalEnabled=true and Email Like 'lesliew@synopsys.com'
+{u'totalSize': 0, u'records': [], u'done': True}
+totalSize
+records
+done
+select Name, Email from User where  IsPortalEnabled=true and Email Like 'michael.litcofsky@draeger.com'
+{u'totalSize': 0, u'records': [], u'done': True}
+totalSize
+records
+done
+select Name, Email from User where  IsPortalEnabled=true and Email Like 'mark.mcfadden@draeger.com'
+{u'totalSize': 0, u'records': [], u'done': True}
+totalSize
+records
+done
+select Name, Email from User where  IsPortalEnabled=true and Email Like 'blake.whitney@draeger.com'
+{u'totalSize': 0, u'records': [], u'done': True}
+totalSize
+records
+done
+select Name, Email from User where  IsPortalEnabled=true and Email Like 'jolyn.rutledge@draeger.com'
+{u'totalSize': 0, u'records': [], u'done': True}
+totalSize
+records
+done
+select Name, Email from User where  IsPortalEnabled=true and Email Like 'luis.diaz@draeger.com'
+{u'totalSize': 0, u'records': [], u'done': True}
+totalSize
+records
+done
+select Name, Email from User where  IsPortalEnabled=true and Email Like 'sroushani@brslabs.com'
+{u'totalSize': 0, u'records': [], u'done': True}
+totalSize
+records
+done
+select Name, Email from User where  IsPortalEnabled=true and Email Like 'chickox@caci.com'
+{u'totalSize': 0, u'records': [], u'done': True}
+totalSize
+records
+done
+select Name, Email from User where  IsPortalEnabled=true and Email Like 'rywatson@caci.com'
+{u'totalSize': 0, u'records': [], u'done': True}
+totalSize
+records
+done
+select Name, Email from User where  IsPortalEnabled=true and Email Like 'plueders@caci.com'
+{u'totalSize': 0, u'records': [], u'done': True}
+totalSize
+records
+done
+select Name, Email from User where  IsPortalEnabled=true and Email Like 'skashfi@caci.com'
+{u'totalSize': 0, u'records': [], u'done': True}
+totalSize
+records
+done
+select Name, Email from User where  IsPortalEnabled=true and Email Like 'robert.martino@ngc.com'
+{u'totalSize': 0, u'records': [], u'done': True}
+totalSize
+records
+done
+select Name, Email from User where  IsPortalEnabled=true and Email Like 'stephen.sheard@dyson.com'
+{u'totalSize': 0, u'records': [], u'done': True}
+totalSize
+records
+done
+select Name, Email from User where  IsPortalEnabled=true and Email Like 'mike.aldred@dyson.com'
+{u'totalSize': 0, u'records': [], u'done': True}
+totalSize
+records
+done
+select Name, Email from User where  IsPortalEnabled=true and Email Like 'david.sellars@dyson.com'
+{u'totalSize': 0, u'records': [], u'done': True}
+totalSize
+records
+done
+select Name, Email from User where  IsPortalEnabled=true and Email Like 'lcurrier@irobot.com'
+{u'totalSize': 0, u'records': [], u'done': True}
+totalSize
+records
+done
+select Name, Email from User where  IsPortalEnabled=true and Email Like 'jcheuvront@irobot.com'
+{u'totalSize': 0, u'records': [], u'done': True}
+totalSize
+records
+done
+select Name, Email from User where  IsPortalEnabled=true and Email Like 'tfield@irobot.com'
+{u'totalSize': 0, u'records': [], u'done': True}
+totalSize
+records
+done
+select Name, Email from User where  IsPortalEnabled=true and Email Like 'rmcfatter@irobot.com'
+{u'totalSize': 0, u'records': [], u'done': True}
+totalSize
+records
+done
+select Name, Email from User where  IsPortalEnabled=true and Email Like 'tj@thermoanalytics.com'
+{u'totalSize': 0, u'records': [], u'done': True}
+totalSize
+records
+done
+select Name, Email from User where  IsPortalEnabled=true and Email Like 'mark.tudor@termana.com'
+{u'totalSize': 0, u'records': [], u'done': True}
+totalSize
+records
+done
+select Name, Email from User where  IsPortalEnabled=true and Email Like 'walt.soderman@termana.com'
+{u'totalSize': 0, u'records': [], u'done': True}
+totalSize
+records
+done
+select Name, Email from User where  IsPortalEnabled=true and Email Like 'jargyros@alung.com'
+{u'totalSize': 0, u'records': [], u'done': True}
+totalSize
+records
+done
+select Name, Email from User where  IsPortalEnabled=true and Email Like 'rgeer@alung.com'
+{u'totalSize': 0, u'records': [], u'done': True}
+totalSize
+records
+done
+select Name, Email from User where  IsPortalEnabled=true and Email Like 'rgeorge@alung.com'
+{u'totalSize': 0, u'records': [], u'done': True}
+totalSize
+records
+done
+select Name, Email from User where  IsPortalEnabled=true and Email Like 'christian.baumann@zmdi.com'
+{u'totalSize': 0, u'records': [], u'done': True}
+totalSize
+records
+done
+select Name, Email from User where  IsPortalEnabled=true and Email Like 'lszalvay@solutionsiq.com'
+{u'totalSize': 0, u'records': [], u'done': True}
+totalSize
+records
+done
+select Name, Email from User where  IsPortalEnabled=true and Email Like 'stephane.lachaud@schneider-electric.com'
+{u'totalSize': 0, u'records': [], u'done': True}
+totalSize
+records
+done
+select Name, Email from User where  IsPortalEnabled=true and Email Like 'li-lilian.zhang@schneider-electric.com'
+{u'totalSize': 0, u'records': [], u'done': True}
+totalSize
+records
+done
+select Name, Email from User where  IsPortalEnabled=true and Email Like 'kimberly.flynn@schneider-electric.com'
+{u'totalSize': 0, u'records': [], u'done': True}
+totalSize
+records
+done
+select Name, Email from User where  IsPortalEnabled=true and Email Like 'tobias.hofmann@schneider-electric.com'
+{u'totalSize': 0, u'records': [], u'done': True}
+totalSize
+records
+done
+select Name, Email from User where  IsPortalEnabled=true and Email Like 'frederique.digeon@schneider-electric.com'
+{u'totalSize': 0, u'records': [], u'done': True}
+totalSize
+records
+done
+select Name, Email from User where  IsPortalEnabled=true and Email Like 'ashwin2.kumar@schneider-electric.com'
+{u'totalSize': 0, u'records': [], u'done': True}
+totalSize
+records
+done
+select Name, Email from User where  IsPortalEnabled=true and Email Like 'roddy.shearer@seemis.gov.uk'
+{u'totalSize': 0, u'records': [], u'done': True}
+totalSize
+records
+done
+select Name, Email from User where  IsPortalEnabled=true and Email Like 'christine.smith@seemis.gov.uk'
+{u'totalSize': 0, u'records': [], u'done': True}
+totalSize
+records
+done
+select Name, Email from User where  IsPortalEnabled=true and Email Like 'tajaeger@cgintl.com'
+{u'totalSize': 0, u'records': [], u'done': True}
+totalSize
+records
+done
+select Name, Email from User where  IsPortalEnabled=true and Email Like 'nfox@repairclinic.com'
+{u'totalSize': 0, u'records': [], u'done': True}
+totalSize
+records
+done
+select Name, Email from User where  IsPortalEnabled=true and Email Like 'spearen@repairclinic.com'
+{u'totalSize': 0, u'records': [], u'done': True}
+totalSize
+records
+done
+select Name, Email from User where  IsPortalEnabled=true and Email Like 'peter.marton@surfcam.com'
+{u'totalSize': 0, u'records': [], u'done': True}
+totalSize
+records
+done
+select Name, Email from User where  IsPortalEnabled=true and Email Like 'gagan.arora@surfcam.com'
+{u'totalSize': 0, u'records': [], u'done': True}
+totalSize
+records
+done
+select Name, Email from User where  IsPortalEnabled=true and Email Like 'towler@ccdc.cam.ac.uk'
+{u'totalSize': 0, u'records': [], u'done': True}
+totalSize
+records
+done
+select Name, Email from User where  IsPortalEnabled=true and Email Like 'thomas@ccdc.cam.ac.uk'
+{u'totalSize': 0, u'records': [], u'done': True}
+totalSize
+records
+done
+select Name, Email from User where  IsPortalEnabled=true and Email Like 'macrae@ccdc.cam.ac.uk'
+{u'totalSize': 0, u'records': [], u'done': True}
+totalSize
+records
+done
+select Name, Email from User where  IsPortalEnabled=true and Email Like 'ktaylor@ccdc.cam.ac.uk'
+{u'totalSize': 0, u'records': [], u'done': True}
+totalSize
+records
+done
+select Name, Email from User where  IsPortalEnabled=true and Email Like 'richard.hagans@lmco.com'
+{u'totalSize': 0, u'records': [], u'done': True}
+totalSize
+records
+done
+select Name, Email from User where  IsPortalEnabled=true and Email Like 'rainer.leicht@raiffeisen.ch'
+{u'totalSize': 0, u'records': [], u'done': True}
+totalSize
+records
+done
+select Name, Email from User where  IsPortalEnabled=true and Email Like 'ralph.goebel@raiffeisen.ch'
+{u'totalSize': 0, u'records': [], u'done': True}
+totalSize
+records
+done
+select Name, Email from User where  IsPortalEnabled=true and Email Like 'walter.schmiedl@raiffeisen.ch'
+{u'totalSize': 0, u'records': [], u'done': True}
+totalSize
+records
+done
+select Name, Email from User where  IsPortalEnabled=true and Email Like 'michael.lorenzi@raiffeisen.ch'
+{u'totalSize': 0, u'records': [], u'done': True}
+totalSize
+records
+done
+select Name, Email from User where  IsPortalEnabled=true and Email Like 'gerbert.orasche@avl.com'
+{u'totalSize': 0, u'records': [], u'done': True}
+totalSize
+records
+done
+select Name, Email from User where  IsPortalEnabled=true and Email Like 'ricklin.nelson@lfg.com'
+{u'totalSize': 0, u'records': [], u'done': True}
+totalSize
+records
+done
+select Name, Email from User where  IsPortalEnabled=true and Email Like 'steve.byers@lfg.com'
+{u'totalSize': 0, u'records': [], u'done': True}
+totalSize
+records
+done
+select Name, Email from User where  IsPortalEnabled=true and Email Like 'sandra.kendrick@lmco.com'
+{u'totalSize': 0, u'records': [], u'done': True}
+totalSize
+records
+done
+select Name, Email from User where  IsPortalEnabled=true and Email Like 'boegesj@appliedbiosystems.com'
+{u'totalSize': 0, u'records': [], u'done': True}
+totalSize
+records
+done
+select Name, Email from User where  IsPortalEnabled=true and Email Like 'brodyms@appliedbiosystems.com'
+{u'totalSize': 0, u'records': [], u'done': True}
+totalSize
+records
+done
+select Name, Email from User where  IsPortalEnabled=true and Email Like 'orest.kihevka@lifetech.com'
+{u'totalSize': 0, u'records': [], u'done': True}
+totalSize
+records
+done
+select Name, Email from User where  IsPortalEnabled=true and Email Like 'sanghahs@appliedbiosystems.com'
+{u'totalSize': 0, u'records': [], u'done': True}
+totalSize
+records
+done
+select Name, Email from User where  IsPortalEnabled=true and Email Like 'anh.phi@lifetech.com'
+{u'totalSize': 0, u'records': [], u'done': True}
+totalSize
+records
+done
+select Name, Email from User where  IsPortalEnabled=true and Email Like 'fay.austin@appliedbiosystems.com'

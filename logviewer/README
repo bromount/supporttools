@@ -1,0 +1,42 @@
+How to Install the PHP Log Parser
+---------------------------------
+
+Step 1:
+
+  * Thank Ian for writing such a great tool buy bribing him, or purchasing him
+    large amounts of caffeine.  Ask around -- folks know what I like :)
+
+Step 2:
+  * Make sure that you have PHP5, MySQL, apache, pecl, and pear installed.  On
+    debian based systems, the last two are from the php5-dev packages.
+
+Step 3:
+  * Install items that are specific for the progress bar to work.
+    # pecl install uploadprogress-0.3.0
+    # pear install HTML_AJAX-0.5.2
+  * Add the extension to the php.ini file for apache.  This varies from distro to
+    distro, but, I do this for the *buntu based distros:
+    # echo "extension=uploadprogress.so" >> /etc/php5/apache2/php.ini
+  * Restart Apache
+    # /etc/init.d/apache2 restart
+
+Step 4:
+  * Install the database schema.
+    # mysqladmin -p create logparser
+    # mysql -p logparser < schema.sql
+  * TODO:  Create a user as part of the Install process
+
+Step 5:
+  * move files to a directory inside your webtree and chown to apache's user
+    # mv . /var/www/logparser/
+    # chown -R www-data:www-data /var/www/logparser
+
+Step 6:
+  * Configure your PHP installation to allow large files.  I've done this by editing
+    the php.ini file that I added the extension to in step 3, and changing a few different
+    things.  Since each individual configuration is different, I can't tell you what the
+    values should be, however, I've used:
+    
+
+Step 7:
+  * Cross your fingers, and hope that it works!

@@ -1,0 +1,56 @@
+#! /usr/bin/perl -w
+
+# log_summoner 0.1
+# Orlando Castro
+# Use this script to call the summon-dev.cgi script from the commandline instead of having to login with a browser.
+# Syntax: log_summoner <string>
+# This script will parse all hostnames listed in the options and allow you to choose which domain you want logs for.
+
+    use MIME::Base64;
+chomp ( my ( $search_string ) = ( @ARGV ) );
+print "Enter your login ( format username:password ):  ";
+chomp ( my $login_credentials  =  <STDIN> );
+chomp ( my $encoded_auth_creds = encode_base64( "$login_credentials" ) );
+my $curl = '/usr/bin/curl';
+my $curl_args = '--connect-timeout 10000 -iks';
+my $host_header = '--header "Host: stats.collab.net"';
+my $keep_alive_header = '--header "Keep-Alive: 115" --header "Connection: keep-alive"';
+my $referer_header = '--header "Referer: https://stats.collab.net/cgi-bin/summon-dev.cgi"';
+my $auth_header = "--header \"Authorization: Basic $encoded_auth_creds\"";
+my $log_summoner_url = 'https://stats.collab.net/cgi-bin/summon-dev.cgi';
+my $curl_list_hosts = "$curl $curl_args $referer_header $auth_header $log_summoner_url";
+my @host_list;
+my @host_match;
+my @host_count;
+my $host_count = 1;
+
+print $search_string, "\n";
+print $curl_list_hosts, "\n";
+open $curl_list_hosts, "$curl_list_hosts 2>&1 |" or die "Cannot open $curl_list_hosts: $!\n";
+while ( <$curl_list_hosts> ) {
+    chomp;
+    next if $_ !~ /$search_string/;
+    $host_match = $_;
+    $host_match =~ s/<[^>]+>//g;
+    push @host_count, $host_count;
+    push @host_match, $host_count;
+    push @host_match, $host_match;
+    $host_count ++;
+}
+
+my %host_list = @host_match;
+print "\nHost list:\n"; 
+foreach ( @host_count ) {
+    my $found_host = $host_list { $_ };
+    print "$_ $found_host\n";
+}
+
+print "Choose the number of the host you want logs for: ";
+chomp ( my $answer = <STDIN> );
+$answer =~ /\b[0-9]+\b/i ? $host_name = $host_list { $answer } : print "Choose a number... Exiting\n" && exit;
+$host_name =~ s/\s+\([^)]+\)//;
+print "Generating logs for: $host_name\n";
+my $curl_log_post_data = "--data \"host=$host_name&passphrase1=summ0n1%23&cmd=fetch&force=1\"";
+my $curl_generate_logs = "$curl  $curl_args $curl_log_post_data $host_header $keep_alive_header $referer_header $auth_header $log_summoner_url";
+print $curl_generate_logs, "\n";
+system ( "$curl_generate_logs" );

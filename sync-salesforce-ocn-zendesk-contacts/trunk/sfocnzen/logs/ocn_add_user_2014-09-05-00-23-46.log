@@ -1,0 +1,7 @@
+INFO:root:added user  Ajay Kumar BK ,  ajasy.bkaaaa@schneider-electric.com
+ERROR:root:
+Traceback (most recent call last):
+  File "ocn_add_user.py", line 67, in <module>
+    sf_name = row[0].strip()
+IndexError: list index out of range
+INFO:root:added user  Ajay Kumar BK ,  ajasy.bkaaaa@schneider-electric.com

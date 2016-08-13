@@ -1,0 +1,950 @@
+"Artifact ID","Title","Description","Submitted By","Submitted On","Last Modified","Closed","Status","Category","Priority","Assigned To","Activity","Context-sensitive","Filename","Index Terms - enter comma separated values","Internal","L10N (ja)","Point 1 ","Point 2","Point 3","Point 4","Product 1","Product 2","Product 3","Product 4","Related link 1 - Fully qualified URL","Related link 2 - Fully qualified URL","Related link 3 - Fully qualified URL","Review URL","Since version:","URLs","User","User 1","User 2","User 3","Wrapper","Monitoring Status","Dependency Parent","Dependency Children","Item Link"
+"artf44611","Why does the server status page not show OK after I re/start the collabnet service?","Why does the server status for Email and Search show a status of 'Down' when my CTF instance is first started up?","Alex Lustenberg","07/23/2009 2:11 PM","10/05/2009 3:39 PM","","Technical review","","3","Alexander Thomas","","No","","jboss,startup,log,service","No","Review","when the init script for collabnet returns, this means that the application server has completed startup.","the mail server (James), search server (Lucene) and SOAP services are all started from the application server after it has completed its inital startup.  During this startup period, the services will report as Failed until they have completed their startup process. ","This can take up to 2 minutes to fully complete startup.  'tail -f /opt/collabnet/teamforge/log/apps/server.log' can be used to track the status of the subsystem startup.","","CTF/CSFE/SFEE","CSFE 5.2,CSFE 5.1,CSFE 5.0,SFEE 4.x","","","","","","","4.4","","System administrator","sysadmin","","","No","","","","https://forge.collab.net/sf/go/artf44611/"
+"artf34988","What should I do before I upgrade SourceForge?","Before you upgrade, you may want to make sure your server is running the correct version of Subversion, synchronize permissions, and back up data.","Ted Kuster","10/10/2008 11:59 AM","10/05/2009 2:57 AM","","Technical review","","3","Ted Kuster","","No","csfeupgradepreflight.xml","upgrade, upgrade requirements","No","Review","Upgrade Subversion 
+CSFE requires Subversion 1.5. If your Subversion service runs on its own server, upgrade that server to Subversion 1.5 before upgrading your CSFE application server to version .","Synchronize permissions 
+If possible, it is a good idea to ask all site users who manage source code repositories to synchronize their repository permissions before you start an upgrade.","Back up data 
+Always make a backup copy of your site's data before doing anything with it. If your site's data is mounted from a separate machine, and you are upgrading to a new machine, remount the data in the equivalent location on the new machine. ","","CTF/CSFE/SFEE","SFEE 4.x","","","http://help.collab.net/index.jsp?topic=/csfe510/tasks/startcsfeupgrade.html","","","","4.4","http://cu009.cubit.sp.collab.net:8081/help/topic/csfe_sysadmin_510/concepts/csfeupgradepreflight.html","System administrator","sysadmin","","","No","","","","https://forge.collab.net/sf/go/artf34988/"
+"artf34983","SourceForge preinstall checklist","http://cu009.cubit.sp.collab.net:8081/help/topic/csfe_sysadmin_510/concepts/csfeinstallpreflight.html","Ted Kuster","10/10/2008 11:12 AM","10/05/2009 2:57 AM","","Technical review","","4","Ted Kuster","","No","csfeinstallpreflight.xml","","No","Review","enter paragraph information and use html tags for bullet points.","","","","CTF/CSFE/SFEE","SFEE 4.x","","","Enter at least one related link.","","","","4.4","","System administrator","sysadmin","","","No","","","","https://forge.collab.net/sf/go/artf34983/"
+"artf29615","What terms and wildcards can I use to narrow my search?","http://cu009.cubit.sp.collab.net:8081/help/topic/sfee500/concepts/searchterms.html","Ted Kuster","08/12/2008 11:24 AM","10/05/2009 2:57 AM","","Technical review","","4","Ted Kuster","","No","searchterms.xml","","No","Review","enter paragraph information and use html tags for bullet points.","","","","CTF/CSFE/SFEE","SFEE 4.x","","","Enter at least one related link.","","","","4.4","","System administrator","sysadmin","","","No","","","","https://forge.collab.net/sf/go/artf29615/"
+"artf29614","What's the best way to search the CollabNet User Information Center?","http://cu009.cubit.sp.collab.net:8081/help/topic/sfee500/concepts/searchinfocenter.html","Ted Kuster","08/12/2008 11:21 AM","10/05/2009 2:57 AM","","Technical review","","4","Ted Kuster","","No","searchinfocenter.xml","","No","Review","enter paragraph information and use html tags for bullet points.","","","","CTF/CSFE/SFEE","SFEE 4.x","","","Enter at least one related link.","","","","4.4","","System administrator","sysadmin","","","No","","","","https://forge.collab.net/sf/go/artf29614/"
+"artf29609","Why does my SourceForge VMware site show a different time from the server it is running on?","http://cu009.cubit.sp.collab.net:8081/help/topic/sfee500-sysadmin-onsite/concepts/csfevmtime.html","Ted Kuster","08/12/2008 11:03 AM","10/05/2009 2:57 AM","","Technical review","","4","Ted Kuster","Installation","No","csfevmtime.xml","","No","Review","enter paragraph information and use html tags for bullet points.","","","","CTF/CSFE/SFEE","CSFE 5.1,SFEE 4.x","","","Enter at least one related link.","","","","4.4","","System administrator","sysadmin","","","No","","","","https://forge.collab.net/sf/go/artf29609/"
+"artf35265","Update SourceForge (VM)","http://cu009.cubit.sp.collab.net:8081/help/topic/csfevm510/tasks/updatecsfevm.html","Ted Kuster","11/05/2008 10:04 AM","10/05/2009 2:57 AM","","Technical review","","4","Ted Kuster","","No","tasks/updatecsfevm.xml","","No","Review","enter paragraph information and use html tags for bullet points.","","","","CTF/CSFE/SFEE","CSFE 5.1,SFEE 4.x","","","Enter at least one related link.","","","","4.4","","System administrator","sysadmin","","","No","","","","https://forge.collab.net/sf/go/artf35265/"
+"artf35004","How do licenses work?","http://cu009.cubit.sp.collab.net:8081/help/topic/csfe_sysadmin_510/concepts/csfelicense.html","Ted Kuster","10/11/2008 12:48 PM","10/05/2009 2:57 AM","","Technical review","","4","Ted Kuster","","No","csfelicense.xml - help-en/branches/csfe51/concepts","","No","Review","enter paragraph information and use html tags for bullet points.","","","","CTF/CSFE/SFEE","SFEE 4.x","","","Enter at least one related link.","","","","4.4","","System administrator","sysadmin","","","No","","","","https://forge.collab.net/sf/go/artf35004/"
+"artf29607","What is in the SourceForge VMware package?","http://cu009.cubit.sp.collab.net:8081/help/topic/sfee500-sysadmin-onsite/concepts/csfevmpackage.html","Ted Kuster","08/12/2008 10:59 AM","10/05/2009 2:57 AM","","Technical review","","4","Ted Kuster","Installation","No","reference/csfevmpackage.xml","","No","Review","enter paragraph information and use html tags for bullet points.","","","","CTF/CSFE/SFEE","CSFE 5.1,SFEE 4.x","","","Enter at least one related link.","","","","4.4","","System administrator","sysadmin","","","No","","","","https://forge.collab.net/sf/go/artf29607/"
+"artf49609","How do I configure DNS locally in a linux machine?","Follow the steps below:","Cayenne Woods","10/15/2009 3:36 PM","11/02/2009 2:51 PM","","Hold","","0","Cayenne Woods","","No","linuxconfigdns.xml","","No","","1. Assign a static IP to the box
+
+2. Install Named RPM 
+
+3. Edit named.conf to add domain name
+
+4. create forward and reverse zone file. 
+
+5. Restart the named service 
+
+6. Use the chkconfig command to make it start during system bootup","","","","3rd-party","none","","","","","","","","","System administrator","","","","No","","","","https://forge.collab.net/sf/go/artf49609/"
+"artf44894","Fix Help/Support TopTab links on CEE stage site","On some stage sites, some of the TopTab links (usually Help & Support) point to the production site instead of the stage site.  Here is how to fix this.","Martin Fieldhouse","08/02/2009 5:33 PM","11/03/2009 11:24 AM","","Hold","Software Configuration Mgmt","4","Cayenne Woods","Branding","No","fixtoptabs.xml","","Yes","","1. Check out the 'look' project
+2. Edit www/overrides/templates/TopTabs.vm 
+3. Find the lines with the URL's matching the TopTabs on a line that looks something like this. 
+     <$element><a href=""https://support.ibitdev.com/"">Support</a></$element> 
+4. Change the URL to match the stage site, i.e:
+     <$element><a href=""https://support.stage2.ibitdev.com/"">Support</a></$element> 
+5. Check in changes & reload the page. You don't have to restart CEE or the server.","This FAQ is for CollabNet Support and.or Operations personnel only.","","","CEE","CEE 5.2,CEE 5.1,CEE 4.x","","","","","","","4.x (CEE only)","","System administrator","sysadmin","","","No","","","","https://forge.collab.net/sf/go/artf44894/"
+"artf49804","What are the steps for SSH tunneling?","The related link below will provide you the required steps using cygwin.","Cayenne Woods","10/19/2009 4:30 PM","11/02/2009 2:51 PM","","Hold","","0","Cayenne Woods","","No","stepsforssh.xml","","No","","","","","","3rd-party","none","","","https://www.ipssources.com/nonav/scdocs/ddSSHGuideCygwin.html","","","","","","System administrator","","","","No","","","","https://forge.collab.net/sf/go/artf49804/"
+"artf49806","How do I find the Solaris version on which subversion is hosted for java.net?","-- sudo /opt/sourcecast/runtime/scripts/svn --versionsvn, version 1.1.1 (r11581)","Cayenne Woods","10/19/2009 4:30 PM","11/03/2009 11:24 AM","","Hold","","0","Cayenne Woods","","No","solarisversion.xml","","Yes","","","","","","CEE","none","","","","","","","","","System administrator","","","","No","","","","https://forge.collab.net/sf/go/artf49806/"
+"artf50001","remotemanager-<date and time>.log","James can be administratively controlled by access its management port and authenticating with the proper credentials. If you've firewalled your SourceForge installation as instructed, this port should not be available to access, however, it would be good security practives to review the remote manager log at: * /usr/local/sourceforge/james/james-/apps/james/log/remotemanager-.log Any remote logins to this port will be logged here and should be acted upon immediately.","Cayenne Woods","10/22/2009 1:11 PM","10/29/2009 5:11 PM","","Draft","","0","Jeeva","","No","","","No","","","","","","CTF/CSFE/SFEE","none","","","","","","","","","Project member","","","","No","","","","https://forge.collab.net/sf/go/artf50001/"
+"artf41006","What are CollabNet Support's policies?","Review support policies.","Tiffany Sonny(disabled)","04/13/2009 2:31 PM","09/16/2009 3:42 PM","","Draft","","5","brian noble","","No","tbd","","No","","tbd","","","","CN SVN","CollabNet Subversion","","","tbd","","","","","","Project member","projectmember","","","No","","","","https://forge.collab.net/sf/go/artf41006/"
+"artf38025","Why don't I have approval permissions for the file I suggested?","TBD","Nithin","02/02/2009 4:39 AM","09/16/2009 3:42 PM","","Draft","","4","Nithin","","No","Documents & Files","","No","","enter paragraph information and use html tags for bullet points.","","","","CEE","CEE 5.2","","","Enter at least one related link.","","","","5.2","","Project member","projectmember","","","No","","","","https://forge.collab.net/sf/go/artf38025/"
+"artf41074","How do I convert my SVN repo from the BDB backend to the FSFS backend?","tbd","Tiffany Sonny(disabled)","04/14/2009 1:48 PM","10/30/2009 1:21 PM","","Technical review","","4","Ted Kuster","","No","tbd","","No","","It is fairly easy to convert a repo from the BDB backend to the FSFS backend. In fact, the trickiest part is ensuring that no one is accessing the repo. So, as step one, please ensure that you've either shut down Apache on the SVN server, or have changed your project's RBAC to deny everyone access to the repo being converted.
+
+Now, we will move the existing repo out of the way while we work:
+
+mv /svnroot/my_repo /svnroot/my_repo-bdb
+
+Next, we create our new, empty repo with the correct backend:
+
+svnadmin create /svnroot/my_repo-fsfs --fs-type fsfs
+
+At this point, we grab the data from the old repo and put it into the new repo:
+
+svnadmin dump /svnroot/my_repo-bdb -q | svnadmin load /svnroot/my_repo-fsfs
+
+Now, we restore the old hooks to the new repo:
+
+cp /svnroot/my_repo-bdb/hooks/* /svnroot/my_repo-fsfs/hooks
+
+Next, we will correct the ownership and move the repo back to where it belongs:
+
+chown -R apache.apache /svnroot/my_repo-fsfs && mv /svnroot/my_repo-fsfs /svnroot/my_repo
+
+Finally, you can remove the old repo:
+
+rm /svnroot/my_repo-bdb
+","Restore access by enabling Apache, or reconfiguring RBAC.","","","CEE","CEE 5.2","","","tbd","","","","5.2","","Project member","projectmember","","","No","","","","https://forge.collab.net/sf/go/artf41074/"
+"artf41142","How do I query to fetch the list of all domain users and their 'last logged in' time?","Select LOGIN_NAME, TIMES_LOGGED_IN, LAST_LOGGED_IN from HELM_USER where DOMAIN_ID=2 AND TYPE=""""base"""" ORDER BY LOGIN_NAME","Tiffany Sonny(disabled)","04/15/2009 3:35 PM","11/03/2009 10:44 AM","","Hold","","4","Cayenne Woods","","No","tbd","","Yes","","The output includes the number of times the user has logged in. This query will also fetch the accounts such as 'postmaster' and 'webmaster', which must be removed manually if the results are to be provided to the client.
+","","","","CEE","CEE 5.2","","","tbd","","","","5.2","","Project member","projectmember","","","No","","","","https://forge.collab.net/sf/go/artf41142/"
+"artf40955","Why am I not able to see the ""Submit"" button on this tracker?","If a workflow rule is created to make a field required on the (New Artifact) status, no new artifacts will be able to be created.","David Thomas","04/09/2009 12:48 PM","09/16/2009 3:42 PM","","Draft","","4","Ted Kuster","","No","n/a","","No","","You can correct this by disabling the workflow rule on the (New Artifact) status.","","","","CTF/CSFE/SFEE","SFEE 4.x","","","n/a","","","","4.4","","Project member","projectmember","","","No","","","","https://forge.collab.net/sf/go/artf40955/"
+"artf40785","When I click on a Subversion repository I receive  Unable to load default SVN client","JavaHL or SVNKit needs to be installed","Ryan Paredes","03/31/2009 10:48 PM","09/16/2009 3:42 PM","","Technical review","","4","Ryan Paredes","","No","FAQ","","No","","","","","","Eclipse Desktop","Eclipse Desktop","","","URL","","","","","","Project member","projectmember","","","No","","","","https://forge.collab.net/sf/go/artf40785/"
+"artf41056","How can I monitor a forum or mailing list?","You can monitor a forum or mailing list at the Discussion Forum  level or at the My Workspace level.","Tiffany Sonny(disabled)","04/14/2009 10:33 AM","10/30/2009 12:22 PM","","Technical review","","4","Ryan Paredes","","No","tbd","","No","","There are two (2) methods for monitoring a forum or mailing list in SourceForge:
+
+    * At the Discussion Forum level
+          o check the box beside the forum in question
+          o select the Monitor button
+          o select 'Monitor Selected'
+    * At the 'My Workspace' level
+          o select """"Monitoring'
+          o select the project name
+          o select the 'Monitored Applications' tab
+          o select Discussions
+          o click 'Save'","NOTE: You must monitor a given forum to receive email from the mailing list associated with that forum.","","","CTF/CSFE/SFEE","CollabNet Subversion","","","tbd","","","","","","Project member","projectmember","","","No","","","","https://forge.collab.net/sf/go/artf41056/"
+"artf41146","How can I get the CEE data to a departing client?","Following are methods you can use to extract all the CEE data for a site.","Tiffany Sonny(disabled)","04/15/2009 3:44 PM","11/03/2009 11:37 AM","","Hold","","4","Ryan Paredes","","No","","","Yes","","Use the XML export function from within PT.  Manually go through each project to perform the XML dump, so it is not practical to use this method for sites using PT across a large number of projects.
+
+To determine how many projects are using PT you can use the MySQL statement:
+select distinct MODULE_ID, NAME from SCARAB_ISSUE, HELM_PROJECT where DELETED != 1 and MODULE_ID = PROJECT_ID.  If the number of these projects is great my potential solution was to use cURL to programmatically call the XML export function iterating over each PT project.  To my knowledge, this work still needs to be accomplished.
+","To get filesystem data:
+tar czvf /somewhere/with/lots/of/space/allCeeData.tgz $DATA_DIR
+where $DATA_DIR points to the location of the .../sourcecast/data directory.
+
+To get an SVN datadump:
+   $ ls -1 $DATA_DIR/adapter-svn/repositories > ./repos
+   $ for i in `cat ./repos`; do sudo -u httpd svnadmin dump $DATA_DIR/adapter-svn/repositories/$i > /somewhere/$i.svnDumpOutput ; done
+
+To get the Tigris MySQL data:
+We need to be careful in extracting and delivering the MySQL data as we do NOT allow our schema to be reviewed or seen by clients.  To this end the commands necessary to get the MySQL data, but not the schema are:
+   $ sudo mysqldump -u root -p -T ./location tigris
+   $ rm ./location/*.sql
+to remove all the schema files.
+","In addition, the output from these queries was provided as well:
+query1
+select l.PROJECT_ID, l.NAME, m.FOLDER_ID, m.NAME, m.PARENT_ID, m.DESCRIPTION, n.
+DOCUMENT_ID, n.NAME, n.STATUS, n.DESCRIPTION, n.FILE_NAME, n.
+CLIENT_SIDE_FILE_NAME, n.FILE_SIZE, n.LOCATION, n.CREATED_DATE, n.MODIFIED_DATE, 
+n.PROPOSED_BY, n.APPROVED_BY, n.MODIFIED_BY from NIDABA_PROJECTFOLDER m, 
+HELM_PROJECT l, NIDABA_PROJECTDOCUMENT n where m.PROJECT_ID = l.PROJECT_ID and 
+m.FOLDER_ID = n.FOLDER_ID order by l.NAME
+
+query2
+select USER_ID, LOGIN_NAME, REAL_NAME, EMAIL, ORGANIZATION from HELM_USER where 
+EMAIL not like '%@collab%' and EMAIL is not NULL
+
+query3
+select h.PROJECT_ID, h.NAME, n.FOLDER_ID, n.PARENT_ID, n.NAME, n.MODIFIED_DATE, 
+n.PROPOSED_BY, n.APPROVED_BY from NIDABA_PROJECTFOLDER n, HELM_PROJECT h where 
+h.PROJECT_ID=n.PROJECT_ID order by h.PROJECT_ID
+
+query4
+select l.PROJECT_ID, l.NAME, n.DOCUMENT_ID, n.NAME, n.STATUS, n.DESCRIPTION, n.
+FILE_NAME, n.CLIENT_SIDE_FILE_NAME, n.FILE_SIZE, n.LOCATION, n.CREATED_DATE, n.
+MODIFIED_DATE, n.PROPOSED_BY, n.APPROVED_BY, n.MODIFIED_BY from HELM_PROJECT l, 
+NIDABA_PROJECTDOCUMENT n where n.PROJECT_ID = l.PROJECT_ID and n.FOLDER_ID=0 
+order by l.NAME
+
+query5
+select NAME, PROJECT_ID, concat(ID_PREFIX, ID_COUNT), ATTACHMENT_FILE_PATH, 
+MODIFIED_BY, CREATED_BY, MODIFIED_DATE, CREATED_DATE from SCARAB_ATTACHMENT, 
+SCARAB_ISSUE, HELM_PROJECT where ATTACHMENT_TYPE_ID=1 and SCARAB_ATTACHMENT.
+ISSUE_ID=SCARAB_ISSUE.ISSUE_ID and SCARAB_ISSUE.MODULE_ID=HELM_PROJECT.
+PROJECT_ID and ATTACHMENT_FILE_PATH is not null order by NAME, concat(ID_PREFIX, 
+ID_COUNT)","","CEE","CEE 5.2","","","tbd","","","","5.2","","Project member","projectmember","","","No","","","","https://forge.collab.net/sf/go/artf41146/"
+"artf41069","Is there a GUI management tool for PostgreSQL similar to OEM?","While not as completely featurefull as OEM, we have found that EMS SQL Manager is quite capable.","Tiffany Sonny(disabled)","04/14/2009 1:35 PM","10/30/2009 1:10 PM","","Technical review","","4","Ryan Paredes","","No","tbd","","No","","Please understand that this is not an 'endorsement' by us, nor will we assist in supporting this application, however, we have used it internally. You can get it at:
+
+ http://www.sqlmanager.net/products/postgresql/manager"",""Sridharan Santhanakrishnan"",""1"",""Approved"",""0"",""7/19/2007"",""7/24/2007""
+""vamessages.log"",""00000658"",""SourceForge records just about everything it's doing to the following file:
+
+    * /usr/local/sourceforge/log/vamessages.log","You can use this log to debug startup issues, performance issues, system errors, exid backtraces, JVM issues, SQL issues, etc. Since this log contains so many different types of log messages, it grows extremely rapidly. As such, the file is automatically rotated by SourceForge when it reaches 100M and SourceForge will keep the previous 10 copies of the log. If you are having any kind of issue, this is probably the log you want to look at.","","","CN SVN","CollabNet Subversion","","","tbd","","","","","","Project member","projectmember","","","No","","","","https://forge.collab.net/sf/go/artf41069/"
+"artf40786","Subversion dump fields","Node-path: absolute/path/to/node/in/filesystem
+Node-kind: file | dir  (1)
+Node-action: change | add | delete | replace
+[Node-copyfrom-rev: X]
+[Node-copyfrom-path: path ]
+[Text-copy-source-md5: blob] (2)
+[Text-content-md5: blob]
+[Text-content-length: T]
+[Prop-content-length: P]
+Content-length: Y (3)","Ryan Paredes","03/31/2009 10:53 PM","11/03/2009 8:48 AM","","Technical review","","4","Ryan Paredes","","No","FILE","","No","","","","","","CN SVN","CollabNet Subversion","","","URL","","","","","","Project member","projectmember","","","No","","","","https://forge.collab.net/sf/go/artf40786/"
+"artf41098","How do I restore a SourceForge PostgreSQL database?","If you ever have the need to recover your database, you can use the pg_restore utility that ship with PostgreSQL to restore your database (assuming you are using pg_dump to back it up).","Tiffany Sonny(disabled)","04/14/2009 7:46 PM","11/03/2009 11:55 AM","","Hold","","4","Cayenne Woods","","No","tbd","","No","","Follow these simple steps:
+
+    * recreate the db user
+          o createuser -P sfee
+    * recreate the db
+          o createdb -E UNICODE -O sfee sfdb
+    * restore your data
+          o pg_restore -d sfdb /restore/sfdb.tar
+
+Once you have restored the database, it is a good idea to manually vacuum it before turning SourceForge back on.","","","","3rd-party","CEE 5.2","","","tbd","","","","5.2","","Project member","projectmember","","","No","","","","https://forge.collab.net/sf/go/artf41098/"
+"artf49732","How do I upgrade my PostgreSQL software?","Upgrading your PostgreSQL database is fairly straightforward. If you are using the rpms provided by your OS vendor (and you should be), then upgrading will be handled automatically (in most cases) by their system upgrades. If, for whatever reason, you are not using the rpms provided by the OS vendor, or you're just concerned about it, then below are the steps to ensure a smooth upgrade.","Cayenne Woods","10/19/2009 2:45 PM","11/02/2009 2:51 PM","","Hold","","4","Cayenne Woods","","No","upgradepostgressql.xml","","No","","First, make a backup of the database:
+
+su - postgres
+pg_dump -Ft -b -o your_db > $HOME/pre_upgrade_your_db.tar
+exit
+
+Next, stop PostgreSQL:
+
+su -
+service postgresql stop
+
+Next, copy your existing config files (if you're upgrading in the same series, i.e. 7.4.10 to 7.4.17 say. This will NOT work for upgrading from like 7.4.10 to 8.1):
+
+mv ~postgres/data/{pg_hba,postgresql}.conf /tmp
+
+Next, remove the existing PostgreSQL rpms:
+
+rpm -q -a|grep postgr|while read line; do rpm -e $line; done
+
+Next, remove the database from the disk
+
+/bin/rm -r /var/lib/pgsql/data/*
+
+Now re-install the new rpms:
+
+rpm -Uvh path_to_rpms>/*.rpm
+
+Next, initialize the PostgreSQL 'internal' databases:
+
+/etc/init.d/postgresql initdb
+exit
+
+Next, put the config files back:
+
+mv /tmp/{pg_hba,postgresql}.conf ~postgres/data
+
+Next, we start the PostgreSQL server:
+
+su -
+service postgresql start
+exit
+
+Finally, put the old db back:
+
+su - postgres
+createuser -W sfee_db_owner
+createdb -E UNICODE -O sfee_db_owner your_db
+pg_restore -d your_db $HOME/pre_upgrade_your_db.tar
+exit","","","","3rd-party","none","","","","","","","","","System administrator","projectmember","","","No","","","","https://forge.collab.net/sf/go/artf49732/"
+"artf42056","Does a deactivated account add to license count?","Yes, a deactivated CTF user account will add to the license count.","ramya deepika","05/28/2009 2:03 AM","09/16/2009 3:42 PM","","Draft","User & Workspace Mgmt","4","Ted Kuster","Other","No","NA","","No","","Deleted user account do not get added to the license count.","","","","CTF/CSFE/SFEE","CSFE 5.2,CSFE 5.1,CSFE 5.0","","","NA","","","","5.0","","System administrator","sysadmin","","","No","","","","https://forge.collab.net/sf/go/artf42056/"
+"artf34980","Highlights of SourceForge 5.1","http://cu009.cubit.sp.collab.net:8081/help/topic/csfe_sysadmin_510/concepts/highlights-sfee51.html","Ted Kuster","10/10/2008 11:02 AM","10/05/2009 2:57 AM","","Technical review","","4","Ted Kuster","","No","highlights-sfee51.xml","","No","Review","enter paragraph information and use html tags for bullet points.","","","","CTF/CSFE/SFEE","SFEE 4.x","","","Enter at least one related link.","","","","4.4","","System administrator","sysadmin","","","No","","","","https://forge.collab.net/sf/go/artf34980/"
+"artf29617","What hardware and software is required for the SourceForge VMware download?","http://cu009.cubit.sp.collab.net:8081/help/topic/sfee500-sysadmin-onsite/concepts/sysreqs-csfevm.html","Ted Kuster","08/12/2008 11:30 AM","10/05/2009 2:57 AM","","Technical review","","4","Ted Kuster","Installation","No","reference\sysreqs-csfevm.xml","","No","Review","enter paragraph information and use html tags for bullet points.","","","","CTF/CSFE/SFEE","CSFE 5.1,SFEE 4.x","","","Enter at least one related link.","","","","4.4","","System administrator","sysadmin","","","No","","","","https://forge.collab.net/sf/go/artf29617/"
+"artf35266","Start SourceForge site (VM)","http://cu009.cubit.sp.collab.net:8081/help/topic/csfevm510/tasks/startcsfevm.html","Ted Kuster","11/05/2008 10:05 AM","10/05/2009 2:57 AM","","Technical review","","4","Ted Kuster","","No","tasks/startcsfevm.xml","","No","Review","enter paragraph information and use html tags for bullet points.","","","","CTF/CSFE/SFEE","CSFE 5.1,SFEE 4.x","","","Enter at least one related link.","","","","4.4","","System administrator","sysadmin","","","No","","","","https://forge.collab.net/sf/go/artf35266/"
+"artf29211","Trademarks","Copied from www.collab.net trademarks page. Used for print output only. For online output, use link.","Ted Kuster","06/16/2008 4:26 PM","09/16/2009 3:42 PM","","Technical review","","4","Ted Kuster","","No","trademarks.xml","","No","","enter paragraph information and use html tags for bullet points.","","","","CEE","CEE 5.2","","","Enter at least one related link.","","","","5.2","","Project member","projectmember","","","No","","","","https://forge.collab.net/sf/go/artf29211/"
+"artf45653","What wouldl happen to messages, if a discussion is moderatored and the moderator had set the vacation message to his mailbox","All the messages will be rejected.","karthiks","08/20/2009 5:06 AM","10/08/2009 2:37 AM","","Draft","","4","Ted Kuster","","No","","","No","","","","","","CEE","CEE 5.2","","","","","","","4.5","","Project member","projectmember","","","No","","","","https://forge.collab.net/sf/go/artf45653/"
+"artf42950","How do I configure a proxy for the SOAP API?","User'c company requires them to use a proxy to connect to the CEE server but there doesn't appear to be a place to specify proxy in the property files.","Martin Fieldhouse","06/14/2009 4:26 PM","09/16/2009 3:43 PM","","Draft","Integrations","4","Ted Kuster","Access control","No","soapapiproxy","","No","","You can set proxy in your code or when starting the JVM, like:
+
+$ java -jar myapp.jar -Dhttp.proxyHost=10.10.10.xx -Dhttp.proxyPort=8080
+
+If you needed to authenticate with your proxy you can add:
+-Dhttp.proxyUser=someUserName
+-Dhttp.proxyPassword=somePassword
+
+If your proxy uses SSL there is a different property.
+","","","","CEE","CEE 5.2,CEE 5.1","","","n/a","","","","5.1","","Project member,Project manager,System administrator,Developer","projectmember","projectadmin","","No","","","","https://forge.collab.net/sf/go/artf42950/"
+"artf38020","What is the size of an attachment in the documents & files? ","There is as such no limit to the size of the file that can be uploaded. ","Nithin","02/02/2009 4:26 AM","09/16/2009 3:43 PM","","Draft","","4","Nithin","","No","whatisattachmentsize.xml","","No","","enter paragraph information and use html tags for bullet points.","","","","CEE","CEE 5.2","","","Enter at least one related link.","","","","5.2","","Project member,Project manager","projectmember","projectadmin","","No","","","","https://forge.collab.net/sf/go/artf38020/"
+"artf49610","How can I parse the scast-vc.log file to determine user-based activity?","The script below will take the log and parse it by user and count the hits in it for each one. It will then print a list of those hits with the most active users on top. It also prints a line total for the logfile as well as snip of the top and bottom to show the log's duration.","Cayenne Woods","10/15/2009 3:36 PM","11/02/2009 2:51 PM","","Hold","","0","Cayenne Woods","","No","perlparselog.xml","","No","","#######################BEGIN SCRIPT######################### #!/usr/bin/perl -w use strict; use warnings; 
+
+# initialize variables my ($hit,$user,%accesses,@list,$y); my $foo = ""./scast-vc.log""; my $out = ""./processedScastVcLog.output""; 
+
+# testing vars #my $foo = ""./foo""; #my $out = ""./bar.processedScastVcLog.output""; 
+
+# open the scast-vc.log file for reading open FOO, $foo or die ""Can't open '$foo': $!""; 
+
+# loop thry the log to get users and the number of their accesses 
+
+# print a dot for every 500k entries processed ~ crude progress meter while (<FOO>){ $y++; print ""."" if ($y % 500000)==0; m/^.*: (\w+)/; $user = $1; $accesses{$user}++; } 
+
+# open the output file open OUT, "">$out"" or die ""Cant open $out: $!\n""; 
+
+# reverse sort the hash values and print them to the output file my @keys = sort { $accesses{$b} <=> $accesses{$a} } keys %accesses; foreach my $key ( @keys ) { print OUT ""user: $key \t\tlines of output in scast-vc log: $accesses{$key}\n""; } 
+
+# get a line count of the entire file and print it last 
+
+# along with the top and bottom 5 lines to show the log's duration my $count = `wc -l < $foo`; chomp $count; print OUT ""\n""; print OUT ""There are $count total lines in scast-vc.log.\n\n\n""; my $start = `head -5 $foo`; my $end = `tail -5 $foo`; print OUT ""Beginning of scast-vc.log:\n$start\n\n""; print OUT ""End of scast-vc.log:\n$end\n""; 
+
+# close the files close OUT; close FOO; #######################END SCRIPT#########################","","","","3rd-party","none","","","","","","","","","System administrator","","","","No","","","","https://forge.collab.net/sf/go/artf49610/"
+"artf49611","How can I increase SSL performance?","You can modify some Apache defaults to achieve this.","Cayenne Woods","10/15/2009 3:36 PM","11/02/2009 2:51 PM","","Hold","","0","Cayenne Woods","","No","apacheimprovessl.xml","","No","","Most versions of Apache ship with a default configuration to intentionally downgrade and degrade performance with Internet Explorer. In a stock Internet Explorer and Apache configuration, MSIE will open a new thread every time it has finished downloading an object (css, javascript, or image file) and create a new thread for the next request, which creates another thread on Apache, and adds to network overhead. 
+
+We recommend removing the following lines from your ssl.conf file: 
+
+* SetEnvIf User-Agent ""
+
+*MSIE
+
+*"" \ 
+
+* nokeepalive ssl-unclean-shutdown \ 
+
+* downgrade-1.0 force-response-1.0 
+
+You will need to restart your Apache server in order for this change to take effect.","","","","3rd-party","none","","","","","","","","","System administrator","","","","No","","","","https://forge.collab.net/sf/go/artf49611/"
+"artf49616","How can I improve user performance with mod_deflate?","Apache 2.x ships with the mod_deflate module, which allows you to compress the content before sending it over the wire to the user. This results in less data to transfer and less bandwidth consumption, which improves the user's performance experience.","Cayenne Woods","10/15/2009 3:36 PM","11/02/2009 2:51 PM","","Hold","","0","Cayenne Woods","","No","apachemod_deflate.xml","","No","","To enable this feature, add the following to either httpd.conf or ssl.conf (depending on whether you're running your site with HTTPS or not): 
+
+* # Turn on mod_deflate 
+
+* DeflateFilterNote Input instream 
+
+* DeflateFilterNote Output outstream 
+
+* DeflateFilterNote Ratio ratio 
+
+* LogFormat '""%r"" %[outstream]n/%[instream]n [%[ratio]n%%]' deflate 
+
+* CustomLog logs/deflate_log deflate 
+
+* <Location /> 
+
+* SetOutputFilter DEFLATE 
+
+* BrowserMatch ^Mozilla/4 gzip-only-text/html 
+
+* BrowserMatch ^Mozilla/4.0[678] no-gzip 
+
+* BrowserMatch bMSI[E] !no-gzip !gzip-only-text/html 
+
+* SetEnvIfNoCase Request_URI .(?:gif|jpe?g|png)$ no-gzip dont-vary 
+
+* Header append Vary User-Agent env=!dont-vary 
+
+* </Location> 
+
+Once Apache has been restarted, your site's content will be compressed for those browsers that support it (except for images).","","","","3rd-party","none","","","","","","","","","System administrator","","","","No","","","","https://forge.collab.net/sf/go/artf49616/"
+"artf49617","How can I improve user performance with mod_expires?","Apache 2.x ships with a module called mod_expires that allows you to specify the Content-Expires header by file type. You can improve the perceived performance of SourceForge for your users by utilizing this module to allow caching of the various static content pieces in SourceForge.","Cayenne Woods","10/15/2009 3:36 PM","11/02/2009 2:51 PM","","Hold","","0","Cayenne Woods","","No","apachemod_expires.xml","","No","","Simply add the following lines to httpd.conf and ssl.conf: 
+
+* # mod_expires configuration 
+
+* ExpiresActive On 
+
+* ExpiresDefault ""access plus 0 seconds"" 
+
+* ExpiresByType image/gif ""access plus 1 days"" 
+
+* ExpiresByType image/jpeg ""access plus 1 days"" 
+
+* ExpiresByType image/png ""access plus 1 days"" 
+
+* ExpiresByType text/css ""access plus 1 days"" 
+
+* ExpiresByType text/javascript ""access plus 1 days"" 
+
+* ExpiresByType application/x-javascript ""access plus 1 days"" 
+
+* ExpiresByType image/x-icon ""access plus 1 days"" 
+
+Once Apache is restarted, these changes will take effect. What you're doing is specifying a 'default' of immediate expiration. This is needed so that your changes to pages in SourceForge aren't cached by the browser and resulting in weird behavior. The next set of lines tell the browser to cache any GIF/JPG/PNG images as well as any Javascript and CSS files for one day. This value can be adjusted up as needed in your environment. Finally, we tell the browser to cache the favicon.ico file.","","","","3rd-party","none","","","","","","","","","System administrator","","","","No","","","","https://forge.collab.net/sf/go/artf49617/"
+"artf41067","How do I configure my CVS client to access SourceForge?","Using CVS in SourceForge on a Linux or Unix-based workstation requires two components:","Tiffany Sonny(disabled)","04/14/2009 1:31 PM","11/02/2009 2:51 PM","","Hold","","4","Cayenne Woods","","No","tbd","","No","","    * CVS
+          o If you do not already have CVS installed, you can download it from http://www.cvshome.org
+    * SSH
+          o If you do not already have an SSH client installed, you can download it from http://www.openssh.com
+
+Once you've successfully installed both CVS and SSH, you need to set the CVS_RSH environment variable, so that all of your CVS transactions will be passed over an SSH tunnel. SourceForge uses CVS over SSH as an added security mechanism, so that all CVS traffic is encrypted and authenticated (unlike traditional CVS over pserver). You can set the CVS_RSH variable in bash, with the following command:
+
+    * export CVS_RSH=ssh","Once you've completed the above steps, you are ready to use CVS with SourceForge to access your repository. The exact command line needed to access your repository can be found by browsing to your project and clicking the 'Source Code' button.","","","3rd-party","CollabNet Subversion","","","","","","","","","Project member","projectmember","","","No","","","","https://forge.collab.net/sf/go/artf41067/"
+"artf41017","What is the Weblogic startup script?","Starting/stopping a WebLogic-based application is very specific in the order of steps required. An example script is provided below.","Tiffany Sonny(disabled)","04/13/2009 6:29 PM","11/03/2009 9:43 AM","","Hold","","4","Cayenne Woods","","No","weblogicstartup.xml","","No","","Here is a very rudimentary script:
+
+#!/bin/sh
+BEA_HOME=/path/to/weblogic/install/dir
+SF_HOME=/path/to/sourceforge/install/dir
+case """"$1"""" in
+start)
+$BEA_HOME/weblogic81/server/bin/startNodemanager.sh &
+sleep 10
+$BEA_HOME/user_projects/domains/sourceforge/startWebLogic.sh &
+sleep 10
+$SF_HOME/bin/weblogic-start-managed-server.sh &
+sleep 10
+$SF_HOME/bin/weblogic-deploy-sourceforge.sh &
+sleep 30
+$SF_HOME/bin/sourceforge-weblogic-init.sh start
+;;
+stop)
+$SF_HOME/bin/sourceforge-weblogic-init.sh stop
+killall java
+;;
+esac","","","","3rd-party","CEE 5.2","","","tbd","","","","5.2","","Project member","projectmember","","","No","","","","https://forge.collab.net/sf/go/artf41017/"
+"artf39777","Does CN desktop support WebSSO?","User is trying to connect to a CEE site that is WebSSO enabled. Does the CollabNet Desktop support WebSSO? (aka 'sso') ","Harsha(disabled)","02/18/2009 7:57 PM","09/16/2009 3:42 PM","","Draft","","4","Hajime Kawano","","No","FAQ 64","","No","","enter paragraph information and use html tags for bullet points.","","","","Eclipse Desktop","Eclipse Desktop,Visual Studio Desktop","","","Enter at least one related link.","","","","","","Project member","projectmember","","","No","","","","https://forge.collab.net/sf/go/artf39777/"
+"artf41367","How do I determine which version of CEE the site is running?","How do I determine which version of CEE the site is running?","Martin Fieldhouse","04/26/2009 6:34 PM","09/16/2009 3:42 PM","","Draft","User & Workspace Mgmt","4","Martin Fieldhouse","Other","No","cee_get_version","","No","","Any user can do this:   Right-click any page and View source.  Look for the ""meta version/content "" line that looks like the following:  <meta name=""version"" content=""5.2.0.140.2"" />
+
+A Domain Administrator can find the version as well as additional details by selecting ""Build Information"" from the Administration tab.  (https://www.domain.com/servlets/BuildInfo)
+","","","","CEE","CEE 5.2,CEE 5.1,CEE 4.x","","","https://www.domain.com/servlets/BuildInfo","","","","4.x (CEE only)","","Project manager,System administrator","projectadmin","","","No","","","","https://forge.collab.net/sf/go/artf41367/"
+"artf40650","Subversion: switch vs update","What is the difference between switch and update my working copy?","Ryan Paredes","03/25/2009 9:34 AM","09/16/2009 3:42 PM","","Draft","","4","Ryan Paredes","","No","svn","","No","","Text regarding switch and update. accessing the repository?","","","","CN SVN","CollabNet Subversion","","","f:////","","","","","","Project member","projectmember","","","No","","","","https://forge.collab.net/sf/go/artf40650/"
+"artf40781","Subversion: Modify a commited log message","How do I modify a commited log message?","Ryan Paredes","03/31/2009 2:54 PM","09/16/2009 3:42 PM","","Draft","","4","Ryan Paredes","SCM","No","FAQ bits","Subversion, svnadmin setlog, svn log, commit","No","","procedure","","","","CN SVN","CollabNet Subversion","","","http://","","","","","","Project member","projectmember","","","No","","","","https://forge.collab.net/sf/go/artf40781/"
+"artf40784","Subversion: Setup Apache for LDAP","How do I configure Subversion with Apache and LDAP","Ryan Paredes","03/31/2009 6:17 PM","09/16/2009 3:42 PM","","Draft","","4","Ryan Paredes","","No","FAQ","","No","","Procedure here","","","","CN SVN","CollabNet Subversion","","","http://blogs.open.collab.net/svn/2009/03/subversion-with-apache-and-ldap-updated.html","","","","","","System administrator","sysadmin","","","No","","","","https://forge.collab.net/sf/go/artf40784/"
+"artf43850","Why am I not able to view the Dashboard?","Clicking on ""Dashboard"" tab in ""My Workspace"" does not list trackers & tasks in my projects though I have the required permissions.","ramya deepika","07/06/2009 7:31 AM","09/16/2009 3:42 PM","","Technical review","User & Workspace Mgmt","4","ramya deepika","Project Dashboard","No","NA","","No","","Check if this project was created using a template.If so,it is a known issue.","FYI, it is ""Filed as Bug"" & it is not in any release notes.","","","CTF/CSFE/SFEE","CSFE 5.2,CSFE 5.1,CSFE 5.0","","","NA","","","","5.0","","Project member","projectmember","","","No","","","","https://forge.collab.net/sf/go/artf43850/"
+"artf38018","How do I add a file to a folder?","Add a file to a folder in documents and files. Select the file you want to add or create a new one and click add new file.","Nithin","02/02/2009 4:16 AM","09/16/2009 3:43 PM","","Draft","","4","Nithin","","No","addfiletofolder.xml","","No","","enter paragraph information and use html tags for bullet points.","","","","CEE","CEE 5.2","","","http://stage.help.collab.net/index.jsp?topic=/faq/removefile.html","","","","5.2","","Project member,Project manager,Developer","projectmember","projectadmin","","No","","","","https://forge.collab.net/sf/go/artf38018/"
+"artf38022","What is reservation option in documents & files?","Use the reservation option option is to lock your files. You can use two types of reservations-Strict lock & Advisory warning.","Nithin","02/02/2009 4:31 AM","09/16/2009 3:43 PM","","Draft","","4","Nithin","","No","whatisreservationoption.xml","","No","","enter paragraph information and use html tags for bullet points.","","","","CEE","CEE 5.2","","","Enter at least one related link.","","","","5.2","","Project member,Project manager","projectmember","projectadmin","","No","","","","https://forge.collab.net/sf/go/artf38022/"
+"artf40882","Subversion: Fixed and Reported ","What was fixed in Subversion","Ryan Paredes","04/05/2009 2:29 PM","09/16/2009 3:42 PM","","Draft","","4","Ryan Paredes","","No","FAQ","","No","","CollabNet Subversion 1.6.0 (Released March 2009)
+------------------------------------------------
+
+Fixed:
+artf40180 : Windows installer wiped out users PATH : https://forge.collab.net/sf/go/artf40180/
+artf39813 : Allow Windows server installer to install client : https://forge.collab.net/sf/go/artf39813/
+artf40181 : Package OpenSSL so that default CA's are trusted : https://forge.collab.net/sf/go/artf40181/
+artf40647 : Observed Release Candidate entry for subversion_1.6.0 client & server in Registry Editor. : https://forge.collab.net/sf/go/artf40647/
+artf40641 : When I selects ‘annotate’ link and ‘Get Diffs’ button from Viewvc-browser page, Python Traceback exception observed. : https://forge.collab.net/sf/go/artf40641/
+artf35127 : Unable to Remove CSVN_1.5.4 completely during Uninstallation. : https://forge.collab.net/sf/go/artf35127/
+
+Reported:
+artf40795 : LDAP is Broken on Linux too. : https://forge.collab.net/sf/go/artf40795/ 
+artf40764 : LDAP is broken on Windows : https://forge.collab.net/sf/go/artf40764/ 
+artf40665 : Upgrade from CSVN version 1.5.6-2 to CSVN_1.6.0-6 client & server packages is failing. : https://forge.collab.net/sf/go/artf40665/ 
+artf40180 : Windows installer wiped out users PATH : https://forge.collab.net/sf/go/artf40180/ 
+artf40725 : Problems setting up Windows services : https://forge.collab.net/sf/go/artf40725/ 
+artf40765 : Windows installer truncates the system path. : https://forge.collab.net/sf/go/artf40765/ 
+artf40672 : During Upgrade System Path for CSVN_1.6.0-7 client got duplicated . : https://forge.collab.net/sf/go/artf40672/ 
+artf40647 : Observed Release Candidate entry for subversion_1.6.0 client & server in Registry Editor. : https://forge.collab.net/sf/go/artf40647/ 
+artf40641 : When I selects ‘annotate’ link and ‘Get Diffs’ button from Viewvc-browser page :  Python Traceback exception observed. : https://forge.collab.net/sf/go/artf40641/ 
+","CollabNet Subversion 1.5.5 (Released June 2008)
+-----------------------------------------------
+
+Fixed:
+artf35164 : Improper CSVN version Perceives - during Verifying --requires
+artf35126 : Unable to Run Apache service (Only CollabNetSubversion-server-1.5.4-1.win32.exe Installed).
+artf35486 : Improper CSVN version Perceives –During Dependency check.
+
+Reported:
+artf39813 : Allow Windows server installer to install client
+artf36486 : Windows installer not upgrading properly
+artf36425 : Not able to create Subversion repository(Client new version, server old)","CollabNet Subversion 1.4.6 (Released September 2006)
+---------------------------","","CN SVN","CollabNet Subversion","","","http://subversion.tigris.org/svn_1.5_releasenotes.html","http://subversion.tigris.org/svn_1.6_releasenotes.html","","","","","Project member,Developer","projectmember","","","No","","","","https://forge.collab.net/sf/go/artf40882/"
+"artf29209","Copyright","Copied from www.collab.net copyright page. Used only in print outputs. For online outputs, use link.","Ted Kuster","06/16/2008 4:23 PM","09/16/2009 3:42 PM","","Draft","","4","Ted Kuster","","No","copyright.xml","","No","","enter paragraph information and use html tags for bullet points.","","","","CEE","CEE 5.2","","","Enter at least one related link.","","","","5.2","","Project member","projectmember","","","No","","","","https://forge.collab.net/sf/go/artf29209/"
+"artf40570","How to revert a symlink that was added to www folder ","In CEE, the trunk/www folder, you are not permitted to commit a symlink, however if you already svn added it, this poses a problem because it's not easy to svn revert the addition. ","Martin Fieldhouse","03/22/2009 6:00 PM","09/16/2009 3:42 PM","","Technical review","","4","Martin Fieldhouse","","No","revertsymlinkaddition.xml","","No","","You may see an error like this:
+
+Commit failed (details follow):
+svn: MERGE request failed on '/svn/build-automation/trunk/www/cn-project-pages/etcetera/etcetera
+svn: Commit blocked by pre-commit hook (exit code 1) with output:
+Cannot add or change 'svn:special' property on or under www/ directory: ","Here is how to get rid of the svn:special property for the symlink, then revert the addition of the symlink. 
+svn propdel svn:special www/<symlink>
+svn revert --recursive www ","","","CEE","CEE 5.2","","","?","","","","5.2","","Project member","projectmember","","","No","","","","https://forge.collab.net/sf/go/artf40570/"
+"artf40726","Why don't my proxy settings work for Subversion in CN Desktop Eclipse edition?","You must configure the proxy settings manually in the Subversion servers file, or use the Tortoise client on Windows.","Martin Fieldhouse","03/30/2009 6:43 AM","09/16/2009 3:42 PM","","Technical review","Software Configuration Mgmt","4","Martin Fieldhouse","","No","eclipse_svn_proxy.xml","","No","","Why don't my proxy settings for Subversion in CN Desktop Eclipse edition?
+- User enters proxy settings in Eclipse.  
+- Proxy settings work for accessing CEE/CSFE (i.e. web pages, trackers, Docs & Files) but Subversion actions fail.
+
+Solution: Configure the proxy settings manually in the Subversion servers file.  
+ * Unix/Linux = /home/<username>/.subversion/servers
+ * Windows = C:\Documents and Settings\<username>\Application Data\Subversion\servers
+
+Solution: Another solution on Windows is to install TortoiseSVN and configure proxy through its UI. TortoiseSVN writes directly to the Subversion servers file.
+ * (Explorer) –> File –> TortoiseSVN –> Settings –> Network
+
+","Eclipse reads from the Subversion servers file but it cannot write to it because Subversion does not at this time expose an API for 3rd party applications to do this. Therefore you have to configure the proxy in the Subversion runtime area.  See FAQs links for more information:
+
+","","","Eclipse Desktop","Eclipse Desktop","","","http://subclipse.tigris.org/wiki/PluginFAQ#head-68b22e8153d602f6065567d5d781ee4473bcdd50","http://svn.collab.net/subclipse/help/index.jsp?topic=/org.tigris.subversion.subclipse.doc/html/reference/protocol.html","","","","","Project member,System administrator","projectmember","","","No","","","","https://forge.collab.net/sf/go/artf40726/"
+"artf41843","Why don't I see any commits under 'View Commits' for a manually imported SVN repo?","When an SVN repo is manually imported into a CTF repository, the 'Browse Repository' for that repository will work fine but the 'View Commits' don't. The older commits which existed in the imported repo will not have corresponding commit ID's.
+
+However, commits that were made after the repository was imported will have an associated commit ID and will be visible via 'View Commits' then.","Jeeva","05/21/2009 2:50 AM","09/16/2009 3:42 PM","","Draft","","4","Jeeva","","No","NA","","No","","This is because each commit made to any repository in the CTF server will have a corresponding entry in the 'scm_commit' table with a unique commit ID and the commit message.
+
+Since CTF do not generate such commit ID's in the scm_commit table while manually importing an SVN repo, the 'View Commits' for the imported repo will not work.","","","","CTF/CSFE/SFEE","CSFE 5.2,CSFE 5.1,CSFE 5.0,SFEE 4.x","","","help.collab.net","","","","4.4","","Project member","projectmember","","","No","","","","https://forge.collab.net/sf/go/artf41843/"
+"artf43411","How to install ViewVC for Subversion?","Step 1.Get the latest version of ViewVC.Untar it.
+
+    # tar xzf viewvc-1.2-dev.tar.gz
+    # cd viewvc-1.2-dev
+    # ./viewvc-install
+
+Step 2. Answer simple questions. Default choice is okay for normal operation.
+
+Step 3. Edit its config file which is self explainatory. Various options are there, you should read carefully and make use of. For basic working just update following options related to your Subversion server:
+
+    # cd /usr/local/viewvc-1.2-dev/
+    # vi viewvc.conf
+    svn_roots = cgi-bin: /svn/cgi-bin
+    root_parents = /svn : svn
+    default_root = cgi
+    root_as_url_component = 1 
+
+here, root_parents is directory which contains all you repositories. It can be avoided in case your repositories are spread over multiple locations. default_root is the name of repository(set in svn_roots) to be displayed by viewvc automatically.
+
+Step 4. Open your httpd.conf file for Apache settings and write:
+
+    # vi /etc/httpd/conf/httpd.conf
+
+    ScriptAlias /viewvc /usr/local/viewvc-1.2-dev/bin/cgi/viewvc.cgi
+    ScriptAlias /queryvc /usr/local/viewvc-1.2-dev/bin/cgi/query.cgi 
+
+We are making a scriptalias to access viewvc through running its cgi script. The second line, which make alias of query.cgi is optional but recommended. It enables you to search for repositories, branches, files in your cvs/subversion.
+
+ViewVC should run fine now.","ramya deepika","06/23/2009 6:49 AM","09/16/2009 3:42 PM","","Technical review","","4","Ted Kuster","SCM","No","httpd.conf","","No","","http://linuxadminzone.com/download-install-and-configure-viewvc-for-subversion/","","","","CN SVN","CollabNet Subversion","","","http://linuxadminzone.com/download-install-and-configure-viewvc-for-subversion/","","","","","","System administrator","sysadmin","","","No","","","","https://forge.collab.net/sf/go/artf43411/"
+"artf39977","How do you modify CEE's main login page?","You can likely do this by checking out the look project and modifying the snippet at:
+[look] / trunk / www / overrides / snippets / LoginSetup-Info.html.en or perhaps one of it's siblings.","Poornima Sabari","02/26/2009 3:05 AM","09/16/2009 3:42 PM","","Technical review","User & Workspace Mgmt","4","Ted Kuster","","No","FAQ 30","","No","","If the above does not work, you can try to use template overrides, however, template overrides are discouraged. In case it's necessary to do a template override it has to be done in look/www/overrides/templates/.
+
+","Before you edit the template, it's important to commit the original file to be able to see differences in the future. The original template has to be copied over from the same version of SourceCast that the site client is built on. It is important to place the file in the same directory structure under ""look/www/templates/"". For example, if you are going to override ""helm/templates/org/tigris/helm/domain/TLogin.vm"", it has to be placed under ""look/www/org/tigris/helm/domain/TLogin.vm""
+","","","CEE","CEE 5.2","","","Enter at least one related link.","","","","5.2","","Project member","projectmember","","","No","","","","https://forge.collab.net/sf/go/artf39977/"
+"artf41134","Why do I get an error message from webmaster@reutersdev.net when I create a new role?","The attachment shows a mail which is sent as the automated """"Out of Office AutoReply"""" to the new Role request claimed by the user in the 'rtc-setup' project.","Tiffany Sonny(disabled)","04/15/2009 3:00 PM","11/03/2009 11:24 AM","","Hold","","4","Cayenne Woods","","No","tbd","","Yes","","When a user request for a new role in any project, the request will be sent to the project owner(s), and to the domain admins for their approval. In this case, the chances for the user to receive a mail similar to the attached are
+
+1. if any of the project owner(s) or domain admins are on a vacation
+or
+2. had turned on the """"Out of Office AutoReply"""" option in their mail client.","","","","CEE","CEE 5.2","","","tbd","","","","5.2","","Project member","projectmember","","","No","","","","https://forge.collab.net/sf/go/artf41134/"
+"artf42952","Where do I configure a Subversion proxy in Eclipse?","Where do I configure a Subversion proxy in Eclipse?  (The Subversion 'servers' file)","Martin Fieldhouse","06/14/2009 4:45 PM","09/16/2009 3:42 PM","","Draft","User & Workspace Mgmt","4","Ted Kuster","Access control","No","eclipsesubversionproxy","","No","","A Subversion proxy in Eclipse is configured the same way you configure it for the command line, in theSubversion ' servers' file.  
+
+On Unix/Linux:    /home/username/.subversion/servers
+On Windows:      C:\Documents and Settings\username\Application Data\Subversion\servers","","","","Eclipse Desktop","Eclipse Desktop","","","n/a","","","","","","Project member,Developer","projectmember","","","No","","","","https://forge.collab.net/sf/go/artf42952/"
+"artf40978","How do I rebuild the Project Tracker (PT) index?","** Please read the entire FAQ before attempting this procedure. ** It is possible to do this, but it is not a process to be taken lightly. You MUST work closely with Operations or you may cause significant interruption to the availability of Project Tracker and possibly cause downtime for all site components.","Martin Fieldhouse","04/12/2009 8:45 PM","11/03/2009 11:24 AM","","Hold","Software Configuration Mgmt","4","Cayenne Woods","Project Tracker","No","pt_reindex.xml","","Yes","","Problems with the PT indexer are often seen in the form of an error in the UI when entering new artifacts. You might see one of the following error messages in the UI.
+   ""Lock obtain timed out"" or
+   ""Error obtaining lock"" or
+   ""Fatal error - /shared/data/tracker/index/segments (No such file or directory)""
+
+You may also be alerted to an index problem by log entries similar to the ones shown in the examples below.","WORK WITH OPS!
+    - Ops needs to check for any lock files before you start the index.
+    - The search plugin indexes live here: $DATA/index/lucene/<host>/scarab
+    - The PT index lives here: $DATA/tracker/index
+
+    - The Lucene index log file (segments) 'might' need to be renamed before you start the reindex.
+        (A core product issue was filed for this problem - Issue 66888 2/11/09)
+  
+      Example: (OPS does this, if needed)
+        mv /u1/sourcecast/data/tracker/index /u1/sourcecast/data/tracker/index.pcn# (i.e index.66886)
+
+    - It is generally recommended that you check with CERT before doing index rebuild, just in case you have misdiagnosed the problem.
+    - Get log entries from the site (java.log, turbine.log) ","LOGGING LEVEL
+    - Make sure the the site is set to at least INFO logging level or else you will not see the Start/Finish messages in the turbine.log and you will not know when the index is finished.
+    - Intermediate progress can only be tracked (in the turbine.log) if the site is set to DEBUG logging level, however this incurs a 'significant' performance hit and is probably not worth doing unless specifically requested by a CERT Engineer.","COMMAND to start a PT index (New URL, updated 2/09/09)
+
+    *** PLEASE READ ALL COMMENTS IN THIS FAQ BEFORE RUNNING THIS COMMAND! ***
+
+    https://www.domain.com/servlets/TrackerAdmin/action/admin.UpdateSearchIndex/template/admin,UpdateSearchIndex.vm
+
+    - In CEE 5.1.0, this URL will start the indexer, so it is best for only one CN person to load the URL and then you can use the turbine.log is used to determine progress. It is possible for a single user to continue visiting that same URL to see if the indexer is finished, but if someone else loads the URL, the indexer will start again. So to repeat, in 5.1.0 use the URL to start the indexer and the turbine.log to track progress.
+
+    - In CEE 5.2.0, this same URL will 'not' automatically start the indexer, you must also press the Index button on the screen. The same user, or any other user, may also enter that URL and progress will be shown while the indexer is running and the button to start the indexer will not show up again until the indexer is finished.
+
+    - Some of the previous forms of the URL will work (especially prior to 5.2.0), but it's best to stick to the one shown here. (As a side note, it is always okay to remove the ""/removecurreport/true"" path information from a PT URL, if you want to make it shorter.)
+
+IMPORTANT NOTE: the helm indexer status page does not show the indexing started by the above URL. The indexer status page shows the status of indexers related to the site search feature. PT uses a 'separate' index for its own search/query of artifacts. It is PT's indexer that you are starting with the above URL. It has nothing to do with the site search indexers. This is why you can look at the indexers status page when this index is running and it will look like Scarab/Issue index is not running.
+
+Example: 200 OK: scarab/issue waiting till Sun Feb xx xx:xx:x PST 2009.
+
+(5) Start/Stop messages in Turbine.log
+      START - Turbine.log entry when PT index starts:
+       2008-03-26 18:18:56,819 [Thread-15612] INFO org.tigris.scarab - Update index started!
+      FINISH - Turbine.log entry when PT index finishes:
+       2008-03-27 06:57:57,093 [Thread-15612] INFO org.tigris.scarab - Update index completed!
+
+EXAMPLE LOG entries:
+
+<java.log>
+Caused by: java.lang.RuntimeException: Unable to create instantance of class LuceneCriteria'
+  at com.collabnet.tracker.query.CriteriaFactory.createCriteria(CriteriaFactory.java:275)
+  at com.collabnet.tracker.query.CriteriaFactory.createLuceneCriteria(CriteriaFactory.java:147)
+  at com.collabnet.tracker.query.CriteriaQueryStrategy.addTextCriteria(CriteriaQueryStrategy.java:536)
+  at com.collabnet.tracker.query.CriteriaQueryStrategy.addCoreSearchCriteria(CriteriaQueryStrategy.java:466)
+  at com.collabnet.tracker.query.CriteriaQueryStrategy.buildCountQuery(CriteriaQueryStrategy.java:298)
+</java.log>
+
+
+<turbine.log>
+ERROR org.tigris.scarab - Update index failed:
+java.io.IOException: Lock obtain timed out
+  at org.apache.lucene.store.Lock.obtain(Lock.java:97)
+  at org.apache.lucene.index.IndexWriter.<init>(IndexWriter.java:173)
+  at org.apache.lucene.index.IndexWriter.<init>(IndexWriter.java:151)
+  at org.tigris.scarab.util.word.LuceneAdapter.newIndexWriter(LuceneAdapter.java:908)
+  at org.tigris.scarab.util.word.LuceneAdapter.updateIndex(LuceneAdapter.java:674)
+  at
+org.tigris.scarab.actions.admin.UpdateSearchIndex$UpdateThread.run(UpdateSearchIndex.java:149)
+  at java.lang.Thread.run(Thread.java:595)
+</turbine.log>","CEE","CEE 5.2,CEE 5.1","","","https://pcn.extranet.collab.net/issues/show_bug.cgi?id=66818","https://pcn.extranet.collab.net/issues/show_bug.cgi?id=66636"," https://pcn.extranet.collab.net/issues/show_bug.cgi?id=66547","","5.1","","System administrator","sysadmin","","","No","","","","https://forge.collab.net/sf/go/artf40978/"
+"artf40571","On the wiki, why is the ""Edit this page"" link greyed out? ","A Domain Administrator can fix this by editing the page and removing the extra line (""#acl All:read"") in the HelpTemplate.","Martin Fieldhouse","03/22/2009 6:12 PM","09/16/2009 3:42 PM","","Technical review","Software Configuration Mgmt","4","Martin Fieldhouse","","No","edit_link_greyed_out","","No","","Sometimes a user creates a wiki page but then cannot edit it.  
+This happened because the user created the page using the 'HelpTemplate' which contains the line:  ""#acl All:read"". 
+This line makes the file read-only to all users except Domain Administrators. 
+A Domain Administrator needs to fix this by editing the page and removing this line.
+
+---------------------------------------------------------
+##master-page:HelpTemplate
+##master-date:Unknown-Date
+#format wiki
+#acl All:read <<--------------------- REMOVE THIS LINE
+#language en
+== Template for Help Pages ==
+Text.
+
+=== Example ===
+{{{
+xxx
+}}} 
+
+=== Display ===
+xxx
+
+","","","","CEE","CEE 5.2,CEE 5.1","","","?","","","","5.1","","Project member,System administrator","projectmember","","","No","","","","https://forge.collab.net/sf/go/artf40571/"
+"artf39987","Can I use Ad-Hoc queries to find Administrative role holders? ","Yes, but ad-hoc queries are potentially dangerous and can easily bring down a site.","Poornima Sabari","02/26/2009 5:23 AM","09/30/2009 9:57 AM","","OK to publish","Software Configuration Mgmt","4","Ted Kuster","","No","adhocqueries.xml","","No","","Ad-hoc queries should not be used for general purposes.","","","","CEE","CEE 5.2","","","Enter at least one related link.","","","","5.2","","Project member","projectmember","","","No","","","","https://forge.collab.net/sf/go/artf39987/"
+"artf42671","Why are sub-pages on Project Home not getting displayed after upgrade to CTF 5.2?","After upgrading the CTF 5.2, users are unable to view the sub-pages created under top level pages in the Project Home page. A drop down icon appears next to the top level page, but clicking on it does not display the hierarchy of pages below it.","Karishma Jugal","06/09/2009 8:30 AM","09/16/2009 3:42 PM","","Draft","","4","Ted Kuster","Project pages","No","a","sub-page, project page","No","","This issue may occur if the site has custom branding with a customized project_home.vm file in the repository path branding/templates/sfmain/ within the look project of the site.
+
+There are some changes in CTF 5.2 with regards to the left navigation indentation of project pages. The latest project_home.vm file for CTF 5.2 needs to be updated into the branding repository and the custom branding re-applied. 
+
+The links to download the latest branding files can be found at:
+http://help.collab.net/topic/teamforge520/action/customize.html","","","","CTF/CSFE/SFEE","CSFE 5.2","","","http://help.collab.net/topic/teamforge520/action/customize.html","","","","5.2","","Project member","projectmember","","","No","","","","https://forge.collab.net/sf/go/artf42671/"
+"artf41281","In Windows, when doing an update with the command-line client, I get an error saying ""The system cannot find the path specified,"" suggesting that my working copy might be corrupt. But I can update with TortoiseSVN just fine. What's going on?","A careful examination of the Windows API documentation regarding Naming a File reveals the most common reason why this happens. In short, you can address significantly longer path names when using the Unicode versions of the Windows path functions, and providing absolute path specifiers instead of relative path specifiers. Fortunately, the Apache Portable Runtime (APR) library that Subversion uses transparently converts absolute paths (like C:\?WorkingCopy\file.txt) into the form required by the Windows APIs (\\?\C:\?WorkingCopy\file.txt), and back again. Unfortunately, you only get these long-path benefits when using absolute paths.","Tiffany Sonny(disabled)","04/21/2009 12:40 PM","09/16/2009 3:42 PM","","Technical review","User & Workspace Mgmt","4","Ted Kuster","","No","tbd","","No","","To see if path length is the reason for the problem you're seeing, try providing an absolute target path to the Subversion command-line client instead of a relative one (or none at all). In other words, instead of doing this:
+* C:\> svn up ?WorkingCopy 
+or this:
+* C:\> cd C:\?WorkingCopy C:\?WorkingCopy> svn up 
+
+do this:
+* C:\> svn update C:\?WorkingCopy
+
+","If the problem goes away, congratulations — you've hit a Windows path length limitation. And now you know the workaround. ","Why does this problem not affect TortoiseSVN? Because TortoiseSVN always provides absolute paths to the Subversion APIs.
+
+Why, then, does the Subversion command-line client not always convert its input into absolute paths and use those? The Subversion developers have been operating under the principle that, for reasons of user experience, the display of paths in the tool's output should match the syntax of the paths provided as input. And while conversion to an absolute path from a relative one is a fairly trivial operation, the reverse transformation is fraught with complexities. 
+
+","","CN SVN","CollabNet Subversion","","","tbd","","","","","","Project member","projectmember","","","No","","","","https://forge.collab.net/sf/go/artf41281/"
+"artf41003","Why can't I detect the ethernet card in my proxy machine?","The Microsoft Internet Security and Acceleration (ISA) Server by default does not respond to Dynamic Host Configuration Protocol (DHCP) requests.","Tiffany Sonny(disabled)","04/13/2009 2:18 PM","09/16/2009 3:42 PM","","Technical review","User & Workspace Mgmt","4","Ryan Paredes","","No","tbd","","No","","Due to Microsoft Internet Security and Acceleration (ISA) Server default policy setting, the system is not able to get the IP address from DHCP server. 
+
+If you do not want to uninstall Microsoft Internet Security and Acceleration (ISA) Server, the default policy can be modified to allow the DHCP (Request) Protocol to the Local Host Network.","","","","CN SVN","CollabNet Subversion","","","http://technet.microsoft.com/en-us/library/cc302680.aspx","","","","","","Project member,System administrator","projectmember","","","No","","","","https://forge.collab.net/sf/go/artf41003/"
+"artf45736","How do I connect to TeamForge using CollabNet Desktop for Windows","Tip on connecting to TeamForge with CollabNet Desktop for Windows.","Martin Fieldhouse","08/23/2009 11:36 AM","09/16/2009 3:42 PM","","Draft","User & Workspace Mgmt","4","Martin Fieldhouse","Other","No","","cndesktop ","No","","The most common issue with the CollabNet Desktop is entering the wrong URL. The URL you enter should be www.domain.com and then go to advanced and check SSL. The desktop will know which projects you have access to so you do not need to include the project part of the URL. ","","","","Windows Desktop","CTF 6.0,CSFE 5.2,CSFE 5.1,CSFE 5.0","","","","","","","","","Project member","projectmember","","","No","","","","https://forge.collab.net/sf/go/artf45736/"
+"artf41131","How do I change the user group name?","Run the script below to change the user group name.","Tiffany Sonny(disabled)","04/15/2009 2:52 PM","09/16/2009 3:42 PM","","Draft","","4","Sadiq ","","No","tbd","","No","","run the following commands on a shell : 
+echo """"update HELM_USER set LOGIN_NAME = 'NVIDIADDKUser' where LOGIN_NAME =
+'NVIDIADDKUser'"""" | /u1/sourcecast/runtime/scripts/mysqltigris
+
+followed by 
+Administration Home --> JVM Cache Dump. Select the """"org.tigris.helm.om.User""""
+from the """"Invalidate interested caches"""" dropdown and invalidate the cache for
+that.","","","","CEE","CEE 5.2","","","tbd","","","","5.2","","Project member","projectmember","","","No","","","","https://forge.collab.net/sf/go/artf41131/"
+"artf41138","How do I check out single file from svn repository?","Checking out a single file is not possible in Subversion.","Tiffany Sonny(disabled)","04/15/2009 3:11 PM","09/16/2009 3:42 PM","","Technical review","User & Workspace Mgmt","4","Ryan Paredes","","No","tbd","","No","","Use -N option, to make the checkout to be non-recursive as shown in the following command:
+svn checkout https://cs-esx-30.vmdev.net/svn/cs-esx-30/branches -N cs-esx-30 --username johndoe","","","","CN SVN","CollabNet Subversion","","","http://subversion.tigris.org/faq.html#single-file-checkout","","","","","","Project member,System administrator,Developer","projectmember","","","No","","","","https://forge.collab.net/sf/go/artf41138/"
+"artf41145","What are the steps for SSH tunneling?","https://www.ipssources.com/nonav/scdocs/ddSSHGuideCygwin.html","Tiffany Sonny(disabled)","04/15/2009 3:40 PM","09/16/2009 3:42 PM","","Draft","","4","Jeeva","","No","tbd","","No","","https://www.ipssources.com/nonav/scdocs/ddSSHGuideCygwin.html
+","","","","CEE","CEE 5.2","","","https://www.ipssources.com/nonav/scdocs/ddSSHGuideCygwin.html","","","","5.2","","Project member","projectmember","","","No","","","","https://forge.collab.net/sf/go/artf41145/"
+"artf41116","SVN is not responding, what do I do?","Use the steps below to resolve the issue.","Tiffany Sonny(disabled)","04/14/2009 11:59 PM","11/03/2009 11:23 AM","","Hold","","4","Cayenne Woods","","No","tbd","","Yes","","see point 2","Step 1  stop CEE server -/etc/init.d/sourcecastctl stop - Since there are too many processes have locks to this repository (by running: lsof | grep &lt;projectname&gt;/locks/db.lock), we decided to shutdown CEE instead of killing all these processes one by one, which will take more time)
+
+Step 2 - sudo -u httpd /u1/sourcecast/runtime/scripts/svnadmin recover /u1/sourcecast/data/adapter-svn/repositories/application
+
+Step 3  Start CEE server - -/etc/init.d/sourcecastctl startc
+
+All steps finished within 5 minutes and CEE comes back OK again.","","","CEE","CEE 5.2","","","tbd","","","","5.2","","Project member","projectmember","","","No","","","","https://forge.collab.net/sf/go/artf41116/"
+"artf44895","Unlocking a Teamforge user account and removing '(locked)' from the username","When a user account is locked, the word '(locked)' is appended to the account's Full Name.  The process for removing this differs depending on whether it is done by the account owner or by a Site Administrator.","Martin Fieldhouse","08/02/2009 6:45 PM","11/03/2009 11:24 AM","","Hold","User & Workspace Mgmt","4","Cayenne Woods","Access control","No","unlockaccount.xml","","Yes","","If a user resets their account password using the ""Forgot password"" link on the main page, this process automatically removes '(locked)' from the account's Full Name.
+","If a Site Admin needs to manually unlock an account, they must manually reset the password in the edit account screen and also manually remove '(locked)"" from the full name.","","","CTF/CSFE/SFEE","CSFE 5.2,CSFE 5.1,CSFE 5.0","","","","","","","5.0","","System administrator","sysadmin","","","No","","","","https://forge.collab.net/sf/go/artf44895/"
+"artf40355","CVS Integration authorization limitations on OS authentication","This isn't a FAQ so much as a request to enhance the documentation a bit. ","Douglas J Hunley(deleted)","03/12/2009 11:39 AM","09/16/2009 3:42 PM","","Draft","","4","Ted Kuster","","No","?","","No","","Currently, we do point out that the customer cannot use NIS or NIS+ on a CVS integration. We need to expand this section so that it reads something like:
+Note: If installing a CVS integration, the native UNIX/Linux authentication method must be used by the underlying OS.  The OS must *not* be using external authentication mechanisms such as NIS, NIS+, Winbind, Active Directory, or LDAP. SFEE requires the ability to create and manipulate local system accounts using the default useradd, usermod, groupadd, groupdel, and userdel commands. It further expects to find any accounts/groups it created in /etc/passwd and /etc/group.","","","","CTF/CSFE/SFEE","CSFE 5.2,CSFE 5.1,CSFE 5.0,SFEE 4.x","","","?","","","","4.4","","Project member","projectmember","","","No","","","","https://forge.collab.net/sf/go/artf40355/"
+"artf40357","install guide should clarify cvs ldap","If we're going to mention CVS-LDAP in our Install Guide (imho, we should NOT) then we need to make it abundantly what CVS-LDAP is and isn't.","Douglas J Hunley(deleted)","03/12/2009 12:12 PM","09/16/2009 3:42 PM","","Draft","","4","Ted Kuster","","No","?","","No","","CVS-LDAP is merely turning up a small LDAP server for SFEE to use for maintaining the CVS users and groups it needs to create on a CVS Integration server. It is not the ability to point SFEE at some existing LDAP server for existing users/groups. It is also not 'let's make this machine authenticate via LDAP'. As far as the end-user and the machine running the integration is concerned, this is merely an SFEE service (internal to the application, for its own use)","","","","CTF/CSFE/SFEE","CSFE 5.2,CSFE 5.1,CSFE 5.0,SFEE 4.x","","","?","","","","4.4","","Project member","projectmember","","","No","","","","https://forge.collab.net/sf/go/artf40357/"
+"artf44897","How do you get wiki stats for a hosted CEE site?","To get wiki stats for a hosted CEE site, file a request (PCN) with opsmonkey and ask them to run the following steps.
+[This FAQ is for CollabNet Technical support personnel only.]","Martin Fieldhouse","08/02/2009 7:20 PM","11/03/2009 11:24 AM","","Hold","Software Configuration Mgmt","4","Cayenne Woods","Wiki","No","wikistats.xml","","Yes","","This process is labor intensive and it is not something that we normally provide on demand through Support because this functionality is not built into the product.   This is something that is more commonly requested through a customer's Services Engagement Manager, however if Technical Support is required to intervene and assist, this is how it is done.","File a PCN with opsmonkey and ask them to run these commands on the site's server:
+
+1. Get the number of projects with wiki.
+   Run the following within ${CEE_DATA_DIR}/moinmoin directory:
+
+   # ls -al | grep -v _default-content | grep -v _userdata | wc -l
+
+   This is {NUMBER_OF_PROJECTS}
+
+2. Sum up all of the wiki pages from all of the projects.
+   Run the following within ${CEE_DATA_DIR}/moinmoin directory:
+
+   # for i in *; do ls -q1 $i/data/pages/; done| wc -l
+
+   This is ${TOTAL_WIKI_PAGE_COUNT}
+
+3. Do the math manually. Take the total page count and subtract
+   the default pages (27 for each project): 
+
+   ${TOTAL_WIKI_PAGE_COUNT}-(27*{NUMBER_OF_PROJECTS})=${TOTAL_CUSTOMER_WIKI_PAGES}
+
+
+-------------------------------------------------------------------------------------------------
+
+Example results from Opsmonkey:
+Projects: 847
+Total wiki pages: 23164
+Customer wiki pages: 23164 - (847*27) = 295","[This FAQ is for CollabNet Technical support personnel only.  Not customer facing.]","","CEE","CEE 5.2,CEE 5.1","","","","","","","5.1","","System administrator","sysadmin","","","No","","","","https://forge.collab.net/sf/go/artf44897/"
+"artf40359","Install Guide should have hardware reqs section expanded","Our 'recommended hardware/OS' section needs expanded upon","Douglas J Hunley(deleted)","03/12/2009 12:17 PM","09/16/2009 3:42 PM","","Draft","","4","Ted Kuster","","No","?","","No","","For example, we receive requests like:
+I really need detailed info specifically about the following:
+- Types of disk supported (local only, SAN, NAS etc...)
+- Database options (performance of Postgres Vs Oracle Vs Oracle cluster)
+- Minimum hardware spec to be ""supported"" with the following usage:
+- svn: 1100 commits per day
+- pt: 200 records created/edited per day
+- sessions: 500(avg) 1000(peak) concurrent
+- cont int servers: 300+ (various frequency)
+- svn total space: 400GB
+- ~1200 projects
+- ~3000 users 
+- page load times ~ 0.5 to 1.2 secs avg
+
+Which our documentation doesn't address. Since we have a PSR team, this should be known information. :)","","","","CTF/CSFE/SFEE","CSFE 5.2","","","?","","","","5.2","","Project member","projectmember","","","No","","","","https://forge.collab.net/sf/go/artf40359/"
+"artf41013","Why can't I access onsite CEE installed in local box(btf.maa.corp.collab.net)?","tbd","Tiffany Sonny(disabled)","04/13/2009 6:11 PM","11/03/2009 9:54 AM","","Technical review","","4","Ryan Paredes","","No","tbd","","No","","tbd","","","","CEE","CEE 5.2,CEE 5.1,CEE 4.x","","","tbd","","","","4.x (CEE only)","","Project member","projectmember","","","No","","","","https://forge.collab.net/sf/go/artf41013/"
+"artf40509","how to use snapshot.py?","snapshot.py is located at the following path.
+
+<sourceforge_install_dir>/runtime/scripts
+
+so run as
+<sourceforge_install_dir>/runtime/scripts/snapshot.py","Shrinivasan","03/19/2009 5:22 AM","09/16/2009 3:42 PM","","Technical review","","4","Ted Kuster","","No","snapshot.xml","","No","","The output of the snapshot.py will be kept at
+log/runtime/snapshot.log  -      Primary snapshot.py output log
+log/apps/server.log         -   JBoss JVM thread dump
+","","","","CEE","CEE 5.2","","","http://help.collab.net/index.jsp?topic=/csfe510/tasks/getsiteinfo.html","","","","5.2","","Project member","projectmember","","","No","","","","https://forge.collab.net/sf/go/artf40509/"
+"artf41130","Is there a POST query size limit on reutersdev.net?","There is no limitation on the URL length for POST requests.","Tiffany Sonny(disabled)","04/15/2009 2:50 PM","11/03/2009 11:19 AM","","Hold","","4","Cayenne Woods","","No","tbd","","Yes","","There is a limit only for GET requests which is 2083 chars for IE and 3600 chars for Mozilla.","","","","CEE","CEE 5.2","","","tbd","","","","5.2","","Project member","projectmember","","","No","","","","https://forge.collab.net/sf/go/artf41130/"
+"artf29213","How do I know a service is running?","SourceForge checks the status of several key services regularly and alerts you if they stop. ","Ted Kuster","06/16/2008 4:30 PM","09/16/2009 3:42 PM","","Draft","","4","Ted Kuster","","No","watchdogs.xml","snapshot.py utility,server status","No","","To verify server status, navigate to the Server Status page. See Verifying server status for more information. ","To get detailed information about a SFEE site Use the snapshot.py utility, as described in Get information about a SourceForge site
+","","","CEE","CEE 5.2","","","http://help.collab.net/index.jsp?topic=/csfe500/tasks/siteadmin-verifyingserverstatus.html","http://help.collab.net/index.jsp?topic=/csfe510/tasks/getsiteinfo.html","","","5.2","http://cu009.cubit.sp.collab.net:8081/help/topic/sfee500-sysadmin-hosted/concepts/watchdogs.html","Project member","projectmember","","","No","","","","https://forge.collab.net/sf/go/artf29213/"
+"artf27684","What is the Repository Explorer?","The Repository Explorer is a window that shows you the the files and folders in the Subversion repository for your solution.","Kavitha Somasundaram","03/14/2008 12:00 PM","09/16/2009 3:42 PM","","Draft","","3","Kavitha Somasundaram","","No","ankh_repo_explorer.xml","repository explorer","No","","When you add the URL of a Subversion repository in the Repository Explorer, you can: 
+
+Easily browse the contents of the repository 
+Check out or export a folder 
+Open a file in Visual Studio, view it in a browser, or copy it .","","","","Visual Studio Desktop","Visual Studio Desktop","","","Enter at least one related link.","","","","","","Project member","projectmember","","","No","","","","https://forge.collab.net/sf/go/artf27684/"
+"artf41512","Why do I get a Sync request for all new project files created with MS Project?","After adding the Sync plugin in MS Project for CTF, you're ask to sync the project when creating a new project file.
+
+When clicked on"" no"", it removes the first task. This continues until  Yes is clicked to the sync.","ramya deepika","05/06/2009 5:48 AM","09/16/2009 3:42 PM","","Technical review","Integrations","4","Ted Kuster","Task manager","No","NA","","No","","Steps to prevent this happening are as follows:
+1)Open the new MS Project file(.mpp).
+2)Go to Tools-> Teamforge(Sourceforge) Options
+3)Click on ""Unbind Project Plan from Teamforge""(Sourceforge)
+4)Then create new project & if required you can use
+File-> teamforge-> Synchronise with Teamforge ","","","","CTF/CSFE/SFEE","CSFE 5.2,CSFE 5.1,CSFE 5.0","","","NA","","","","5.0","","Project member","projectmember","","","No","","","","https://forge.collab.net/sf/go/artf41512/"
+"artf41511","Why do I see a blank page when trying to open the doc man in a project?","While trying to view the files in the document manager, a blank page is got.
+
+This might be due to the a deleted folder that have non-deleted folders.","ramya deepika","05/06/2009 5:43 AM","09/16/2009 3:42 PM","","Technical review","User & Workspace Mgmt","4","Ted Kuster","Document manager","No","NA","","No","","#Check for any deleted folder with undeleted sub folders - expect 0 rows 
+select distinct parent_folder_id from folder where is_deleted= 'f' and parent_folder_id in (select folder.id from folder, project where folder.project_id=project.id and folder.is_deleted = 't' and folder.path like 'docman%' and project.path like 'projects.<projectname>')
+
+# Undelete the parent folder 
+update folder set is_deleted='f' where id='<parentdocid>'; ","","","","CTF/CSFE/SFEE","CSFE 5.2,CSFE 5.1,CSFE 5.0,SFEE 4.x","","","NA","","","","4.4","","Project member","projectmember","","","No","","","","https://forge.collab.net/sf/go/artf41511/"
+"artf39120","Permissions","Is it necessary to login to the page to see the permissions for the particular user?
+","pritha","02/09/2009 2:05 AM","09/16/2009 3:42 PM","","Draft","","4","pritha","","No","Permissions","","No","","enter paragraph information and use html tags for bullet points.","","","","CEE","CEE 5.2","","","Enter at least one related link.","","","","5.2","","Project member","projectmember","","","No","","","","https://forge.collab.net/sf/go/artf39120/"
+"artf39119","Permissions","Does a registered user have any role in a project?","pritha","02/09/2009 2:03 AM","09/16/2009 3:42 PM","","Draft","","4","pritha","","No","Permissions","","No","","enter paragraph information and use html tags for bullet points.","","","","CEE","CEE 5.2","","","Enter at least one related link.","","","","5.2","","Project member","projectmember","","","No","","","","https://forge.collab.net/sf/go/artf39119/"
+"artf39118","Permissions","If there are 2 owners of a project,do each of them work independently or in conjunction? ","pritha","02/09/2009 2:02 AM","09/16/2009 3:42 PM","","Draft","","4","pritha","","No","Permissions","","No","","enter paragraph information and use html tags for bullet points.","","","","CEE","CEE 5.2","","","Enter at least one related link.","","","","5.2","","Project member","projectmember","","","No","","","","https://forge.collab.net/sf/go/artf39118/"
+"artf41139","Why does cURL reduce the response time of Project Tracker?","If you are using cURL to perform transactions related to XMLExport ofIssues/Artifacts you may  create a definite load on the system and reduce the performance of Project Tracker.","Tiffany Sonny(disabled)","04/15/2009 3:14 PM","11/03/2009 11:39 AM","","Hold","","4","Cayenne Woods","","No","tbd","","No","","Curl is a tool to transfer data from or to a server, using one of the supported
+protocols (HTTP, HTTPS, FTP, FTPS, TFTP, DICT, TELNET, LDAP or FILE). The
+command is designed to work without user interaction.
+
+Curl offers a busload of useful tricks like proxy support, user authentication,
+ftp upload, HTTP post, SSL (https:) connections, cookies, file transfer resume
+and more.","","","","3rd-party","CEE 5.2","","","tbd","","","","5.2","","Project member","projectmember","","","No","","","","https://forge.collab.net/sf/go/artf41139/"
+"artf38946","How do I add users to CEE-15 using the License Generator?","The CEE-15 base install allows the customer to create 15 users.","victor maria(disabled)","02/07/2009 10:04 PM","09/16/2009 3:42 PM","","Draft","","4","Jeeva","","No","Docs & Files","","No","","enter paragraph information and use html tags for bullet points.","","","","CN SVN","CSFE 5.0","","","Enter at least one related link.","","","","5.0","","Project member","projectmember","","","No","","","","https://forge.collab.net/sf/go/artf38946/"
+"artf38944","WS-API FAQ - Unable to find valid certification path ","If you get a case from a customer regrding WS_API and you see things about SSL, valid certification and/or SSLHandshakeException, check out the PCN shown below in the solution. This is especially valid if the customer is new to using WS-API.","victor maria(disabled)","02/07/2009 10:00 PM","09/16/2009 3:42 PM","","Draft","","4","Shrinivasan","","No","Docs & Files","","No","","enter paragraph information and use html tags for bullet points.","","","","CN SVN","CSFE 5.0","","","Enter at least one related link.","","","","5.0","","Project member","projectmember","","","No","","","","https://forge.collab.net/sf/go/artf38944/"
+"artf35267","Synchronize SourceForge integrations","http://cu009.cubit.sp.collab.net:8081/help/topic/csfevm510/tasks/synchronizeintegration.html","Ted Kuster","11/05/2008 10:07 AM","09/16/2009 3:42 PM","","Technical review","","4","Ted Kuster","","No","tasks/synchronizeintegration.xml","","No","","enter paragraph information and use html tags for bullet points.","","","","CEE","CEE 5.2","","","Enter at least one related link.","","","","5.2","","Project member","projectmember","","","No","","","","https://forge.collab.net/sf/go/artf35267/"
+"artf38942","How do I stop my Subversion client from prompting me to accept the Server certificate? ","The solution described applies to TortoiseSVN and Subversion Command Line Clients. Make sure to change to the correct 'servers ' file.
+","victor maria(disabled)","02/07/2009 9:58 PM","09/16/2009 3:42 PM","","Draft","","4","Shrinivasan","","No","Docs & Files","","No","","enter paragraph information and use html tags for bullet points.","","","","CTF/CSFE/SFEE","CSFE 5.2","","","Enter at least one related link.","","","","5.2","","Project member","projectmember","","","No","","","","https://forge.collab.net/sf/go/artf38942/"
+"artf38938","Template for replying to OpenOffice end-user queries","CollabNet Technical Support occasionally receives questions regarding the use or installation of OpenOffice software. We do not provide this type of end-user support and we should respond in a uniform way to these type of requests.","victor maria(disabled)","02/07/2009 9:51 PM","09/16/2009 3:42 PM","","Draft","","4","Shrinivasan","","No","Docs & Files","","No","","enter paragraph information and use html tags for bullet points.","","","","CTF/CSFE/SFEE","CSFE 5.2","","","Enter at least one related link.","","","","5.2","","Project member","projectmember","","","No","","","","https://forge.collab.net/sf/go/artf38938/"
+"artf38346","How do you add a file to a folder? ","How do you add a file to a folder? ","victor maria(disabled)","02/05/2009 3:55 AM","09/16/2009 3:42 PM","","Draft","","4","Jeeva","","No","Docs and files","","No","","enter paragraph information and use html tags for bullet points.","","","","CEE","CEE 5.2","","","Enter at least one related link.","","","","5.2","","Project member","projectmember","","","No","","","","https://forge.collab.net/sf/go/artf38346/"
+"artf38165","Artifact templates: DDQs, namespaces, saved queries, etc","Given various discussions we've had over the last few days, I think you should make the following clarifications about Namespaces, PDQs, and DDQs in the use cases...
+
+","brian noble","02/04/2009 3:34 PM","09/16/2009 3:42 PM","","Draft","","4","Ted Kuster","","No","y","","No","","enter paragraph information and use html tags for bullet points.","","","","CEE","CEE 5.2","","","Enter at least one related link.","","","","5.2","","Project member","projectmember","","","No","","","","https://forge.collab.net/sf/go/artf38165/"
+"artf41090","How do I backup my SourceForge PostgreSQL database?","PostgreSQL includes a tool for backing up the database to the file system (which can then be backed up as part of the OS backup).","Tiffany Sonny(disabled)","04/14/2009 7:28 PM","11/03/2009 11:51 AM","","Hold","","4","Cayenne Woods","","No","tbd","","No","","Databases cannot be backed up as part of your normal OS backup, as the database always has file handles open that prevent the backup software from properly dealing with them. The database may also have data in memory that it has not yet flushed to disk. For these reasons, you need to actually use a database-specific tool for backing up the database to the filesystem (which can then be backed up as part of the OS backup). 
+
+Fortunately, PostgreSQL includes such a utility as part of the software. Simply create a cronjob that runs the following as the postgres user:
+
+    * pg_dump -Ft -b -o sfee | gzip -9 > sfee_backup.tar.gz
+
+You can adjust the filename to include a date/time stamp or other information. The backup is mostly transparent, but it does include some overhead on the database, so you should schedule them as frequently as possible without negatively impacting the performance of the database.","","","","3rd-party","CSFE 5.2,CSFE 5.1,CSFE 5.0,SFEE 4.x","","","tbd","","","","5.2","","Project member","projectmember","","","No","","","","https://forge.collab.net/sf/go/artf41090/"
+"artf29210","Highlights of SourceForge 5.0","http://cu009.cubit.sp.collab.net:8081/help/topic/sfee500-sysadmin-hosted/concepts/highlights-sfee50.html","Ted Kuster","06/16/2008 4:24 PM","09/16/2009 3:42 PM","","Draft","","4","Ted Kuster","","No","highlights-sfee50.xml","","No","","enter paragraph information and use html tags for bullet points.","","","","CEE","CEE 5.2","","","Enter at least one related link.","","","","5.2","","Project member","projectmember","","","No","","","","https://forge.collab.net/sf/go/artf29210/"
+"artf41077","How do I configure PostgreSQL for optimal performance?","In order to get the best performance from PostgreSQL, tune some of the default settings.","Tiffany Sonny(disabled)","04/14/2009 2:00 PM","11/03/2009 11:56 AM","","Hold","","4","Cayenne Woods","","No","tbd","","No","","In order to get the best performance from PostgreSQL, we will need to tune some of its default setting. First however, we need to adjust some OS setting to allow PostgreSQL to use the resources we allocate. Add the following lines to /etc/sysctl.conf :
+
+kernel.shmmax=2147483648
+kernel.shmall=2097152
+kernel.sem = 250 32000 100 128
+fs.file-max = 65536
+
+And then out these options into effect by executing 'sysctl -p' (the file is read at  boot time, but we don't want to reboot for them to take affect).","Now, let's put the following into /var/lib/pgsql/data/postgresql.conf : 
+
+max_connections = 220
+
+shared_buffers = 25000
+
+sort_mem = 15000
+
+vacuum_mem = 100000  
+
+max_fsm_pages = 200000
+
+wal_buffers = 4096 
+
+effective_cache_size = 196608
+
+geqo = false 
+
+statement_timeout = 300000
+
+fsync = off
+
+enable_mergejoin = false
+
+commit_delay = 20000
+
+commit_siblings = 3
+
+enable_nestloop = false 
+
+ 
+
+and restart PostgreSQL by running 'service postgresql restart' .
+","You should now be fully optimized in your PostgreSQL settings. Please refer to our article on running vacuum regularly to ensure optimal performance.
+","NOTE: We are assuming a DB server with 4Gb of RAM and that the db server is not doing much else.","3rd-party","CollabNet Subversion","","","tbd","","","","","","Project member","projectmember","","","No","","","","https://forge.collab.net/sf/go/artf41077/"
+"artf40927","Why do I get a get "" 502 Proxy error"" while trying to add field in a tracker?","While trying to add a field to a tracker which already has more than 1000+ artifacts, then 502 Proxy error might throw.
+
+ProxyTimeout in httpd.conf should be increased to facilitate this.","ramya deepika","04/08/2009 5:39 AM","09/16/2009 3:42 PM","","Draft","Project Mgmt","4","Ted Kuster","Project Tracker","No","httpd.conf","","No","","Log directly via the 8080 port and removing the timeout will help you to add extra fields & prevent proxy error","","","","CTF/CSFE/SFEE","CSFE 5.2,CSFE 5.1,CSFE 5.0","","","NA","","","","5.0","","Project manager","projectadmin","","","No","","","","https://forge.collab.net/sf/go/artf40927/"
+"artf42953","How can I query PT artifacts through the API without knowing the project names?","The way to accomplish this is to create a project-scoped ""saved query"" via the web UI.","Martin Fieldhouse","06/14/2009 4:52 PM","09/16/2009 3:42 PM","","Draft","Integrations","4","Ted Kuster","Project Tracker","No","allprojqueryapinonames","","No","","You can create cross-project saved queries and one of the options for specifying the projects and artifact types is to choose ""All projects and all artifact types"". 
+
+ You can then use this saved query with the API's <namedQuery> element of getArtifactList.
+","","","","CEE","CEE 5.2,CEE 5.1","","","n/a","","","","5.1","","Project manager,System administrator,Developer","projectadmin","","","No","","","","https://forge.collab.net/sf/go/artf42953/"
+"artf41096","How do I vacuum a PostgreSQL database?","PostgreSQL does a fairly decent job of maintaining its performance over time when properly tuned. However, do to the nature of SFEE and its 'never delete anything in the database' policy, it is necessary to help PostgreSQL maintain optimal performance by periodically running vacuumdb.","Tiffany Sonny(disabled)","04/14/2009 7:40 PM","11/03/2009 11:57 AM","","Hold","","4","Cayenne Woods","","No","tbd","","No","","We recommand you create ~postgres/vacuum.sh as:
+
+#!/bin/bash
+
+do_vacuum()
+{
+    for table in $*
+    do
+        echo """"analyze $table"""" | psql sfee
+        echo """"vacuum $table"""" | psql sfee
+    done
+}
+
+HIGH_PRI_TABLES=""""audit_change mntr_subscription""""
+MED_PRI_TABLES=""""artifact item audit_entry document document_folder folder""""
+LOW_PRI_TABLES=`echo <backslash>d|/usr/bin/psql sfee|grep table|awk '{print $3}'|egrep
+-v 'artifact|item|audit_change|audit_entry|mntr_subscription|document|document_f
+older|folder|objecttype'`
+
+cd ~postgres
+
+WHICH_PRI=$1
+
+case $WHICH_PRI in
+    HI)
+        do_vacuum $HIGH_PRI_TABLES
+        ;;
+    MED)
+        do_vacuum $MED_PRI_TABLES
+        ;;
+    LOW)
+        do_vacuum $LOW_PRI_TABLES
+        ;;
+esac
+
+exit 0
+
+Next, create the following crontab entries for the postgres user:
+
+03,18,33,48 * * * * $HOME/vacuum.sh HI
+08 01,07,13,19 * * * $HOME/vacuum.sh MED
+11 04,16 * * * $HOME/vacuum.sh LOW
+","Once this is in place, your PostgreSQL db should remain at its optimal performance level.
+
+NOTE: We are assuming you've already tweaked the PostgreSQL settings as per our article on the same. We are also assuming that you've disabled the statement_timeout setting for the postgres user, like so: alter user postgres set statement_timeout = 0;","","","3rd-party","CollabNet Subversion","","","tbd","","","","","","Project member","projectmember","","","No","","","","https://forge.collab.net/sf/go/artf41096/"
+"artf29612","What is the look project?","http://cu009.cubit.sp.collab.net:8081/help/topic/sfee500/concepts/lookproject.html","Ted Kuster","08/12/2008 11:05 AM","09/16/2009 3:42 PM","","Technical review","User & Workspace Mgmt","4","Ted Kuster","Branding","No","lookproject.xml","","No","","enter paragraph information and use html tags for bullet points.","","","","CTF/CSFE/SFEE","SFEE 4.x","","","Enter at least one related link.","","","","4.4","","Project manager","projectadmin","","","No","","","","https://forge.collab.net/sf/go/artf29612/"
+"artf29598","How do I customize my site's look and feel?","http://cu009.cubit.sp.collab.net:8081/help/topic/sfee500/concepts/branding.html","Ted Kuster","08/12/2008 10:47 AM","09/16/2009 3:42 PM","","Technical review","User & Workspace Mgmt","4","Ted Kuster","Branding","No","reference/branding.xml","","No","","enter paragraph information and use html tags for bullet points.","","","","CTF/CSFE/SFEE","SFEE 4.x","","","Enter at least one related link.","","","","4.4","","Project manager","projectadmin","","","No","","","","https://forge.collab.net/sf/go/artf29598/"
+"artf39085","How do I remove the keyword from the issue tracker? ","TBD","Arun Prasad (Support)","02/08/2009 10:20 PM","09/16/2009 3:42 PM","","Draft","","4","Arun Prasad (Support)","Issue Tracker","No","Issue Tracker ","","No","","enter paragraph information and use html tags for bullet points.","","","","CEE","CEE 5.2","","","Enter at least one related link.","","","","5.2","","Project manager","projectadmin","","","No","","","","https://forge.collab.net/sf/go/artf39085/"
+"artf39086","What are Edit issue import configuration rules in IT? ","TBD","Arun Prasad (Support)","02/08/2009 10:24 PM","09/16/2009 3:42 PM","","Draft","","4","Arun Prasad (Support)","Issue Tracker","No","issuetrackerimportconfiguration.xml","","No","","enter paragraph information and use html tags for bullet points.","","","","CEE","CEE 5.2","","","Enter at least one related link.","","","","5.2","","Project manager,Developer","projectadmin","","","No","","","","https://forge.collab.net/sf/go/artf39086/"
+"artf41466","If the user not able to view the My page in the site, permission required is?","Project page-view is a permission which allows the user to view the home pages of public projects.","David Thomas","05/01/2009 11:54 AM","09/16/2009 3:42 PM","","Draft","","4","Ted Kuster","","No","n/a","","No","","If you have a direct role with project-view on any of the private project and don't have the project page-view on that role, we couldn't able to view that private project home page","","","","CEE","CEE 5.2,CEE 5.1,CEE 4.x","","","n/a","","","","4.x (CEE only)","","Project manager","projectadmin","","","No","","","","https://forge.collab.net/sf/go/artf41466/"
+"artf41467","Why is there a delay in the creation of SVN repo with my new project?","Rarely, if the new project has been created and visible, there will be delay in the creation of the SVN repo.","David Thomas","05/01/2009 11:56 AM","09/16/2009 3:42 PM","","Draft","","4","Ted Kuster","","No","n/a","","No","","This is due to the indexer ceasing in the application. When the indexer is restarted , the repo will be created.
+","","","","CEE","CEE 5.2,CEE 5.1,CEE 4.x","","","n/a","","","","4.x (CEE only)","","Project manager","projectadmin","","","No","","","","https://forge.collab.net/sf/go/artf41467/"
+"artf40954","Why are there so many httpd processes on my CollabNet Subversion server?","The number of apache child processes is controlled by the StartServers, MinSpareServers, MaxSpareServers, and MaxClients directives.","David Thomas","04/09/2009 12:45 PM","09/16/2009 3:42 PM","","Draft","","4","Ted Kuster","","No","httpd.conf","","No","","For more information on configuring them please see http://httpd.apache.org/docs/2.2/mod/prefork.html
+","","","","CN SVN","CollabNet Subversion","","","http://httpd.apache.org/docs/2.2/mod/prefork.html","","","","","","System administrator","sysadmin","","","No","","","","https://forge.collab.net/sf/go/artf40954/"
+"artf43461","How can I know who revoked a user's role in a project in CTF?","In CTF 6.0, there is actually no audit log page in UI like what we have in CEE.
+
+So, if one wants to know who revoked a user's role in a project, it can be found by logging into the database and with the help of SQL query.
+
+However, this can only be achieved starting from CTF6.0 as versions prior to CTF6.0 do not record the role revocation events in DB.","Jeeva","06/24/2009 2:24 AM","09/16/2009 3:42 PM","","Draft","","4","Ted Kuster","","No","rolerevoke.xml","","No","","The below query can be used to know this information:
+
+select u.username,u.full_name,u.email,a.date_created from sfuser u, audit_entry a, audit_change c where c.old_value = '%user_name%' and c.property_name = 'roleRevoked' and c.audit_entry_id=a.id and a.created_by_id=u.id;
+
+%user_name% = username of the user whose role got revoked","","","","CTF/CSFE/SFEE","CTF 6.0","","","http://help.collab.net","","","","6.0","","System administrator","sysadmin","","","No","","","","https://forge.collab.net/sf/go/artf43461/"
+"artf37825","What are the permissions associated with the moderator user role?","permissions associated with a moderator","Menka Puthalath","01/21/2009 10:50 AM","09/16/2009 3:42 PM","","Draft","","4","Menka Puthalath","Discussions","No","permissionsassociatedwithamoderator.xml","","No","","enter paragraph information and use html tags for bullet points.","","","","CTF/CSFE/SFEE","CSFE 5.1","","","Enter at least one related link.","","","","5.1","","Project manager","projectadmin","","","No","","","","https://forge.collab.net/sf/go/artf37825/"
+"artf47196","How do I undelete a deleted artifact in TeamForge?  (In progress - not finished)","How do I undelete a deleted artifact in TeamForge where the user may or may no know the artifact number of the item that was deleted?","Martin Fieldhouse","09/13/2009 1:43 PM","09/16/2009 3:42 PM","","Draft","Change Mgmt","4","Martin Fieldhouse","","No","","","No","","The steps to undelete a deleted artifact are as follows.  This example assumes that the artifact was deleted today but the steps can easily be modified to find artifacts deleted on a previous day.
+
+1) Find the userID of the user that deleted the artifact - look this up in the sfuser table.
+    ""????????????????""
+
+2) Examine the audit_entry table for delete events that the user performed <today> with an object id starting with artf.  Adjust userID and date fields as necessary:
+    select * from audit_entry where created_by_id = 'userxxxx' and operation like 'delete' and object_id like 'artf%' and date_created like '2009-09-%';
+
+3) Update the 'item' table:
+    sfdb=#   update item set is_deleted = false where id = 'artfxxxxxx';
+
+4) Restore any related objects:
+    update relationship set is_deleted = false where origin_id = 'artfxxxxxx' or target_id = 'artfxxxxxx';
+
+5) Check for attachments.  If any exist, you need to update the attachment and stored_file tables in a similar way.
+        ""????????????????""","","","","CTF/CSFE/SFEE","CTF 6.0,CSFE 5.2,CSFE 5.1,CSFE 5.0","","","","","","","","","Site administrator,System administrator","siteadmin","","","No","","","","https://forge.collab.net/sf/go/artf47196/"
+"artf40930","Why do I get Unable to render widget after installation?","After doing CSFE installation I get the following error when I try to view the site home page
+
+[Exception in:/common/jsp/menus/top.jsp] Failure processing Velocity template templates/menu_bar.vm Unable to render widget error","ramya deepika","04/08/2009 7:26 AM","09/16/2009 3:42 PM","","Draft","","4","Ted Kuster","Installation","No","NA","","No","","You need to check if the postgres password provided in the site-options.conf is same as the one provided in create database whilke setting up postgres database. If there is a conflict, change it in site-options.conf & recreate runtime.","","","","CTF/CSFE/SFEE","CSFE 5.2,CSFE 5.1,CSFE 5.0","","","NA","","","","5.0","","System administrator","sysadmin","","","No","","","","https://forge.collab.net/sf/go/artf40930/"
+"artf46239","How do I set repository permissions correctly?","Try to have as few users access the repository file system as possible.","Cayenne Woods","09/03/2009 4:23 PM","09/16/2009 3:42 PM","","Technical review","","4","Martin Fieldhouse","","No","","","No","","For example, run apache or 'svnserve -d' as a specific user, and make the repository wholly owned by that user. Don't allow any other users to access the repository via file:/// urls, and be sure to run 'svnlook' and 'svnadmin' only as the user which owns the repository. ","If your clients are accessing via file:/// or svn+ssh://, then there's no way to avoid access by multiple users. In that case, read the last section in chapter 6, and pay particular attention to the ""checklist"" sidebar at the bottom. It outlines a number of steps to make this scenario safer. Note for SELinux / Fedora Core 3+ / Red Hat Enterprise users:
+
+In addition to regular Unix permissions, under SELinux every file, directory, process, etc. has a 'security context'. When a process attempts to access a file, besides checking the Unix permissions the system also checks to see if the security context of the process is compatible with the security context of the file.
+
+Fedora Core 3, among other systems, comes with SELinux installed by default, configured so that Apache runs in a fairly restricted security context. To run Subversion under Apache, you have to set the security context of the repository to allow Apache access (or turn off the restrictions on Apache, if you think all this is overkill). The chcon command is used to set the security context of files (similarly to how the chmod sets the traditional Unix permissions). For example, one user had to issue this command
+
+    * $ chcon -R -h -t httpd_sys_content_t PATH_TO_REPOSITORY 
+
+to set the security context to be able to successfully access the repository. ","","","CN SVN","none","","","","","","","","","System administrator","sysadmin","","","No","","","","https://forge.collab.net/sf/go/artf46239/"
+"artf44898","Recover CEE site from long-running DELETE statements by truncating temp tables","Optional fix for when CEE site queries are running slowly and consulting the mysql-slow-queries.log shows long running DELETE statements on the SCARAB_QUERY_RESULT (or SCARAB_QUERY_SNAPSHOT) tables. 
+
+[This FAQ is for CollabNet Technical support personnel only.]","Martin Fieldhouse","08/02/2009 7:36 PM","11/03/2009 11:24 AM","","Hold","Software Configuration Mgmt","4","Cayenne Woods","Project Tracker","No","recoverfromdelete.xml","","Yes","","The truncate temp query data tables command shown below should ONLY be used under the supervision of CERT - consulting with CERT is mandatory.  Even under CERT supervision, it should be used with caution.
+
+(1) Do not run this command (URL) without consulting CERT and possibly Ops as well.
+(3) Read desc226 in PCN 61516 before running this command
+(2) Also read the the following comments before running this command: '
+
+[Comments about this script from Engineering]
+
+- Executing this URL while the the expunger thread is running might kill the thread.  Depending on how bad the thread is behaving, it might be ok if the query did kill it. But if the expunger thread doesn't appear to be hurting the site, it would be a bit annoying to have it killed as then someone would have to take on the task of executing the cleanup URL periodically (1-4 times a day) until the site was restarted.
+
+The cleanup URL is a rude cleanup that wipes the tables completely and (hopefully) quickly. It would be better if it was run when the site is seeing less usage as to avoid the probably unnoticed side-effects on users who are navigating query result lists.
+
+","Steps to run:
+* If the site, and in particular PT queries, start to run slowly, the mysql-slow-queries.log should be consulted and if there are long running DELETE statements on the SCARAB_QUERY_RESULT (or SCARAB_QUERY_SNAPSHOT) tables, then a new action was added to the hot-fix to allow us to truncate (recreate as empty) those tables. 
+
+* Run URL command to truncate temp query data tables:    http://www.<host>/servlets/TrackerAdmin/action/admin.ClearQueryResults/template/admin,GlobalArtifactTypeShow.vm ","[This FAQ is for CollabNet Technical support personnel only.]","","CEE","CEE 5.2,CEE 5.1","","","","","","","5.1","","System administrator","sysadmin","","","No","","","","https://forge.collab.net/sf/go/artf44898/"
+"artf42949","CN Desktop for Windows - Credentials error","Error logging in - Client found response content type of 'text/html;charset=UTF-8', but expected 'text/xml'","Martin Fieldhouse","06/14/2009 4:18 PM","09/16/2009 3:43 PM","","Draft","","4","Ted Kuster","Other","No","cndesktoperror","","No","","User adds new Teamforge site in CN Desktop for Windows and encounters error:
+
+Error logging in. Please check your credentials
+Cause: Client found response content type of 'text/html;charset=UTF-8', but expected 'text/xml'
+The request failed with the error message:
+--
+","Cause: User entered URL including the project name:
+http://domain.com/sf/projects/robin ","Solution:  It's the incorrect URL format that causes this error, the site URL needs to be entered as:
+http://domain.com
+","","CEE","CEE 5.2","","","n/a","","","","5.2","","Project member,Project manager,System administrator,Developer","projectmember","projectadmin","","No","","","","https://forge.collab.net/sf/go/artf42949/"
+"artf41075","Every time I try to run a svn command, it says my working copy is locked. Is my working copy corrupt?","No, your working copy is not corrupt, nor is your data lost. Subversion's working copy is a journaling system that logs everything it is about to do before it does it. If the svn client program is interrupted violently (segfault or killed, but NOT with Control-C), one or more lockfiles are left behind, along with logfiles describing unfinished business.","Tiffany Sonny(disabled)","04/14/2009 1:51 PM","09/16/2009 3:42 PM","","Technical review","User & Workspace Mgmt","4","Ryan Paredes","","No","copylocked.xml","","No","","The'svn status' command will show an 'L' next to locked directories. Any other process that attempts to access the working copy will fail when it sees the locks. To unlock your working copy, you need to tell the svn client to finish the work. Simply run: svn cleanup working-copy.
+","File locking can also be managed by Admin using the 'svnadmin lslocks', and 'svnadmin rmlocks' commands."",""Mohanakrishna Achar"",""1"",""Approved"",""0"",""7/20/2007"",""7/24/2007""
+""The dynamic images that SFEE creates seem to be broken"",""00000623"",""If you have a fresh install of SFEE, and you're noticing that the dynamic images that SFEE are creating are not correct, you may be missing a library that is needed to create the images. 
+","The easiest way to find this is to check and see if you have the xorg-x11-depreciated-libs rpm installed, by doing a: 
+
+rpm -qva | grep xorg-x11-depreciated 
+
+And watching for the results.  If you do see that you have the xorg-x11-depreciated-libs rpm installed, and after a server restart, you're not seeing the images, please open a support request.
+
+If you do not have the xorg-x11-depreciated-libs rpm installed, it can usually be installed by performing a simple: 
+
+up2date xorg-x11-deprecated-libs 
+
+And restarting SFEE.","","CN SVN","CollabNet Subversion","","","http://subversion.tigris.org/faq.html#wedged-wc","","","","","","Project member,System administrator","projectmember","","","No","","","","https://forge.collab.net/sf/go/artf41075/"
+"artf41111","Can I use an alternative Search Index Tool?","Yes, if you're having issues getting the correct results from your web site, there is an alternative re-indexer (Perl Reindex Tool) that you can use that lives on the Tapestry site.","Tiffany Sonny(disabled)","04/14/2009 11:36 PM","09/16/2009 3:42 PM","","Technical review","User & Workspace Mgmt","4","Ryan Paredes","","No","tbd","","No","","The instructions and requirements for your site are located in the README file that is in the download.  If you have any feature requests, please place them in the tracker on tapestry, as the developer will look into feature requests and implement them as needed.  It can be set up as a cron job to re-index your site weekly to make sure that you're receiving the correct search results for your SFEE installation.","You can find this tool at
+http://tapestry.sourceforge.com/sf/projects/perl_reindex_tool","","","CTF/CSFE/SFEE","SFEE 4.x","","","https://tapestry.sourceforge.com/sf/projects/perl_reindex_tool","","","","4.4","","Project member","projectmember","","","No","","","","https://forge.collab.net/sf/go/artf41111/"
+"artf27685","What is the Working Copy Explorer?","The Working Copy Explorer lets you work with the files and folders in your local copy of the repository, within Visual Studio. This includes items that are not part of your project or solution.","Kavitha Somasundaram","03/14/2008 12:03 PM","09/16/2009 3:42 PM","","Technical review","Integrations","3","Kavitha Somasundaram","","No","ankh_wc_explorer.xml","","No","","enter paragraph information and use html tags for bullet points.","","","","Visual Studio Desktop","Visual Studio Desktop","","","Enter at least one related link.","","","","","http://cu009.cubit.sp.collab.net:8081/help/topic/com.collabnet.anksvn.doc/concepts/ankh_wc_explorer.html","Project member","projectmember","","","No","","","","https://forge.collab.net/sf/go/artf27685/"
+"artf39123","Permissions","What are the two types of roles?","pritha","02/09/2009 2:10 AM","09/16/2009 3:42 PM","","Draft","","4","pritha","","No","Permissions","","No","","enter paragraph information and use html tags for bullet points.","","","","CEE","CEE 5.2","","","Enter at least one related link.","","","","5.2","","Project member","projectmember","","","No","","","","https://forge.collab.net/sf/go/artf39123/"
+"artf39703","Can changes made by a user in a site be determined? ","Can changes made by a user in a site be determined? 
+
+Yes.","karthiks","02/17/2009 7:30 AM","09/16/2009 3:42 PM","","Draft","","4","Karthi Swaminathan","Other","No","Administration ","","No","","enter paragraph information and use html tags for bullet points.","","","","CEE","CEE 5.2","","","Enter at least one related link.","","","","5.2","","Project member","projectmember","","","No","","","","https://forge.collab.net/sf/go/artf39703/"
+"artf41465","Can the type of an attribute be changed after it is created?","The type of an attribute can not be changed once it is created. However, this is not applicable for all the attributes","David Thomas","05/01/2009 11:52 AM","09/16/2009 3:42 PM","","Draft","","4","Ted Kuster","","No","n/a","","Yes","","There are few attributes, whose type can be changed even after they have been created. The complete table showing the ""possible and impossible"" can be referred in the following link:
+
+https://scarab.extranet.collab.net/data-types/conversions.html","","","","CEE","CEE 5.2,CEE 5.1,CEE 4.x","","","https://scarab.extranet.collab.net/data-types/conversions.html","","","","4.x (CEE only)","","System administrator","sysadmin","","","No","","","","https://forge.collab.net/sf/go/artf41465/"
+"artf45054","Why do I receive this error when accessing a secure site: There is a problem with this website's security certificate. The security certificate presented by this website was not issued by a trusted certificate authority.","To resolve this issue you need to install a certificate from a trusted Certification Authority - either internal (Active Directory) or external (VeriSign).","Ryan Paredes","08/05/2009 2:26 PM","09/16/2009 3:42 PM","","Technical review","","4","Ryan Paredes","Security","No","certificates.xml","certificates, https","No","","As a workaround you can:
+1. In Windows Internet Explorer click Continue to this website (not recommended). A red Address Bar and a certificate warning appear. 
+2. Click the Certificate Error button to open the information window.
+3. Click View Certificates, and then click Install Certificate. 
+4. On the warning message that appears, click Yes to install the certificate. 
+","","","","CTF/CSFE/SFEE","CEE 5.2,CEE 5.1,CEE 4.x,CTF 6.0,CSFE 5.2,CSFE 5.1,CSFE 5.0,SFEE 4.x,CollabNet Subversion,Cubit 2.0","","","","","","","","","Project member","projectmember","","","No","","","","https://forge.collab.net/sf/go/artf45054/"
+"artf45063","Can I specify a destination folder when performing a silent install of CollabNet Subversion client [windows] via commandline?","While performing a silent install of CollabNet Subversion client [windows] via commandline, it is possible to specify a destination folder so that the client gets installed there instead of the default path which is ""C:\Program Files\CollabNet Subversion Client"".
+
+The command is -
+
+CollabNetSubversion-client-<version>.win32.exe /S /D=<path_to_destination_dir>","Jeeva","08/06/2009 2:04 AM","09/16/2009 3:42 PM","","Draft","","4","Ted Kuster","","No","","","No","","","","","","CN SVN","CollabNet Subversion","","","","","","","","","Project member","projectmember","","","No","","","","https://forge.collab.net/sf/go/artf45063/"
+"artf41136","How do I change the color of a CollabNet Enterprise Edition stage site?","Add the following line to the inst.css file:
+body {	background-color:#ffff99   }","Tiffany Sonny(disabled)","04/15/2009 3:05 PM","11/10/2009 12:18 PM","","Hold","","4","Cayenne Woods","","No","changecolor.xml","","Yes","","Locate the /look/www/overrides/static/csi/css/inst.css and add the following line to the end of the file:
+body {	background-color:#ffff99   }
+Color codes are available from a number of sources, one being http://html-color-codes.com.
+","When a site doesn't have an inst.css file in the look project, in order to override it, the best method is to paste http://[domain]/branding/css/inst.css in your browser and copy the content of the inst.css file over to the new inst.css you create in the look directory. Any additions or changes should be appended to it. (from pcn39881, Aug29, 2005).
+
+At times a site will have added a stylesheet, i.e. styles.css.  This page gets parsed after inst.css and has the ability to override the site's colors.  In this case, add the background-color setting to the bottom of the styles.css page.","","","CEE","CEE 5.2,CEE 5.1","","","http://html-color-codes.com","","","","5.2","","Site administrator","projectmember","","","No","","","","https://forge.collab.net/sf/go/artf41136/"
+"artf38021","What is the difference between default and exactly as entered html?","TBD","Nithin","02/02/2009 4:28 AM","09/16/2009 3:42 PM","","Draft","","4","Nithin","","No","Documents & Files","","No","","enter paragraph information and use html tags for bullet points.","","","","CEE","CEE 5.2","","","Enter at least one related link.","","","","5.2","","Project member","projectmember","","","No","","","","https://forge.collab.net/sf/go/artf38021/"
+"artf27110","What is the lifecyle of a project?","The lifecycle of a project depends on several factors like the type of project, the size, and the project resources.","Ted Kuster","03/02/2008 3:25 PM","09/16/2009 3:42 PM","","Draft","Project Mgmt","3","Ted Kuster","Project pages","No","whatisprojectlifecycle.xml","","No","","enter paragraph information and use html tags for bullet points.","","","","CTF/CSFE/SFEE","SFEE 4.x","","","Enter at least one related link.","","","","4.4","","Project manager","projectadmin","","","No","","","","https://forge.collab.net/sf/go/artf27110/"
+"artf41468","What is CVS watch?","CVS provides a notification scheme which allows a group of developers to know if somebody is working on a given file. This facility is known as watches.","David Thomas","05/01/2009 11:58 AM","09/16/2009 3:42 PM","","Draft","","4","Ted Kuster","","No","n/a","","No","","By setting a watch on a file, you can have CVS notify you via email if someone else starts to edit this file. This mechanism is notification based only; the file is not locked in any way on the server, and several people are allowed to edit the same file at the same time.
+","","","","CEE","CEE 5.2,CEE 5.1,CEE 4.x","","","n/a","","","","4.x (CEE only)","","Project member","projectmember","","","No","","","","https://forge.collab.net/sf/go/artf41468/"
+"artf41506","How to start servies after upgrading from SFEE 4.4 to CTF 5.2?","After upgrading from SFEE 4.4 to CTF 5.2, not able to start collabnet servcies
+
+$ sudo /etc/init.d/collabnet start all
+Starting all services ""localhost""
+apache (subversion app)(cu000.cubit.sp.collab.net:80) (ext)                 running
+pgsql (database) (cu000.cubit.sp.collab.net:5432) (ext)                          running
+jboss (app) (cu000.cubit.sp.collab.net:8080)                                     not running
+tomcat (subversion cvs) (cu000.cubit.sp.collab.net:7080)                         not running","ramya deepika","05/06/2009 4:54 AM","09/16/2009 3:42 PM","","Draft","Software Configuration Mgmt","4","Ted Kuster","Upgrade","No","site-options.conf","","No","","Do change the NODE_HOSTNAME token from ""localhost' to the machine name.","","","","CTF/CSFE/SFEE","CSFE 5.2,SFEE 4.x","","","NA","","","","4.4","","System administrator","sysadmin","","","No","","","","https://forge.collab.net/sf/go/artf41506/"
+"artf39781","How do I export queries in CEE? ","CEE does not support exporting CEE PT queries for reuse in other projects. However, you can use the following workaround.","Harsha(disabled)","02/18/2009 9:44 PM","09/16/2009 3:42 PM","","Draft","","4","pritha","","No","FAQ 60","","No","","enter paragraph information and use html tags for bullet points.","","","","CEE","CEE 5.2","","","Enter at least one related link.","","","","5.2","","Project member","projectmember","","","No","","","","https://forge.collab.net/sf/go/artf39781/"
+"artf38027","Documents & Files","How is documents and files represented in the roles and permissions? ","Nithin","02/02/2009 4:42 AM","09/16/2009 3:42 PM","","Draft","","4","Nithin","","No","Documents & Files","","No","","enter paragraph information and use html tags for bullet points.","","","","CEE","CEE 5.2","","","Enter at least one related link.","","","","5.2","","Project member","projectmember","","","No","","","","https://forge.collab.net/sf/go/artf38027/"
+"artf38026","How is documents and files represented in the roles and permissions? ","It is also called project documents. ","Nithin","02/02/2009 4:40 AM","09/16/2009 3:42 PM","","Draft","","4","Nithin","","No","docsandfilesinrolesandpermissions.xml","","No","","enter paragraph information and use html tags for bullet points.","","","","CEE","CEE 5.2","","","Enter at least one related link.","","","","5.2","","Project member","projectmember","","","No","","","","https://forge.collab.net/sf/go/artf38026/"
+"artf42951","How can I tell if Eclipse is using JavaHL or SVNKit?","How can I tell if I my Eclipse is using JavaHL or SVNKit?  I see the (Subversion JavaHL Win32 Libraries) in the list of plugins but I don't know if that means I'm actually using JavaHL.","Martin Fieldhouse","06/14/2009 4:38 PM","09/16/2009 3:42 PM","","Draft","User & Workspace Mgmt","4","Ted Kuster","Other","No","javahl-svnkit","","No","","""Eclipse preferences ->  Team -> SVN""   will show what Eclipse is using.
+","For more detail, see: http://svn.collab.net/subclipse/help/index.jsp?topic=/org.tigris.subversion.subclipse.doc/html/reference/protocol.html","","","Eclipse Desktop","Eclipse Desktop","","","http://svn.collab.net/subclipse/help/index.jsp?topic=/org.tigris.subversion.subclipse.doc/html/reference/protocol.html","","","","","","Project member,Developer","projectmember","","","No","","","","https://forge.collab.net/sf/go/artf42951/"
+"artf41008","How do I install QC on a Japanese machine?","tbd","Tiffany Sonny(disabled)","04/13/2009 2:37 PM","09/16/2009 3:42 PM","","Technical review","","4","Ryan Paredes","","No","tbd","","No","","tbd","","","","CN SVN","CollabNet Subversion","","","tbd","","","","","","Project member","projectmember","","","No","","","","https://forge.collab.net/sf/go/artf41008/"
+"artf39125","Permissions","What is the difference between the registered user & observer?","pritha","02/09/2009 2:14 AM","09/16/2009 3:42 PM","","Draft","","4","pritha","","No","Permissions","","No","","enter paragraph information and use html tags for bullet points.","","","","CEE","CEE 5.2","","","Enter at least one related link.","","","","5.2","","Project member","projectmember","","","No","","","","https://forge.collab.net/sf/go/artf39125/"
+"artf40928","How to provide SVN anonymous read access?","Go to Project Admin->Permissions-> make the project public->Edit Default Access Permissions-
+From the drop down you can set the foll: All repositories:View ->All Users 
+
+If it is set to ALL Users for public projects then without logging into the site, one can view the sourcecode","ramya deepika","04/08/2009 5:52 AM","09/16/2009 3:42 PM","","Draft","","4","Ted Kuster","","No","NA","","No","","Using commandline , the anonymous user can use the following to checkout the SVN
+svn checkout https://<domain site name>/svn/repos/<projectname> ","","","","CTF/CSFE/SFEE","CSFE 5.2,CSFE 5.1,CSFE 5.0","","","NA","","","","5.0","","Project manager","projectadmin","","","No","","","","https://forge.collab.net/sf/go/artf40928/"
+"artf41237","How do I check out the Subversion code?","Use the Subversion client: $ svn co http://svn.collab.net/repos/svn/trunk subversion","Tiffany Sonny(disabled)","04/21/2009 9:01 AM","09/16/2009 3:42 PM","","Technical review","User & Workspace Mgmt","4","Ted Kuster","","No","tbd","","No","","That will check out a copy of the Subversion source tree into a directory named subversion on your local machine. ","","","","CN SVN","CollabNet Subversion","","","tbd","","","","","","Project member","projectmember","","","No","","","","https://forge.collab.net/sf/go/artf41237/"
+"artf48621","Why am I told I do not have permission to view a project?","I have a ""Developer"" role  (with view/commit access) in a project but when I access the project in a browser, I am told I don't have permission to view the project page even though I can see the project in their list of projects.   Why is this?
+
+In this example, the only permission that was granted to the Developer role in the project was view/commit to the source code repository.  When trying to access the project through the Web interface, a user will be directed to the project's homepage, which is known as a Project Page in Teamforge.  The Developer role was not configured with view permissions to Project Pages in this project. 
+
+The solution is to configure Role permissions and add permissions to View or Edit Project Pages as necessary for a Developer role.","Martin Fieldhouse","09/30/2009 9:56 AM","10/05/2009 3:48 PM","","Technical review","User & Workspace Mgmt","4","Martin Fieldhouse","Access control","No","","","No","","","","","","CTF/CSFE/SFEE","CTF 6.0,CSFE 5.2,CSFE 5.1,CSFE 5.0","","","","","","","","","Project member,Project manager","projectmember","projectadmin","","No","","","","https://forge.collab.net/sf/go/artf48621/"
+"artf44658","Can different artifacts share the same component and subcomponent reference data?","When setting up tasks, defect reports and requirement artifacts, questions sometimes arise in regard to  component/subcomponent reference data reuse between trackers","Martin Fieldhouse","07/27/2009 5:42 PM","10/05/2009 2:57 AM","","Technical review","User & Workspace Mgmt","4","Martin Fieldhouse","Tracker","No","","","No","Review","The ""Found in Release"" and ""Fixed in Release"" fields automatically populate with data based on the releases you have set up in the File Release manager.
+
+At this time all other fields are lists that must be set up on per Tracker basis through the Tracker Admin interface.","","","","CTF/CSFE/SFEE","CSFE 5.2,CSFE 5.1,CSFE 5.0","","","","","","","5.0","","Project manager,System administrator","projectadmin","","","No","","","","https://forge.collab.net/sf/go/artf44658/"
+"artf41837","How can I set James logs to DEBUG mode?","There are times were we require james logs in DEBUG mode for triage & we need to switch it back to INFO mode, as DEBUG mode occupies more space.","ramya deepika","05/20/2009 10:37 PM","10/05/2009 2:57 AM","","Technical review","Software Configuration Mgmt","4","Ted Kuster","Logging","No","james-config.xml","","No","Review","To set james logs in debug mode.
+1. Back up your runtime/james/apps/james/SAR-INF/environment.xml.
+2. Alter all log level ""INFO"" to ""DEBUG"" in runtime/james/apps/james/SAR-INF/environment.xml. They are inside <category tag.
+3. restart the phoneix.sh and repeat the mailing scenario.
+4. take the latest set of log files inside log/james/ dir by command ""ls -lrt log/james/*"" and get all the files (spoolmanager-*.log,james-*.log,
+smtpserver-*.log,default-*.log,mailet-*.log,dnsserver-*.log) based on the date and latest time stamp. Normally the last set of files displayed from
+command ""ls -lrt log/james/*"" will gives us the recent log.
+5. Make sure the timing you tried mailing reflect the log files modification date and time.
+6. Restore the backed up file runtime/james/apps/james/SAR-INF/environment.xml in step1. Restoring will avoid logging debug information further. ","","","","CTF/CSFE/SFEE","CSFE 5.2,CSFE 5.1,CSFE 5.0","","","NA","","","","5.0","","System administrator","sysadmin","","","No","","","","https://forge.collab.net/sf/go/artf41837/"

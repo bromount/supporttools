@@ -1,0 +1,265 @@
+#! /usr/bin/perl
+# download_release .82 by Orlando L. Castro
+    use HTML::Entities;
+my ( $url_code, $obj_id_list ) = ( @ARGV );
+my $version      = '.82';
+my @urls         = qw( f forge.collab.net o ctf.open.collab.net );
+my @obj_ids      = ( split ( /,/, $obj_id_list ) );
+my %urls         = @urls;
+my $site_url     = "https://" . $urls { $url_code };
+my $login_url    = "$site_url/sf/sfmain/do/login";
+my $logout_url   = "$site_url/sf/sfmain/do/logout";
+my $curl         = '/usr/bin/curl';
+my $referer      = " --header \"Referer: $site_url/sf/sfmain/do/home\"";
+my $user_agent   = "\"Mozilla/4.0\"";
+my $curl_options = "-ikLs --connect-timeout 100 ";
+my $cdl_options  = "-kL -# --connect-timeout 100 -C - ";
+my $cookie_header;
+my $download_url;
+my @good_obj_ids;
+my @bad_obj_ids;
+my @dupe_obj_ids;
+my @failed_obj_ids;
+
+$url_code =~ /^h$/ ? &print_usage : &check_for_errors;
+&initiate_ui_session;
+foreach my $obj_id ( @obj_ids ) {
+    &obj_path ( $obj_id );
+    &download_release ( $obj_id );
+}
+&clean_up;
+
+
+
+sub check_for_errors
+{
+    my $code;
+    my $dep_missing  = `perldoc -l HTML::Parser`;
+    my $obj_id_regex = '^[^fr]|(frs|rel)\d+(?!,)(frs|rel)\d+|^f(?!rs\d{3,})|^r(?!el\d{3,})|(frs|rel)\d+([.-\/#!$%\^&\*;:{}=\-_`~()\[\]]+|[a-z]+)';
+    my @obj_id_check = grep { $_ =~ /$obj_id_regex/ } @obj_ids;
+    my $self_help    = "\n" . 'Type "download_release h" for help' . "\n";
+    my $error_code_1 = "\n" . '### ERROR!!! First arg must =~ /^[foh]$/ ###' . "\n" . $self_help; 
+    my $error_code_2 = "\n" . '### ERROR!!! Number of args must equal 2. Remove extra spaces ###' . "\n" . $self_help;
+    my $error_code_3 = "\n### ERROR!!! Invalid object id(s) detected: ###\n" . join ( "\n", @obj_id_check ) . "\n" . $self_help;
+    my $error_code_4 = "\n" . '### ERROR!!! perl-HTML-Parser needs to be installed in order to run this tool (i.e., yum install perl-HTML-Parser). ###' . "\n"; 
+    my %error_codes  = (
+                        "1" => $error_code_1,
+                        "2" => $error_code_2,
+                        "3" => $error_code_3,
+                        "4" => $error_code_4,
+                       );
+    $code = '1' if $url_code !~ /^[foh]$/;
+    $code = '2' if $#ARGV    != 1;
+    $code = '3' if scalar @obj_id_check > 0;
+    $code = '4' if $dep_missing !~ /HTML\/Parser.pm/;
+    my  $error_mesg = $error_codes { $code } if $code;
+    die $error_mesg if $error_mesg;
+    return;
+}
+
+
+
+sub initiate_ui_session
+{
+    print "\n\nInitiating UI session\n";
+    print "Username: \n";
+    chomp ( my $user_name  = <STDIN> );
+    system('stty','-echo');
+    print "Password: \n";
+    chomp ( my $password   = <STDIN> );
+    system('stty','echo');
+    my @cookies;
+    my @ctf_username;
+    my $login_post_options = "--data \"sfsubmit=submit&username=$user_name&password=$password\"";
+    my $portal_session     = "$curl $login_post_options $curl_options $referer -A $user_agent $login_url";
+
+    open $portal_session,    "$portal_session 2>&1|" or die "Cannot open $portal_session: $!\n";
+    while ( <$portal_session> ) {
+        chomp;
+        /CtfUserName:|Set-Cookie:/ ? s/\r//g : next;
+        /Set-Cookie:/ ? push @cookies, $_ : push @ctf_username, $_;
+        scalar @ctf_username > 1 ? last : next;
+    }
+    my $user_count   = scalar @ctf_username;
+    my $cookie_count = scalar @cookies;
+    scalar @ctf_username > 1 && scalar @cookies > 2 ? print "### LOGIN SUCCESSFUL!!! ###\n\n" : die "Login attempt failed. Try again\nUsers:$user_count, Cookies:$cookie_count\n";
+    s/Set-Cookie:\s+// for @cookies; 
+    $cookie_header = '--header "Cookie: ' . join ( "; ", @cookies ) . '"';
+    close ( $portal_session );
+    return;
+}
+
+
+
+sub obj_path
+{
+    my ( $obj_id )   = @_;
+    my @obj_uri;
+    my @frs_uri;
+    my @nav_ref;
+    my @hack_path; # 7.x hack
+    my $obj_path;
+    my $obj_url       = "$site_url/sf/sfmain/do/go/$obj_id";
+    my $referer       = " --header \"Referer: $obj_url\"";
+    my $frs_regex1    = "downloadFile[^>]+$obj_id\\?[^>]+>[^<]";
+    my $frs_regex2    = 'downloadFile[^>]+frs\d{3,}\?[^>]+>[^<]';
+    my $rel_regex     = 'downloadRelease[^>]+>[^<]';
+    my $obj_regex     = $obj_id =~ /^frs/ ? $frs_regex1 : $rel_regex;
+    my $nav_regex1    = "PageNavTable";
+    my $nav_regex2    = 'id=\"pageNav_page_[2-9]\"[^>]+>';
+    my $hack_regex    = '_submitterURL'; # 7.x hack
+    my $get_obj_path  = "$curl $curl_options $referer -A $user_agent $cookie_header $obj_url";
+
+    open $get_obj_path, "$get_obj_path 2>&1|" or die "Cannot open $get_obj_path: $!\n";
+    while  ( <$get_obj_path> ) {
+        chomp;
+        push @frs_uri, $_  if $obj_id =~ /^rel/ && $_ =~ /$frs_regex2/;
+        next if $_ !~ /$obj_regex|$nav_regex2|$hack_regex/; # 7.x hack
+        if ( $_ =~ /$nav_regex1|$hack_regex/ ) {  # 7.x hack
+            /$hack_regex/ ? push @hack_path, $_ : decode_entities ( @nav_ref = ( $_ =~ /$nav_regex2/g ) ); # 7.x hack
+            s/.*?href="([^"]+)".*/$1/ for @nav_ref;
+            s#.*localhost:8080([^"]+projects\.\w+/).*#$1# for @hack_path; # 7.x hack
+            s#(^frs\.\w+.*)#$hack_path[0]$1# for @nav_ref; # 7.x hack
+            next
+        } else { push @obj_uri, $_ }
+    }
+    if ( $obj_id =~ /^rel/ && scalar @obj_uri < 1 && scalar @frs_uri > 0 ) {
+        push @obj_uri, $frs_uri[0];
+        if ( scalar @frs_uri > 1 ) {
+            shift @frs_uri;
+            s/.*?=[^=]+(frs\d+)[^>]+>([^<]+)<.*/$1 - $2\n\n/ for @frs_uri;
+            print "All other FRS Objects for this release (download with script if needed):\n";
+            print join ( "\n", @frs_uri );
+        }
+    }
+    close ( $get_obj_path );
+
+    while ( scalar @obj_uri < 1 && scalar @nav_ref > 0 ) {
+       my $page_path        = shift @nav_ref; 
+       my $next_page_uri    = $site_url . $page_path;
+       my $get_next_page    = "$curl $curl_options $referer -A $user_agent $cookie_header $next_page_uri";
+       open $get_next_page,   "$get_next_page 2>&1|" or die "Cannot open $get_next_page: $!\n";
+       while ( <$get_next_page> ) {
+           next if $_ !~ /$obj_regex/;
+           chomp;
+           push @obj_uri, $_;
+        }
+        close ( $get_next_page );
+    }
+    s/.*?href="([^"]+)".*/$1/ for @obj_uri;
+    s#(^frs\.\w+.*)#$hack_path[0]$1# for @obj_uri; # 7.x hack
+    $obj_path     = $obj_uri[0];
+    $download_url = $site_url . $obj_path;
+
+    if ( scalar @obj_uri < 1 ) {
+        print "####### RELEASE NOT FOUND: $obj_id SKIPPING #######\n";
+        push @bad_obj_ids, $obj_id;
+        next;
+    } else { push @good_obj_ids, $obj_id }
+    return;
+}
+
+
+
+sub download_release
+{
+    my ( $obj_id )        = @_;
+    my $download_file;
+    my $file_size;
+    my $obj_url           = "$site_url/sf/sfmain/do/go/$obj_id";
+    my $cdl_referer       = " --header \"Referer:" . $obj_url . "\"";
+    my $get_obj_filename  = "$curl $curl_options -A $user_agent $referer $cookie_header $download_url";
+
+    open $get_obj_filename, "$get_obj_filename 2>&1|", or die "Cannot open $get_obj_filename: $!\n";
+    while ( <$get_obj_filename> ) {
+        chomp;
+        last if $_ !~ /^\w+/; 
+        /^Content-Disposition|Content-Length/ ? s/\r//g : next;
+        if ( /^Content-Disposition/ ) {
+            $download_file     =  $_;
+            $download_file     =~ s/.*?"([^"]+)".*/$1/;
+            $download_file     =~ s/([\s\/])/-/g;
+            $good_obj_ids[-1] .=  ' - ' . $download_file;
+        } else { 
+            $file_size =  $_;
+            $file_size =~ s/.*? \b([\d]+)\b.*/$1/;
+        }
+    }
+    my $download_command = "$curl $cdl_options $cookie_header $cdl_referer -o \'$download_file\' $download_url";
+    if ( -e $download_file && ( ! $file_size || -s $download_file == $file_size ) ) {
+        print "**** DOWNLOAD FILE EXISTS: $obj_id - $download_file SKIPPING ****\n";
+        @good_obj_ids = grep { $_ !~ /$obj_id/ } @good_obj_ids;
+        my $dupe_obj  = $obj_id . ' - ' . $download_file;
+        push @dupe_obj_ids, $dupe_obj;
+    } else { 
+        print "\n@@@@ STARTING DOWNLOAD FOR $obj_id - $download_file... @@@@\n";
+        system ( "$download_command" );
+        print "\n\n";
+        if ( $file_size && -s $download_file != $file_size ) {
+            @good_obj_ids   = grep { $_ !~ /$obj_id/ } @good_obj_ids;
+            my $failed_obj  = $obj_id . ' - ' . $download_file;
+            push @failed_obj_ids, $failed_obj;
+        }    
+    }
+    close ( $get_obj_filename );
+    return;
+}
+                                                                                                                                
+
+
+sub clean_up
+{
+    my $logout_request = "$curl $curl_options -A $user_agent $referer $cookie_header $logout_url";
+    system ( "$logout_request 2>&1 > /dev/null" );
+    print "Successful Downloads:\n",          join ( "\n", @good_obj_ids ), "\n\n" if scalar @good_obj_ids > 0;
+    print "\nFailed Downloads:\n",            join ( "\n", @failed_obj_ids ), "\n\n" if scalar @failed_obj_ids > 0;
+    print "\nFile(s) NOT found:\n",           join ( "\n", @bad_obj_ids ), "\n\n" if scalar @bad_obj_ids > 0;
+    print "\nDuplicates (NOT Downloaded):\n", join ( "\n", @dupe_obj_ids ), "\n\n" if scalar @dupe_obj_ids > 0;
+    return;
+}
+
+
+
+sub print_usage
+{
+    print <<EOF;
+
+ download_release $version
+
+ Using curl, this screen scraper allows you to download single or multiple (frs and rel) objects
+ from forge or cocn directly to the server running this script. All you need is a valid login and proper
+ permissions to access the requested release.
+
+ Download a frs or rel object directly to a server instead of downloading to your workstation then uploading
+ to a server saving a step. Download multiple objects by entering a comma delimited list (NO SPACES) of
+ rel_ids/frs_ids saving multiple steps. Ops personnel may find this script useful during customer upgrades.
+
+ Usage: ./download_release <f|o|h> <rel1234|frs1234>[,rel12341,frs12341,rel12343,rel12344,frs12342,frs12343...]
+ (f=forge, o=cocn, h=help)
+
+ Examples using valid obj_ids:
+ Download a single rel object from cocn: ./download_release o rel3377
+ Download multiple rel objects from forge: ./download_release f rel4241,rel3888,rel3340
+ Download multiple frs and rel objects from cocn: ./download_release o frs8029,rel3377,frs8030,rel2574,frs5770,rel3180
+ A report will appear at the end regarding successful, failed, non-existent and duplicates (which are NOT downloaded).
+
+ Final notes:
+
+ There are cases where the downoadRelease button is not available while multiple frs objects are displayed on the page.
+ The script will download the first frsxxxx object and provide a list of the rest (if any).
+
+ This script will logout when finished. As a result, your browser session for forge/cocn 
+ will most likely be logged out as well.
+
+ Monitor the latest updates:
+ https://forge.collab.net/svn/repos/supporttools/download_release_script
+ https://forge.collab.net/svn/repos/orlandocastro/bin/download_release.scripts
+ 
+ Special Thanks:
+ Thank you Joey S. for being such a pain and pushing for features and going the extra mile with testing!!!
+
+ Let me know if you find any bugs. Enjoy!!!
+
+EOF
+    exit;
+}

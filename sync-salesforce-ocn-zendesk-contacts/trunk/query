@@ -1,0 +1,50 @@
+Filter Logic: (1 AND (2 or 3)) AND 4
+
+ 
+1. Support Contact? equals "True"
+
+Contact = Primary_Support_Contact__c
+
+ 
+2. Support Product equals "ScrumWorks Basic, ScrumWorks Pro - Onsite, ScrumWorks Pro - Hosted"
+
+Account = Support_Product__c
+
+
+ 
+3. Secondary product equals "ScrumWorks Basic, ScrumWorks Pro - Onsite, ScrumWorks Pro - Hosted"
+
+Account = Secondary_product__c
+
+
+4. Type equals "Customer, Customer - Hosted, Customer - Internal, Customer - Training"
+
+
+Account = Type 
+
+
+
+SELECT Id FROM Account WHERE Domain_Name__c LIKE " + "'%" + real_hostname + "%'"
+
+SELECT Name From Account WHERE Support_Product__c LIKE "ScrumWorks" AND Type LIKE "Customer"
+
+
+
+
+se content: [{u'errorCode': u'INVALID_FIELD', u'message': u"\n(Account.Type LIKE 'Customer%') AND Contact.Primary_Support_Contact__c\n                                    ^\nERROR at Row:1:Column:171\nDidn't understand relationship 'Contact' in field path. If you are attempting to use a custom relationship, be sure to append the '__r' after the custom relationship name. Please reference your WSDL or the describe call for the appropriate names."}]
+
+
+
+
+
+
++LIKE+%27ScrumWorks%25%27+OR+Secondary_product__c+LIKE+%27ScrumWorks%25%27%29+AND+Type+LIKE+%27Customer%25%27%29+. Response content: [{u'errorCode': u'MALFORMED_QUERY', u'message': u"\n'ScrumWorks%') AND Type LIKE 'Customer%') \n                                       ^\nERROR at Row:1:Column:139\nunexpected token: )"}]
+
+
+query = "SELECT Name From Account WHERE (Support_Product__c LIKE 'ScrumWorks%' OR Secondary_product__c LIKE 'ScrumWorks%') AND (Type LIKE 'Customer%') "
+
+select a.name from contact c, account a where (a.Support_Product__c LIKE 'ScrumWorks%' Or a.Secondary_product__c LIKE 'ScrumWorks%') AND (a.Type LIKE 'Customer%') AND a.Name=c.Account AND c.Primary_Support_Contact__c='True'
+
+
+
+select 	Account from Contact, 	

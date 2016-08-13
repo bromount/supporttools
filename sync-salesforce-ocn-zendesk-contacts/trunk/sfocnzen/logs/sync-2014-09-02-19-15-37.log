@@ -1,0 +1,3 @@
+INFO:urllib3.connectionpool:Starting new HTTPS connection (1): test.salesforce.com
+INFO:urllib3.connectionpool:Starting new HTTPS connection (1): test.salesforce.com
+INFO:root:Error connecting to salesforce. Check Username, password and security token in ctf-reports-config.txt

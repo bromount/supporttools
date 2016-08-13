@@ -1,0 +1,28 @@
+INFO:root:
+**********
+INFO:root:hostname = cu219.cloud.sp.collab.net
+INFO:root:IP address = 10.1.68.239
+INFO:root:Tue Aug 27 05:55:44 PDT 2013
+
+INFO:root:Operating System =Linux-2.6.32-131.0.15.el6.x86_64-x86_64-with-redhat-6.1-Santiago
+INFO:root:running 'df ' command
+INFO:root:running ls -lh /svnroot | wc -lcommand
+INFO:root:running 'u -h --max-depth=1 svnroot' command
+INFO:root:running ls -lh /gitroot | wc -lcommand
+INFO:root:running 'du -sh  gitroot' command
+INFO:root:running ls -lh /cvsroot | wc -lcommand
+INFO:root:running 'du -sh  cvsroot' command
+INFO:root:running 'cat /opt/collabnet/teamforge/dist/version/core-version.txt | head -1 |  awk -F '=' '{print $2}' ' command
+INFO:root:running echo 'select count(*) from artifact;' |/opt/collabnet/teamforge/runtime/scripts/psql-wrapper  | sed -n 3pcommand
+INFO:root:running echo 'select count(*) from sfuser;' |/opt/collabnet/teamforge/runtime/scripts/psql-wrapper  | sed -n 3pcommand
+INFO:root:running echo 'select count(*) from project;' |/opt/collabnet/teamforge/runtime/scripts/psql-wrapper  | sed -n 3pcommand
+INFO:root:running echo 'select count(*) from document;' |/opt/collabnet/teamforge/runtime/scripts/psql-wrapper  | sed -n 3pcommand
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): test.salesforce.com
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): cs12.salesforce.com
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): cs12.salesforce.com
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): cs12.salesforce.com
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): cs12.salesforce.com
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): cs12.salesforce.com
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): cs12.salesforce.com
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): cs12.salesforce.com
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): cs12.salesforce.com

@@ -1,0 +1,1165 @@
+INFO:root:backup-start
+INFO:root:backup-start
+INFO:root:backup-start
+INFO:root:backup-start
+INFO:root:backup-start
+INFO:root:backup-start
+INFO:root:backup-start
+INFO:root:backup-start
+INFO:root:backup-start
+INFO:root:backup-start
+INFO:root:backup-start
+INFO:root:backup-start
+INFO:root:backup-start
+INFO:root:backup-start
+INFO:root:backup-start
+INFO:root:backup-start
+DEBUG:root:backup-start
+DEBUG:root:backup-start
+DEBUG:root:backup-start
+DEBUG:root:backup-start
+DEBUG:root:backup-start
+DEBUG:root:backup-start
+DEBUG:root:backup-start
+DEBUG:root:backup-start
+DEBUG:root:backup-start
+DEBUG:root:backup-start
+DEBUG:root:backup-start
+DEBUG:root:backup-start
+DEBUG:root:backup-start
+DEBUG:root:backup-start
+DEBUG:root:backup-start
+DEBUG:root:backup-start
+DEBUG:root:backup-start
+DEBUG:root:backup-start
+DEBUG:root:backup-start
+DEBUG:root:backup-start
+DEBUG:root:backup-start
+DEBUG:root:backup-start
+DEBUG:root:backup-start
+DEBUG:root:backup-start
+DEBUG:root:backup-start
+DEBUG:root:backup-start
+DEBUG:root:backup-start
+DEBUG:root:backup-start
+DEBUG:root:backup-start
+DEBUG:root:backup-start
+DEBUG:root:backup-start
+DEBUG:root:backup-start
+DEBUG:root:2013-11-21-17-09
+DEBUG:root:backup-start
+DEBUG:root:2013-11-21-17-09
+DEBUG:root:backup-start
+DEBUG:root:2013-11-21-17-09
+DEBUG:root:backup-start
+DEBUG:root:backing up 28766153
+DEBUG:root:backing up 29122216
+DEBUG:root:backing up 28660303
+DEBUG:root:backing up 28660053
+DEBUG:root:backing up 28740066
+DEBUG:root:backing up 27827857
+DEBUG:root:backing up 27719268
+DEBUG:root:backing up 25930287
+DEBUG:root:backing up 25680848
+DEBUG:root:backing up 25506137
+DEBUG:root:backing up 25159998
+DEBUG:root:backing up 25061406
+DEBUG:root:backing up 25106522
+DEBUG:root:backing up 24976042
+DEBUG:root:backing up 24977618
+DEBUG:root:backing up 24974853
+DEBUG:root:backing up 24961411
+DEBUG:root:backing up 24977598
+DEBUG:root:backing up 24971558
+DEBUG:root:backing up 24898607
+DEBUG:root:backing up 24904993
+DEBUG:root:backing up 24737067
+DEBUG:root:backing up 24754478
+DEBUG:root:backing up 24739271
+DEBUG:root:backing up 24752123
+DEBUG:root:backing up 24739221
+DEBUG:root:backing up 24736957
+DEBUG:root:backing up 24732501
+DEBUG:root:backing up 24437606
+DEBUG:root:completed
+DEBUG:root:2013-11-21-17-13
+DEBUG:root:backup-start
+DEBUG:root:backing up 28766153
+DEBUG:root:backing up 29122216
+DEBUG:root:backing up 28660303
+DEBUG:root:backing up 28660053
+DEBUG:root:backing up 28740066
+DEBUG:root:backing up 27827857
+DEBUG:root:backing up 27719268
+DEBUG:root:backing up 25930287
+DEBUG:root:backing up 25680848
+DEBUG:root:backing up 25506137
+DEBUG:root:backing up 25159998
+DEBUG:root:backing up 25061406
+DEBUG:root:backing up 25106522
+DEBUG:root:backing up 24976042
+DEBUG:root:backing up 24977618
+DEBUG:root:backing up 24974853
+DEBUG:root:backing up 24961411
+DEBUG:root:backing up 24977598
+DEBUG:root:backing up 24971558
+DEBUG:root:backing up 24898607
+DEBUG:root:backing up 24904993
+DEBUG:root:backing up 24737067
+DEBUG:root:backing up 24754478
+DEBUG:root:backing up 24739271
+DEBUG:root:backing up 24752123
+DEBUG:root:backing up 24739221
+DEBUG:root:backing up 24736957
+DEBUG:root:backing up 24732501
+DEBUG:root:backing up 24437606
+DEBUG:root:Cleaning Files
+DEBUG:root:completed
+DEBUG:root:2013-11-21-17-20
+DEBUG:root:backup-start
+DEBUG:root:Downloading 28766153
+DEBUG:root:Writing into Messages_are_being_sent_correctly_from_my_SVN_repository,_but_they_are_"greyed"_out_in_my_Orchestrate_feed..html
+DEBUG:root:Downloading 29122216
+DEBUG:root:Writing into After_installing_Orchestrate_there_is_no_Tool_Bar-TeamForge_Header_when_I_open_the_tab_for_it_in_TeamForge..html
+DEBUG:root:Downloading 28660303
+DEBUG:root:Writing into How_do_I_Capture_the_installer_output_in_a_file?.html
+DEBUG:root:Downloading 28660053
+DEBUG:root:Writing into My_installer_is_failing_with_a_Connection_Refused_error._What_might_be_Wrong?.html
+DEBUG:root:Downloading 28740066
+DEBUG:root:Writing into Build_notifier_error_message.html
+DEBUG:root:Downloading 27827857
+DEBUG:root:Writing into Build_TeamForge_Orchestrate_Adapter.html
+DEBUG:root:Downloading 27719268
+DEBUG:root:Writing into Use_TeamForge_Orchestrate.html
+DEBUG:root:Downloading 25930287
+DEBUG:root:Writing into Test_Results_for_the_build_data_object.html
+DEBUG:root:Downloading 25680848
+DEBUG:root:Writing into Need_Orchestrate_Adapter_Source_Code.html
+DEBUG:root:Downloading 25506137
+DEBUG:root:Writing into Can_i_use_Orchestrate_without_TeamForge_?.html
+DEBUG:root:Downloading 25159998
+DEBUG:root:Writing into How_do_I_connect_to_multiple_ReviewBoard_Instances?.html
+DEBUG:root:Downloading 25061406
+DEBUG:root:Writing into I_wanted_to_know_if_it_is_possible_to_set_check-in_alerts_for_the_code_at_the_individual_directory_levels_rather_than_the_entire_code_base?.html
+DEBUG:root:Downloading 25106522
+DEBUG:root:Writing into How_do_I_extend_the_"types"_available_in_my_Orchestrate_instance?.html
+DEBUG:root:Downloading 24976042
+DEBUG:root:Writing into Build_a_TeamForge_Orchestrate_Adapter.html
+DEBUG:root:Downloading 24977618
+DEBUG:root:Writing into Activity_Stream_API.html
+DEBUG:root:Downloading 24974853
+DEBUG:root:Writing into [Message_Queue_API]_-_Builds_API.html
+DEBUG:root:Downloading 24961411
+DEBUG:root:Writing into [Message_Queue_API]_-_Commits_API.html
+DEBUG:root:Downloading 24977598
+DEBUG:root:Writing into [Message_Queue_API]_-_Review_Requests_API.html
+DEBUG:root:Downloading 24971558
+DEBUG:root:Writing into Download_Adapters.html
+DEBUG:root:Downloading 24898607
+DEBUG:root:Writing into SSL_certificate_for_Orchestrate.html
+DEBUG:root:Downloading 24904993
+DEBUG:root:Writing into Are_3_separate_servers_mandatory_for_installing_Orchestrate?.html
+DEBUG:root:Downloading 24737067
+DEBUG:root:Writing into Review_Board_Adapter.html
+DEBUG:root:Downloading 24754478
+DEBUG:root:Writing into Atlassian_Crucible_Adapter.html
+DEBUG:root:Downloading 24739271
+DEBUG:root:Writing into Jetbrains_TeamCity_Adapter.html
+DEBUG:root:Downloading 24752123
+DEBUG:root:Writing into Jenkins_Adapter.html
+DEBUG:root:Downloading 24739221
+DEBUG:root:Writing into Subversion_Adapter.html
+DEBUG:root:Downloading 24736957
+DEBUG:root:Writing into Git_Adapter.html
+DEBUG:root:Downloading 24732501
+DEBUG:root:Writing into TeamForge_Download_Adapter.html
+DEBUG:root:Downloading 24437606
+DEBUG:root:Writing into For_Your_Eyes_Only.html
+DEBUG:root:Cleaning Files
+DEBUG:root:Compressing files into 2013-11-21-17-20.tar.gz
+DEBUG:root:Total files downloaded : 29
+DEBUG:root:2013-11-21-17-21
+DEBUG:root:backup-start
+DEBUG:root:Downloading 28766153
+DEBUG:root:Writing into Messages_are_being_sent_correctly_from_my_SVN_repository,_but_they_are_"greyed"_out_in_my_Orchestrate_feed..html
+DEBUG:root:Downloading 29122216
+DEBUG:root:Writing into After_installing_Orchestrate_there_is_no_Tool_Bar-TeamForge_Header_when_I_open_the_tab_for_it_in_TeamForge..html
+DEBUG:root:Downloading 28660303
+DEBUG:root:Writing into How_do_I_Capture_the_installer_output_in_a_file?.html
+DEBUG:root:Downloading 28660053
+DEBUG:root:Writing into My_installer_is_failing_with_a_Connection_Refused_error._What_might_be_Wrong?.html
+DEBUG:root:Downloading 28740066
+DEBUG:root:Writing into Build_notifier_error_message.html
+DEBUG:root:Downloading 27827857
+DEBUG:root:Writing into Build_TeamForge_Orchestrate_Adapter.html
+DEBUG:root:Downloading 27719268
+DEBUG:root:Writing into Use_TeamForge_Orchestrate.html
+DEBUG:root:Downloading 25930287
+DEBUG:root:Writing into Test_Results_for_the_build_data_object.html
+DEBUG:root:Downloading 25680848
+DEBUG:root:Writing into Need_Orchestrate_Adapter_Source_Code.html
+DEBUG:root:Downloading 25506137
+DEBUG:root:Writing into Can_i_use_Orchestrate_without_TeamForge_?.html
+DEBUG:root:Downloading 25159998
+DEBUG:root:Writing into How_do_I_connect_to_multiple_ReviewBoard_Instances?.html
+DEBUG:root:Downloading 25061406
+DEBUG:root:Writing into I_wanted_to_know_if_it_is_possible_to_set_check-in_alerts_for_the_code_at_the_individual_directory_levels_rather_than_the_entire_code_base?.html
+DEBUG:root:Downloading 25106522
+DEBUG:root:Writing into How_do_I_extend_the_"types"_available_in_my_Orchestrate_instance?.html
+DEBUG:root:Downloading 24976042
+DEBUG:root:Writing into Build_a_TeamForge_Orchestrate_Adapter.html
+DEBUG:root:Downloading 24977618
+DEBUG:root:Writing into Activity_Stream_API.html
+DEBUG:root:Downloading 24974853
+DEBUG:root:Writing into [Message_Queue_API]_-_Builds_API.html
+DEBUG:root:Downloading 24961411
+DEBUG:root:Writing into [Message_Queue_API]_-_Commits_API.html
+DEBUG:root:Downloading 24977598
+DEBUG:root:Writing into [Message_Queue_API]_-_Review_Requests_API.html
+DEBUG:root:Downloading 24971558
+DEBUG:root:Writing into Download_Adapters.html
+DEBUG:root:Downloading 24898607
+DEBUG:root:Writing into SSL_certificate_for_Orchestrate.html
+DEBUG:root:Downloading 24904993
+DEBUG:root:Writing into Are_3_separate_servers_mandatory_for_installing_Orchestrate?.html
+DEBUG:root:Downloading 24737067
+DEBUG:root:Writing into Review_Board_Adapter.html
+DEBUG:root:Downloading 24754478
+DEBUG:root:Writing into Atlassian_Crucible_Adapter.html
+DEBUG:root:Downloading 24739271
+DEBUG:root:Writing into Jetbrains_TeamCity_Adapter.html
+DEBUG:root:Downloading 24752123
+DEBUG:root:Writing into Jenkins_Adapter.html
+DEBUG:root:Downloading 24739221
+DEBUG:root:Writing into Subversion_Adapter.html
+DEBUG:root:Downloading 24736957
+DEBUG:root:Writing into Git_Adapter.html
+DEBUG:root:Downloading 24732501
+DEBUG:root:Writing into TeamForge_Download_Adapter.html
+DEBUG:root:Downloading 24437606
+DEBUG:root:Writing into For_Your_Eyes_Only.html
+DEBUG:root:Cleaning Files
+DEBUG:root:Compressing files into 2013-11-21-17-21.tar.gz
+DEBUG:root:Total files downloaded : 29
+DEBUG:root:Backup filename =  2013-11-21-17-21.tar.gz
+DEBUG:root:Backup completed
+DEBUG:root:2013-11-21-17-25
+DEBUG:root:backup-start
+DEBUG:root:Downloading 28766153
+DEBUG:root:Writing into Messages_are_being_sent_correctly_from_my_SVN_repository,_but_they_are_"greyed"_out_in_my_Orchestrate_feed..html
+DEBUG:root:Downloading 29122216
+DEBUG:root:Writing into After_installing_Orchestrate_there_is_no_Tool_Bar-TeamForge_Header_when_I_open_the_tab_for_it_in_TeamForge..html
+DEBUG:root:Downloading 28660303
+DEBUG:root:Writing into How_do_I_Capture_the_installer_output_in_a_file?.html
+DEBUG:root:Downloading 28660053
+DEBUG:root:Writing into My_installer_is_failing_with_a_Connection_Refused_error._What_might_be_Wrong?.html
+DEBUG:root:Downloading 28740066
+DEBUG:root:Writing into Build_notifier_error_message.html
+DEBUG:root:Downloading 27827857
+DEBUG:root:Writing into Build_TeamForge_Orchestrate_Adapter.html
+DEBUG:root:Downloading 27719268
+DEBUG:root:Writing into Use_TeamForge_Orchestrate.html
+DEBUG:root:Downloading 25930287
+DEBUG:root:Writing into Test_Results_for_the_build_data_object.html
+DEBUG:root:Downloading 25680848
+DEBUG:root:Writing into Need_Orchestrate_Adapter_Source_Code.html
+DEBUG:root:Downloading 25506137
+DEBUG:root:Writing into Can_i_use_Orchestrate_without_TeamForge_?.html
+DEBUG:root:Downloading 25159998
+DEBUG:root:Writing into How_do_I_connect_to_multiple_ReviewBoard_Instances?.html
+DEBUG:root:Downloading 25061406
+DEBUG:root:Writing into I_wanted_to_know_if_it_is_possible_to_set_check-in_alerts_for_the_code_at_the_individual_directory_levels_rather_than_the_entire_code_base?.html
+DEBUG:root:Downloading 25106522
+DEBUG:root:Writing into How_do_I_extend_the_"types"_available_in_my_Orchestrate_instance?.html
+DEBUG:root:Downloading 24976042
+DEBUG:root:Writing into Build_a_TeamForge_Orchestrate_Adapter.html
+DEBUG:root:Downloading 24977618
+DEBUG:root:Writing into Activity_Stream_API.html
+DEBUG:root:Downloading 24974853
+DEBUG:root:Writing into [Message_Queue_API]_-_Builds_API.html
+DEBUG:root:Downloading 24961411
+DEBUG:root:Writing into [Message_Queue_API]_-_Commits_API.html
+DEBUG:root:Downloading 24977598
+DEBUG:root:Writing into [Message_Queue_API]_-_Review_Requests_API.html
+DEBUG:root:Downloading 24971558
+DEBUG:root:Writing into Download_Adapters.html
+DEBUG:root:Downloading 24898607
+DEBUG:root:Writing into SSL_certificate_for_Orchestrate.html
+DEBUG:root:Downloading 24904993
+DEBUG:root:Writing into Are_3_separate_servers_mandatory_for_installing_Orchestrate?.html
+DEBUG:root:Downloading 24737067
+DEBUG:root:Writing into Review_Board_Adapter.html
+DEBUG:root:Downloading 24754478
+DEBUG:root:Writing into Atlassian_Crucible_Adapter.html
+DEBUG:root:Downloading 24739271
+DEBUG:root:Writing into Jetbrains_TeamCity_Adapter.html
+DEBUG:root:Downloading 24752123
+DEBUG:root:Writing into Jenkins_Adapter.html
+DEBUG:root:Downloading 24739221
+DEBUG:root:Writing into Subversion_Adapter.html
+DEBUG:root:Downloading 24736957
+DEBUG:root:Writing into Git_Adapter.html
+DEBUG:root:Downloading 24732501
+DEBUG:root:Writing into TeamForge_Download_Adapter.html
+DEBUG:root:Downloading 24437606
+DEBUG:root:Writing into For_Your_Eyes_Only.html
+DEBUG:root:Cleaning Files
+DEBUG:root:Compressing files into 2013-11-21-17-25.tar.gz
+DEBUG:root:Total files downloaded : 29
+DEBUG:root:Backup filename =  2013-11-21-17-25.tar.gz
+DEBUG:root:Backup completed
+DEBUG:root:2013-11-21-17-36
+DEBUG:root:backup-start
+DEBUG:root:Downloading 28766153
+DEBUG:root:Writing into Messages_are_being_sent_correctly_from_my_SVN_repository,_but_they_are_"greyed"_out_in_my_Orchestrate_feed..html
+DEBUG:root:Downloading 29122216
+DEBUG:root:Writing into After_installing_Orchestrate_there_is_no_Tool_Bar-TeamForge_Header_when_I_open_the_tab_for_it_in_TeamForge..html
+DEBUG:root:Downloading 28660303
+DEBUG:root:Writing into How_do_I_Capture_the_installer_output_in_a_file?.html
+DEBUG:root:Downloading 28660053
+DEBUG:root:Writing into My_installer_is_failing_with_a_Connection_Refused_error._What_might_be_Wrong?.html
+DEBUG:root:Downloading 28740066
+DEBUG:root:Writing into Build_notifier_error_message.html
+DEBUG:root:Downloading 27827857
+DEBUG:root:Writing into Build_TeamForge_Orchestrate_Adapter.html
+DEBUG:root:Downloading 27719268
+DEBUG:root:Writing into Use_TeamForge_Orchestrate.html
+DEBUG:root:Downloading 25930287
+DEBUG:root:Writing into Test_Results_for_the_build_data_object.html
+DEBUG:root:Downloading 25680848
+DEBUG:root:Writing into Need_Orchestrate_Adapter_Source_Code.html
+DEBUG:root:Downloading 25506137
+DEBUG:root:Writing into Can_i_use_Orchestrate_without_TeamForge_?.html
+DEBUG:root:Downloading 25159998
+DEBUG:root:Writing into How_do_I_connect_to_multiple_ReviewBoard_Instances?.html
+DEBUG:root:Downloading 25061406
+DEBUG:root:Writing into I_wanted_to_know_if_it_is_possible_to_set_check-in_alerts_for_the_code_at_the_individual_directory_levels_rather_than_the_entire_code_base?.html
+DEBUG:root:Downloading 25106522
+DEBUG:root:Writing into How_do_I_extend_the_"types"_available_in_my_Orchestrate_instance?.html
+DEBUG:root:Downloading 24976042
+DEBUG:root:Writing into Build_a_TeamForge_Orchestrate_Adapter.html
+DEBUG:root:Downloading 24977618
+DEBUG:root:Writing into Activity_Stream_API.html
+DEBUG:root:Downloading 24974853
+DEBUG:root:Writing into [Message_Queue_API]_-_Builds_API.html
+DEBUG:root:Downloading 24961411
+DEBUG:root:Writing into [Message_Queue_API]_-_Commits_API.html
+DEBUG:root:Downloading 24977598
+DEBUG:root:Writing into [Message_Queue_API]_-_Review_Requests_API.html
+DEBUG:root:Downloading 24971558
+DEBUG:root:Writing into Download_Adapters.html
+DEBUG:root:Downloading 24898607
+DEBUG:root:Writing into SSL_certificate_for_Orchestrate.html
+DEBUG:root:Downloading 24904993
+DEBUG:root:Writing into Are_3_separate_servers_mandatory_for_installing_Orchestrate?.html
+DEBUG:root:Downloading 24737067
+DEBUG:root:Writing into Review_Board_Adapter.html
+DEBUG:root:Downloading 24754478
+DEBUG:root:Writing into Atlassian_Crucible_Adapter.html
+DEBUG:root:Downloading 24739271
+DEBUG:root:Writing into Jetbrains_TeamCity_Adapter.html
+DEBUG:root:Downloading 24752123
+DEBUG:root:Writing into Jenkins_Adapter.html
+DEBUG:root:Downloading 24739221
+DEBUG:root:Writing into Subversion_Adapter.html
+DEBUG:root:Downloading 24736957
+DEBUG:root:Writing into Git_Adapter.html
+DEBUG:root:Downloading 24732501
+DEBUG:root:Writing into TeamForge_Download_Adapter.html
+DEBUG:root:Downloading 24437606
+DEBUG:root:Writing into For_Your_Eyes_Only.html
+DEBUG:root:Cleaning Files
+DEBUG:root:Compressing files into 2013-11-21-17-36.tar.gz
+DEBUG:root:Total files downloaded : 29
+DEBUG:root:Backup filename =  2013-11-21-17-36.tar.gz
+DEBUG:root:Backup completed
+DEBUG:root:2013-11-21-17-38
+DEBUG:root:backup-start
+DEBUG:root:Downloading 28766153
+DEBUG:root:Writing into Messages_are_being_sent_correctly_from_my_SVN_repository,_but_they_are_"greyed"_out_in_my_Orchestrate_feed..html
+DEBUG:root:Downloading 29122216
+DEBUG:root:Writing into After_installing_Orchestrate_there_is_no_Tool_Bar-TeamForge_Header_when_I_open_the_tab_for_it_in_TeamForge..html
+DEBUG:root:Downloading 28660303
+DEBUG:root:Writing into How_do_I_Capture_the_installer_output_in_a_file?.html
+DEBUG:root:Downloading 28660053
+DEBUG:root:Writing into My_installer_is_failing_with_a_Connection_Refused_error._What_might_be_Wrong?.html
+DEBUG:root:Downloading 28740066
+DEBUG:root:Writing into Build_notifier_error_message.html
+DEBUG:root:Downloading 27827857
+DEBUG:root:Writing into Build_TeamForge_Orchestrate_Adapter.html
+DEBUG:root:Downloading 27719268
+DEBUG:root:Writing into Use_TeamForge_Orchestrate.html
+DEBUG:root:Downloading 25930287
+DEBUG:root:Writing into Test_Results_for_the_build_data_object.html
+DEBUG:root:Downloading 25680848
+DEBUG:root:Writing into Need_Orchestrate_Adapter_Source_Code.html
+DEBUG:root:Downloading 25506137
+DEBUG:root:Writing into Can_i_use_Orchestrate_without_TeamForge_?.html
+DEBUG:root:Downloading 25159998
+DEBUG:root:Writing into How_do_I_connect_to_multiple_ReviewBoard_Instances?.html
+DEBUG:root:Downloading 25061406
+DEBUG:root:Writing into I_wanted_to_know_if_it_is_possible_to_set_check-in_alerts_for_the_code_at_the_individual_directory_levels_rather_than_the_entire_code_base?.html
+DEBUG:root:Downloading 25106522
+DEBUG:root:Writing into How_do_I_extend_the_"types"_available_in_my_Orchestrate_instance?.html
+DEBUG:root:Downloading 24976042
+DEBUG:root:Writing into Build_a_TeamForge_Orchestrate_Adapter.html
+DEBUG:root:Downloading 24977618
+DEBUG:root:Writing into Activity_Stream_API.html
+DEBUG:root:Downloading 24974853
+DEBUG:root:Writing into [Message_Queue_API]_-_Builds_API.html
+DEBUG:root:Downloading 24961411
+DEBUG:root:Writing into [Message_Queue_API]_-_Commits_API.html
+DEBUG:root:Downloading 24977598
+DEBUG:root:Writing into [Message_Queue_API]_-_Review_Requests_API.html
+DEBUG:root:Downloading 24971558
+DEBUG:root:Writing into Download_Adapters.html
+DEBUG:root:Downloading 24898607
+DEBUG:root:Writing into SSL_certificate_for_Orchestrate.html
+DEBUG:root:Downloading 24904993
+DEBUG:root:Writing into Are_3_separate_servers_mandatory_for_installing_Orchestrate?.html
+DEBUG:root:Downloading 24737067
+DEBUG:root:Writing into Review_Board_Adapter.html
+DEBUG:root:Downloading 24754478
+DEBUG:root:Writing into Atlassian_Crucible_Adapter.html
+DEBUG:root:Downloading 24739271
+DEBUG:root:Writing into Jetbrains_TeamCity_Adapter.html
+DEBUG:root:Downloading 24752123
+DEBUG:root:Writing into Jenkins_Adapter.html
+DEBUG:root:Downloading 24739221
+DEBUG:root:Writing into Subversion_Adapter.html
+DEBUG:root:Downloading 24736957
+DEBUG:root:Writing into Git_Adapter.html
+DEBUG:root:Downloading 24732501
+DEBUG:root:Writing into TeamForge_Download_Adapter.html
+DEBUG:root:Downloading 24437606
+DEBUG:root:Writing into For_Your_Eyes_Only.html
+DEBUG:root:Cleaning Files
+DEBUG:root:Compressing files into 2013-11-21-17-38.tar.gz
+DEBUG:root:Total files downloaded : 29
+DEBUG:root:Backup filename =  2013-11-21-17-38.tar.gz
+DEBUG:root:Backup completed
+DEBUG:root:2013-11-21-17-39
+DEBUG:root:backup-start
+DEBUG:root:Downloading 28766153
+DEBUG:root:Writing into Messages_are_being_sent_correctly_from_my_SVN_repository,_but_they_are_"greyed"_out_in_my_Orchestrate_feed..html
+DEBUG:root:Downloading 29122216
+DEBUG:root:Writing into After_installing_Orchestrate_there_is_no_Tool_Bar-TeamForge_Header_when_I_open_the_tab_for_it_in_TeamForge..html
+DEBUG:root:Downloading 28660303
+DEBUG:root:Writing into How_do_I_Capture_the_installer_output_in_a_file?.html
+DEBUG:root:Downloading 28660053
+DEBUG:root:Writing into My_installer_is_failing_with_a_Connection_Refused_error._What_might_be_Wrong?.html
+DEBUG:root:Downloading 28740066
+DEBUG:root:Writing into Build_notifier_error_message.html
+DEBUG:root:Downloading 27827857
+DEBUG:root:Writing into Build_TeamForge_Orchestrate_Adapter.html
+DEBUG:root:Downloading 27719268
+DEBUG:root:Writing into Use_TeamForge_Orchestrate.html
+DEBUG:root:Downloading 25930287
+DEBUG:root:Writing into Test_Results_for_the_build_data_object.html
+DEBUG:root:Downloading 25680848
+DEBUG:root:Writing into Need_Orchestrate_Adapter_Source_Code.html
+DEBUG:root:Downloading 25506137
+DEBUG:root:Writing into Can_i_use_Orchestrate_without_TeamForge_?.html
+DEBUG:root:Downloading 25159998
+DEBUG:root:Writing into How_do_I_connect_to_multiple_ReviewBoard_Instances?.html
+DEBUG:root:Downloading 25061406
+DEBUG:root:Writing into I_wanted_to_know_if_it_is_possible_to_set_check-in_alerts_for_the_code_at_the_individual_directory_levels_rather_than_the_entire_code_base?.html
+DEBUG:root:Downloading 25106522
+DEBUG:root:Writing into How_do_I_extend_the_"types"_available_in_my_Orchestrate_instance?.html
+DEBUG:root:Downloading 24976042
+DEBUG:root:Writing into Build_a_TeamForge_Orchestrate_Adapter.html
+DEBUG:root:Downloading 24977618
+DEBUG:root:Writing into Activity_Stream_API.html
+DEBUG:root:Downloading 24974853
+DEBUG:root:Writing into [Message_Queue_API]_-_Builds_API.html
+DEBUG:root:Downloading 24961411
+DEBUG:root:Writing into [Message_Queue_API]_-_Commits_API.html
+DEBUG:root:Downloading 24977598
+DEBUG:root:Writing into [Message_Queue_API]_-_Review_Requests_API.html
+DEBUG:root:Downloading 24971558
+DEBUG:root:Writing into Download_Adapters.html
+DEBUG:root:Downloading 24898607
+DEBUG:root:Writing into SSL_certificate_for_Orchestrate.html
+DEBUG:root:Downloading 24904993
+DEBUG:root:Writing into Are_3_separate_servers_mandatory_for_installing_Orchestrate?.html
+DEBUG:root:Downloading 24737067
+DEBUG:root:Writing into Review_Board_Adapter.html
+DEBUG:root:Downloading 24754478
+DEBUG:root:Writing into Atlassian_Crucible_Adapter.html
+DEBUG:root:Downloading 24739271
+DEBUG:root:Writing into Jetbrains_TeamCity_Adapter.html
+DEBUG:root:Downloading 24752123
+DEBUG:root:Writing into Jenkins_Adapter.html
+DEBUG:root:Downloading 24739221
+DEBUG:root:Writing into Subversion_Adapter.html
+DEBUG:root:Downloading 24736957
+DEBUG:root:Writing into Git_Adapter.html
+DEBUG:root:Downloading 24732501
+DEBUG:root:Writing into TeamForge_Download_Adapter.html
+DEBUG:root:Downloading 24437606
+DEBUG:root:Writing into For_Your_Eyes_Only.html
+DEBUG:root:Cleaning Files
+DEBUG:root:Compressing files into 2013-11-21-17-39.tar.gz
+DEBUG:root:Total files downloaded : 29
+DEBUG:root:Backup filename =  2013-11-21-17-39.tar.gz
+DEBUG:root:Backup completed
+DEBUG:root:2013-11-21-17-40
+DEBUG:root:backup-start
+DEBUG:root:Downloading 28766153
+DEBUG:root:Writing into Messages_are_being_sent_correctly_from_my_SVN_repository,_but_they_are_"greyed"_out_in_my_Orchestrate_feed..html
+DEBUG:root:Downloading 29122216
+DEBUG:root:Writing into After_installing_Orchestrate_there_is_no_Tool_Bar-TeamForge_Header_when_I_open_the_tab_for_it_in_TeamForge..html
+DEBUG:root:Downloading 28660303
+DEBUG:root:Writing into How_do_I_Capture_the_installer_output_in_a_file?.html
+DEBUG:root:Downloading 28660053
+DEBUG:root:Writing into My_installer_is_failing_with_a_Connection_Refused_error._What_might_be_Wrong?.html
+DEBUG:root:Downloading 28740066
+DEBUG:root:Writing into Build_notifier_error_message.html
+DEBUG:root:Downloading 27827857
+DEBUG:root:Writing into Build_TeamForge_Orchestrate_Adapter.html
+DEBUG:root:Downloading 27719268
+DEBUG:root:Writing into Use_TeamForge_Orchestrate.html
+DEBUG:root:Downloading 25930287
+DEBUG:root:Writing into Test_Results_for_the_build_data_object.html
+DEBUG:root:Downloading 25680848
+DEBUG:root:Writing into Need_Orchestrate_Adapter_Source_Code.html
+DEBUG:root:Downloading 25506137
+DEBUG:root:Writing into Can_i_use_Orchestrate_without_TeamForge_?.html
+DEBUG:root:Downloading 25159998
+DEBUG:root:Writing into How_do_I_connect_to_multiple_ReviewBoard_Instances?.html
+DEBUG:root:Downloading 25061406
+DEBUG:root:Writing into I_wanted_to_know_if_it_is_possible_to_set_check-in_alerts_for_the_code_at_the_individual_directory_levels_rather_than_the_entire_code_base?.html
+DEBUG:root:Downloading 25106522
+DEBUG:root:Writing into How_do_I_extend_the_"types"_available_in_my_Orchestrate_instance?.html
+DEBUG:root:Downloading 24976042
+DEBUG:root:Writing into Build_a_TeamForge_Orchestrate_Adapter.html
+DEBUG:root:Downloading 24977618
+DEBUG:root:Writing into Activity_Stream_API.html
+DEBUG:root:Downloading 24974853
+DEBUG:root:Writing into [Message_Queue_API]_-_Builds_API.html
+DEBUG:root:Downloading 24961411
+DEBUG:root:Writing into [Message_Queue_API]_-_Commits_API.html
+DEBUG:root:Downloading 24977598
+DEBUG:root:Writing into [Message_Queue_API]_-_Review_Requests_API.html
+DEBUG:root:Downloading 24971558
+DEBUG:root:Writing into Download_Adapters.html
+DEBUG:root:Downloading 24898607
+DEBUG:root:Writing into SSL_certificate_for_Orchestrate.html
+DEBUG:root:Downloading 24904993
+DEBUG:root:Writing into Are_3_separate_servers_mandatory_for_installing_Orchestrate?.html
+DEBUG:root:Downloading 24737067
+DEBUG:root:Writing into Review_Board_Adapter.html
+DEBUG:root:Downloading 24754478
+DEBUG:root:Writing into Atlassian_Crucible_Adapter.html
+DEBUG:root:Downloading 24739271
+DEBUG:root:Writing into Jetbrains_TeamCity_Adapter.html
+DEBUG:root:Downloading 24752123
+DEBUG:root:Writing into Jenkins_Adapter.html
+DEBUG:root:Downloading 24739221
+DEBUG:root:Writing into Subversion_Adapter.html
+DEBUG:root:Downloading 24736957
+DEBUG:root:Writing into Git_Adapter.html
+DEBUG:root:Downloading 24732501
+DEBUG:root:Writing into TeamForge_Download_Adapter.html
+DEBUG:root:Downloading 24437606
+DEBUG:root:Writing into For_Your_Eyes_Only.html
+DEBUG:root:Cleaning Files
+DEBUG:root:Compressing files into 2013-11-21-17-40.tar.gz
+DEBUG:root:Total files downloaded : 29
+DEBUG:root:Backup filename =  2013-11-21-17-40.tar.gz
+DEBUG:root:Backup completed
+DEBUG:root:2013-11-21-17-47
+DEBUG:root:backup-start
+DEBUG:root:Downloading 28766153
+DEBUG:root:Writing into Messages_are_being_sent_correctly_from_my_SVN_repository,_but_they_are_"greyed"_out_in_my_Orchestrate_feed..html
+DEBUG:root:Downloading 29122216
+DEBUG:root:Writing into After_installing_Orchestrate_there_is_no_Tool_Bar-TeamForge_Header_when_I_open_the_tab_for_it_in_TeamForge..html
+DEBUG:root:Downloading 28660303
+DEBUG:root:Writing into How_do_I_Capture_the_installer_output_in_a_file?.html
+DEBUG:root:Downloading 28660053
+DEBUG:root:Writing into My_installer_is_failing_with_a_Connection_Refused_error._What_might_be_Wrong?.html
+DEBUG:root:Downloading 28740066
+DEBUG:root:Writing into Build_notifier_error_message.html
+DEBUG:root:Downloading 27827857
+DEBUG:root:Writing into Build_TeamForge_Orchestrate_Adapter.html
+DEBUG:root:Downloading 27719268
+DEBUG:root:Writing into Use_TeamForge_Orchestrate.html
+DEBUG:root:Downloading 25930287
+DEBUG:root:Writing into Test_Results_for_the_build_data_object.html
+DEBUG:root:Downloading 25680848
+DEBUG:root:Writing into Need_Orchestrate_Adapter_Source_Code.html
+DEBUG:root:Downloading 25506137
+DEBUG:root:Writing into Can_i_use_Orchestrate_without_TeamForge_?.html
+DEBUG:root:Downloading 25159998
+DEBUG:root:Writing into How_do_I_connect_to_multiple_ReviewBoard_Instances?.html
+DEBUG:root:Downloading 25061406
+DEBUG:root:Writing into I_wanted_to_know_if_it_is_possible_to_set_check-in_alerts_for_the_code_at_the_individual_directory_levels_rather_than_the_entire_code_base?.html
+DEBUG:root:Downloading 25106522
+DEBUG:root:Writing into How_do_I_extend_the_"types"_available_in_my_Orchestrate_instance?.html
+DEBUG:root:Downloading 24976042
+DEBUG:root:Writing into Build_a_TeamForge_Orchestrate_Adapter.html
+DEBUG:root:Downloading 24977618
+DEBUG:root:Writing into Activity_Stream_API.html
+DEBUG:root:Downloading 24974853
+DEBUG:root:Writing into [Message_Queue_API]_-_Builds_API.html
+DEBUG:root:Downloading 24961411
+DEBUG:root:Writing into [Message_Queue_API]_-_Commits_API.html
+DEBUG:root:Downloading 24977598
+DEBUG:root:Writing into [Message_Queue_API]_-_Review_Requests_API.html
+DEBUG:root:Downloading 24971558
+DEBUG:root:Writing into Download_Adapters.html
+DEBUG:root:Downloading 24898607
+DEBUG:root:Writing into SSL_certificate_for_Orchestrate.html
+DEBUG:root:Downloading 24904993
+DEBUG:root:Writing into Are_3_separate_servers_mandatory_for_installing_Orchestrate?.html
+DEBUG:root:Downloading 24737067
+DEBUG:root:Writing into Review_Board_Adapter.html
+DEBUG:root:Downloading 24754478
+DEBUG:root:Writing into Atlassian_Crucible_Adapter.html
+DEBUG:root:Downloading 24739271
+DEBUG:root:Writing into Jetbrains_TeamCity_Adapter.html
+DEBUG:root:Downloading 24752123
+DEBUG:root:Writing into Jenkins_Adapter.html
+DEBUG:root:Downloading 24739221
+DEBUG:root:Writing into Subversion_Adapter.html
+DEBUG:root:Downloading 24736957
+DEBUG:root:Writing into Git_Adapter.html
+DEBUG:root:Downloading 24732501
+DEBUG:root:Writing into TeamForge_Download_Adapter.html
+DEBUG:root:Downloading 24437606
+DEBUG:root:Writing into For_Your_Eyes_Only.html
+DEBUG:root:Cleaning Files
+DEBUG:root:Compressing files into 2013-11-21-17-47.tar.gz
+DEBUG:root:Total files downloaded : 29
+DEBUG:root:Backup filename =  2013-11-21-17-47.tar.gz
+DEBUG:root:Backup completed
+DEBUG:root:2013-11-21-17-48
+DEBUG:root:backup-start
+DEBUG:root:Downloading 28766153
+DEBUG:root:Writing into Messages_are_being_sent_correctly_from_my_SVN_repository,_but_they_are_"greyed"_out_in_my_Orchestrate_feed..html
+DEBUG:root:Downloading 29122216
+DEBUG:root:Writing into After_installing_Orchestrate_there_is_no_Tool_Bar-TeamForge_Header_when_I_open_the_tab_for_it_in_TeamForge..html
+DEBUG:root:Downloading 28660303
+DEBUG:root:Writing into How_do_I_Capture_the_installer_output_in_a_file?.html
+DEBUG:root:Downloading 28660053
+DEBUG:root:Writing into My_installer_is_failing_with_a_Connection_Refused_error._What_might_be_Wrong?.html
+DEBUG:root:Downloading 28740066
+DEBUG:root:Writing into Build_notifier_error_message.html
+DEBUG:root:Downloading 27827857
+DEBUG:root:Writing into Build_TeamForge_Orchestrate_Adapter.html
+DEBUG:root:Downloading 27719268
+DEBUG:root:Writing into Use_TeamForge_Orchestrate.html
+DEBUG:root:Downloading 25930287
+DEBUG:root:Writing into Test_Results_for_the_build_data_object.html
+DEBUG:root:Downloading 25680848
+DEBUG:root:Writing into Need_Orchestrate_Adapter_Source_Code.html
+DEBUG:root:Downloading 25506137
+DEBUG:root:Writing into Can_i_use_Orchestrate_without_TeamForge_?.html
+DEBUG:root:Downloading 25159998
+DEBUG:root:Writing into How_do_I_connect_to_multiple_ReviewBoard_Instances?.html
+DEBUG:root:Downloading 25061406
+DEBUG:root:Writing into I_wanted_to_know_if_it_is_possible_to_set_check-in_alerts_for_the_code_at_the_individual_directory_levels_rather_than_the_entire_code_base?.html
+DEBUG:root:Downloading 25106522
+DEBUG:root:Writing into How_do_I_extend_the_"types"_available_in_my_Orchestrate_instance?.html
+DEBUG:root:Downloading 24976042
+DEBUG:root:Writing into Build_a_TeamForge_Orchestrate_Adapter.html
+DEBUG:root:Downloading 24977618
+DEBUG:root:Writing into Activity_Stream_API.html
+DEBUG:root:Downloading 24974853
+DEBUG:root:Writing into [Message_Queue_API]_-_Builds_API.html
+DEBUG:root:Downloading 24961411
+DEBUG:root:Writing into [Message_Queue_API]_-_Commits_API.html
+DEBUG:root:Downloading 24977598
+DEBUG:root:Writing into [Message_Queue_API]_-_Review_Requests_API.html
+DEBUG:root:Downloading 24971558
+DEBUG:root:Writing into Download_Adapters.html
+DEBUG:root:Downloading 24898607
+DEBUG:root:Writing into SSL_certificate_for_Orchestrate.html
+DEBUG:root:Downloading 24904993
+DEBUG:root:Writing into Are_3_separate_servers_mandatory_for_installing_Orchestrate?.html
+DEBUG:root:Downloading 24737067
+DEBUG:root:Writing into Review_Board_Adapter.html
+DEBUG:root:Downloading 24754478
+DEBUG:root:Writing into Atlassian_Crucible_Adapter.html
+DEBUG:root:Downloading 24739271
+DEBUG:root:Writing into Jetbrains_TeamCity_Adapter.html
+DEBUG:root:Downloading 24752123
+DEBUG:root:Writing into Jenkins_Adapter.html
+DEBUG:root:Downloading 24739221
+DEBUG:root:Writing into Subversion_Adapter.html
+DEBUG:root:Downloading 24736957
+DEBUG:root:Writing into Git_Adapter.html
+DEBUG:root:Downloading 24732501
+DEBUG:root:Writing into TeamForge_Download_Adapter.html
+DEBUG:root:Downloading 24437606
+DEBUG:root:Writing into For_Your_Eyes_Only.html
+DEBUG:root:Cleaning Files
+DEBUG:root:Compressing files into 2013-11-21-17-48.tar.gz
+DEBUG:root:Total files downloaded : 29
+DEBUG:root:Backup filename =  2013-11-21-17-48.tar.gz
+DEBUG:root:Backup completed
+DEBUG:root:2013-11-21-17-51
+DEBUG:root:backup-start
+DEBUG:root:Downloading 28766153
+DEBUG:root:Writing into Messages_are_being_sent_correctly_from_my_SVN_repository,_but_they_are_"greyed"_out_in_my_Orchestrate_feed..html
+DEBUG:root:Downloading 29122216
+DEBUG:root:Writing into After_installing_Orchestrate_there_is_no_Tool_Bar-TeamForge_Header_when_I_open_the_tab_for_it_in_TeamForge..html
+DEBUG:root:Downloading 28660303
+DEBUG:root:Writing into How_do_I_Capture_the_installer_output_in_a_file?.html
+DEBUG:root:Downloading 28660053
+DEBUG:root:Writing into My_installer_is_failing_with_a_Connection_Refused_error._What_might_be_Wrong?.html
+DEBUG:root:Downloading 28740066
+DEBUG:root:Writing into Build_notifier_error_message.html
+DEBUG:root:Downloading 27827857
+DEBUG:root:Writing into Build_TeamForge_Orchestrate_Adapter.html
+DEBUG:root:Downloading 27719268
+DEBUG:root:Writing into Use_TeamForge_Orchestrate.html
+DEBUG:root:Downloading 25930287
+DEBUG:root:Writing into Test_Results_for_the_build_data_object.html
+DEBUG:root:Downloading 25680848
+DEBUG:root:Writing into Need_Orchestrate_Adapter_Source_Code.html
+DEBUG:root:Downloading 25506137
+DEBUG:root:Writing into Can_i_use_Orchestrate_without_TeamForge_?.html
+DEBUG:root:Downloading 25159998
+DEBUG:root:Writing into How_do_I_connect_to_multiple_ReviewBoard_Instances?.html
+DEBUG:root:Downloading 25061406
+DEBUG:root:Writing into I_wanted_to_know_if_it_is_possible_to_set_check-in_alerts_for_the_code_at_the_individual_directory_levels_rather_than_the_entire_code_base?.html
+DEBUG:root:Downloading 25106522
+DEBUG:root:Writing into How_do_I_extend_the_"types"_available_in_my_Orchestrate_instance?.html
+DEBUG:root:Downloading 24976042
+DEBUG:root:Writing into Build_a_TeamForge_Orchestrate_Adapter.html
+DEBUG:root:Downloading 24977618
+DEBUG:root:Writing into Activity_Stream_API.html
+DEBUG:root:Downloading 24974853
+DEBUG:root:Writing into [Message_Queue_API]_-_Builds_API.html
+DEBUG:root:Downloading 24961411
+DEBUG:root:Writing into [Message_Queue_API]_-_Commits_API.html
+DEBUG:root:Downloading 24977598
+DEBUG:root:Writing into [Message_Queue_API]_-_Review_Requests_API.html
+DEBUG:root:Downloading 24971558
+DEBUG:root:Writing into Download_Adapters.html
+DEBUG:root:Downloading 24898607
+DEBUG:root:Writing into SSL_certificate_for_Orchestrate.html
+DEBUG:root:Downloading 24904993
+DEBUG:root:Writing into Are_3_separate_servers_mandatory_for_installing_Orchestrate?.html
+DEBUG:root:Downloading 24737067
+DEBUG:root:Writing into Review_Board_Adapter.html
+DEBUG:root:Downloading 24754478
+DEBUG:root:Writing into Atlassian_Crucible_Adapter.html
+DEBUG:root:Downloading 24739271
+DEBUG:root:Writing into Jetbrains_TeamCity_Adapter.html
+DEBUG:root:Downloading 24752123
+DEBUG:root:Writing into Jenkins_Adapter.html
+DEBUG:root:Downloading 24739221
+DEBUG:root:Writing into Subversion_Adapter.html
+DEBUG:root:Downloading 24736957
+DEBUG:root:Writing into Git_Adapter.html
+DEBUG:root:Downloading 24732501
+DEBUG:root:Writing into TeamForge_Download_Adapter.html
+DEBUG:root:Downloading 24437606
+DEBUG:root:Writing into For_Your_Eyes_Only.html
+DEBUG:root:Cleaning Files
+DEBUG:root:Compressing files into 2013-11-21-17-51.tar.gz
+DEBUG:root:Total files downloaded : 29
+DEBUG:root:Backup filename =  2013-11-21-17-51.tar.gz
+DEBUG:root:Backup completed
+DEBUG:root:sent email to artf164317@forge.collab.net
+DEBUG:root:2013-11-21-17-54
+DEBUG:root:backup-start
+DEBUG:root:Downloading 28766153
+DEBUG:root:Writing into Messages_are_being_sent_correctly_from_my_SVN_repository,_but_they_are_"greyed"_out_in_my_Orchestrate_feed..html
+DEBUG:root:Downloading 29122216
+DEBUG:root:Writing into After_installing_Orchestrate_there_is_no_Tool_Bar-TeamForge_Header_when_I_open_the_tab_for_it_in_TeamForge..html
+DEBUG:root:Downloading 28660303
+DEBUG:root:Writing into How_do_I_Capture_the_installer_output_in_a_file?.html
+DEBUG:root:Downloading 28660053
+DEBUG:root:Writing into My_installer_is_failing_with_a_Connection_Refused_error._What_might_be_Wrong?.html
+DEBUG:root:Downloading 28740066
+DEBUG:root:Writing into Build_notifier_error_message.html
+DEBUG:root:Downloading 27827857
+DEBUG:root:Writing into Build_TeamForge_Orchestrate_Adapter.html
+DEBUG:root:Downloading 27719268
+DEBUG:root:Writing into Use_TeamForge_Orchestrate.html
+DEBUG:root:Downloading 25930287
+DEBUG:root:Writing into Test_Results_for_the_build_data_object.html
+DEBUG:root:Downloading 25680848
+DEBUG:root:Writing into Need_Orchestrate_Adapter_Source_Code.html
+DEBUG:root:Downloading 25506137
+DEBUG:root:Writing into Can_i_use_Orchestrate_without_TeamForge_?.html
+DEBUG:root:Downloading 25159998
+DEBUG:root:Writing into How_do_I_connect_to_multiple_ReviewBoard_Instances?.html
+DEBUG:root:Downloading 25061406
+DEBUG:root:Writing into I_wanted_to_know_if_it_is_possible_to_set_check-in_alerts_for_the_code_at_the_individual_directory_levels_rather_than_the_entire_code_base?.html
+DEBUG:root:Downloading 25106522
+DEBUG:root:Writing into How_do_I_extend_the_"types"_available_in_my_Orchestrate_instance?.html
+DEBUG:root:Downloading 24976042
+DEBUG:root:Writing into Build_a_TeamForge_Orchestrate_Adapter.html
+DEBUG:root:Downloading 24977618
+DEBUG:root:Writing into Activity_Stream_API.html
+DEBUG:root:Downloading 24974853
+DEBUG:root:Writing into [Message_Queue_API]_-_Builds_API.html
+DEBUG:root:Downloading 24961411
+DEBUG:root:Writing into [Message_Queue_API]_-_Commits_API.html
+DEBUG:root:Downloading 24977598
+DEBUG:root:Writing into [Message_Queue_API]_-_Review_Requests_API.html
+DEBUG:root:Downloading 24971558
+DEBUG:root:Writing into Download_Adapters.html
+DEBUG:root:Downloading 24898607
+DEBUG:root:Writing into SSL_certificate_for_Orchestrate.html
+DEBUG:root:Downloading 24904993
+DEBUG:root:Writing into Are_3_separate_servers_mandatory_for_installing_Orchestrate?.html
+DEBUG:root:Downloading 24737067
+DEBUG:root:Writing into Review_Board_Adapter.html
+DEBUG:root:Downloading 24754478
+DEBUG:root:Writing into Atlassian_Crucible_Adapter.html
+DEBUG:root:Downloading 24739271
+DEBUG:root:Writing into Jetbrains_TeamCity_Adapter.html
+DEBUG:root:Downloading 24752123
+DEBUG:root:Writing into Jenkins_Adapter.html
+DEBUG:root:Downloading 24739221
+DEBUG:root:Writing into Subversion_Adapter.html
+DEBUG:root:Downloading 24736957
+DEBUG:root:Writing into Git_Adapter.html
+DEBUG:root:Downloading 24732501
+DEBUG:root:Writing into TeamForge_Download_Adapter.html
+DEBUG:root:Downloading 24437606
+DEBUG:root:Writing into For_Your_Eyes_Only.html
+DEBUG:root:Cleaning Files
+DEBUG:root:Compressing files into 2013-11-21-17-54.tar.gz
+DEBUG:root:Total files downloaded : 29
+DEBUG:root:Backup filename =  2013-11-21-17-54.tar.gz
+DEBUG:root:Backup completed
+DEBUG:root:2013-11-21-17-57
+DEBUG:root:backup-start
+DEBUG:root:Downloading 28766153
+DEBUG:root:Writing into Messages_are_being_sent_correctly_from_my_SVN_repository,_but_they_are_"greyed"_out_in_my_Orchestrate_feed..html
+DEBUG:root:Downloading 29122216
+DEBUG:root:Writing into After_installing_Orchestrate_there_is_no_Tool_Bar-TeamForge_Header_when_I_open_the_tab_for_it_in_TeamForge..html
+DEBUG:root:Downloading 28660303
+DEBUG:root:Writing into How_do_I_Capture_the_installer_output_in_a_file?.html
+DEBUG:root:Downloading 28660053
+DEBUG:root:Writing into My_installer_is_failing_with_a_Connection_Refused_error._What_might_be_Wrong?.html
+DEBUG:root:Downloading 28740066
+DEBUG:root:Writing into Build_notifier_error_message.html
+DEBUG:root:Downloading 27827857
+DEBUG:root:Writing into Build_TeamForge_Orchestrate_Adapter.html
+DEBUG:root:Downloading 27719268
+DEBUG:root:Writing into Use_TeamForge_Orchestrate.html
+DEBUG:root:Downloading 25930287
+DEBUG:root:Writing into Test_Results_for_the_build_data_object.html
+DEBUG:root:Downloading 25680848
+DEBUG:root:Writing into Need_Orchestrate_Adapter_Source_Code.html
+DEBUG:root:Downloading 25506137
+DEBUG:root:Writing into Can_i_use_Orchestrate_without_TeamForge_?.html
+DEBUG:root:Downloading 25159998
+DEBUG:root:Writing into How_do_I_connect_to_multiple_ReviewBoard_Instances?.html
+DEBUG:root:Downloading 25061406
+DEBUG:root:Writing into I_wanted_to_know_if_it_is_possible_to_set_check-in_alerts_for_the_code_at_the_individual_directory_levels_rather_than_the_entire_code_base?.html
+DEBUG:root:Downloading 25106522
+DEBUG:root:Writing into How_do_I_extend_the_"types"_available_in_my_Orchestrate_instance?.html
+DEBUG:root:Downloading 24976042
+DEBUG:root:Writing into Build_a_TeamForge_Orchestrate_Adapter.html
+DEBUG:root:Downloading 24977618
+DEBUG:root:Writing into Activity_Stream_API.html
+DEBUG:root:Downloading 24974853
+DEBUG:root:Writing into [Message_Queue_API]_-_Builds_API.html
+DEBUG:root:Downloading 24961411
+DEBUG:root:Writing into [Message_Queue_API]_-_Commits_API.html
+DEBUG:root:Downloading 24977598
+DEBUG:root:Writing into [Message_Queue_API]_-_Review_Requests_API.html
+DEBUG:root:Downloading 24971558
+DEBUG:root:Writing into Download_Adapters.html
+DEBUG:root:Downloading 24898607
+DEBUG:root:Writing into SSL_certificate_for_Orchestrate.html
+DEBUG:root:Downloading 24904993
+DEBUG:root:Writing into Are_3_separate_servers_mandatory_for_installing_Orchestrate?.html
+DEBUG:root:Downloading 24737067
+DEBUG:root:Writing into Review_Board_Adapter.html
+DEBUG:root:Downloading 24754478
+DEBUG:root:Writing into Atlassian_Crucible_Adapter.html
+DEBUG:root:Downloading 24739271
+DEBUG:root:Writing into Jetbrains_TeamCity_Adapter.html
+DEBUG:root:Downloading 24752123
+DEBUG:root:Writing into Jenkins_Adapter.html
+DEBUG:root:Downloading 24739221
+DEBUG:root:Writing into Subversion_Adapter.html
+DEBUG:root:Downloading 24736957
+DEBUG:root:Writing into Git_Adapter.html
+DEBUG:root:Downloading 24732501
+DEBUG:root:Writing into TeamForge_Download_Adapter.html
+DEBUG:root:Downloading 24437606
+DEBUG:root:Writing into For_Your_Eyes_Only.html
+DEBUG:root:Cleaning Files
+DEBUG:root:Compressing files into 2013-11-21-17-57.tar.gz
+DEBUG:root:Total files downloaded : 29
+DEBUG:root:Backup filename =  2013-11-21-17-57.tar.gz
+DEBUG:root:Backup completed
+DEBUG:root:2013-11-21-17-59
+DEBUG:root:backup-start
+DEBUG:root:Downloading 28766153
+DEBUG:root:Writing into Messages_are_being_sent_correctly_from_my_SVN_repository,_but_they_are_"greyed"_out_in_my_Orchestrate_feed..html
+DEBUG:root:Downloading 29122216
+DEBUG:root:Writing into After_installing_Orchestrate_there_is_no_Tool_Bar-TeamForge_Header_when_I_open_the_tab_for_it_in_TeamForge..html
+DEBUG:root:Downloading 28660303
+DEBUG:root:Writing into How_do_I_Capture_the_installer_output_in_a_file?.html
+DEBUG:root:Downloading 28660053
+DEBUG:root:Writing into My_installer_is_failing_with_a_Connection_Refused_error._What_might_be_Wrong?.html
+DEBUG:root:Downloading 28740066
+DEBUG:root:Writing into Build_notifier_error_message.html
+DEBUG:root:Downloading 27827857
+DEBUG:root:Writing into Build_TeamForge_Orchestrate_Adapter.html
+DEBUG:root:Downloading 27719268
+DEBUG:root:Writing into Use_TeamForge_Orchestrate.html
+DEBUG:root:Downloading 25930287
+DEBUG:root:Writing into Test_Results_for_the_build_data_object.html
+DEBUG:root:Downloading 25680848
+DEBUG:root:Writing into Need_Orchestrate_Adapter_Source_Code.html
+DEBUG:root:Downloading 25506137
+DEBUG:root:Writing into Can_i_use_Orchestrate_without_TeamForge_?.html
+DEBUG:root:Downloading 25159998
+DEBUG:root:Writing into How_do_I_connect_to_multiple_ReviewBoard_Instances?.html
+DEBUG:root:Downloading 25061406
+DEBUG:root:Writing into I_wanted_to_know_if_it_is_possible_to_set_check-in_alerts_for_the_code_at_the_individual_directory_levels_rather_than_the_entire_code_base?.html
+DEBUG:root:Downloading 25106522
+DEBUG:root:Writing into How_do_I_extend_the_"types"_available_in_my_Orchestrate_instance?.html
+DEBUG:root:Downloading 24976042
+DEBUG:root:Writing into Build_a_TeamForge_Orchestrate_Adapter.html
+DEBUG:root:Downloading 24977618
+DEBUG:root:Writing into Activity_Stream_API.html
+DEBUG:root:Downloading 24974853
+DEBUG:root:Writing into [Message_Queue_API]_-_Builds_API.html
+DEBUG:root:Downloading 24961411
+DEBUG:root:Writing into [Message_Queue_API]_-_Commits_API.html
+DEBUG:root:Downloading 24977598
+DEBUG:root:Writing into [Message_Queue_API]_-_Review_Requests_API.html
+DEBUG:root:Downloading 24971558
+DEBUG:root:Writing into Download_Adapters.html
+DEBUG:root:Downloading 24898607
+DEBUG:root:Writing into SSL_certificate_for_Orchestrate.html
+DEBUG:root:Downloading 24904993
+DEBUG:root:Writing into Are_3_separate_servers_mandatory_for_installing_Orchestrate?.html
+DEBUG:root:Downloading 24737067
+DEBUG:root:Writing into Review_Board_Adapter.html
+DEBUG:root:Downloading 24754478
+DEBUG:root:Writing into Atlassian_Crucible_Adapter.html
+DEBUG:root:Downloading 24739271
+DEBUG:root:Writing into Jetbrains_TeamCity_Adapter.html
+DEBUG:root:Downloading 24752123
+DEBUG:root:Writing into Jenkins_Adapter.html
+DEBUG:root:Downloading 24739221
+DEBUG:root:Writing into Subversion_Adapter.html
+DEBUG:root:Downloading 24736957
+DEBUG:root:Writing into Git_Adapter.html
+DEBUG:root:Downloading 24732501
+DEBUG:root:Writing into TeamForge_Download_Adapter.html
+DEBUG:root:Downloading 24437606
+DEBUG:root:Writing into For_Your_Eyes_Only.html
+DEBUG:root:Cleaning Files
+DEBUG:root:Compressing files into 2013-11-21-17-59.tar.gz
+DEBUG:root:Total files downloaded : 29
+DEBUG:root:Backup filename =  2013-11-21-17-59.tar.gz
+DEBUG:root:Backup completed
+DEBUG:root:2013-11-21-18-06
+DEBUG:root:backup-start
+DEBUG:root:Downloading 28766153
+DEBUG:root:Writing into Messages_are_being_sent_correctly_from_my_SVN_repository,_but_they_are_"greyed"_out_in_my_Orchestrate_feed..html
+DEBUG:root:Downloading 29122216
+DEBUG:root:Writing into After_installing_Orchestrate_there_is_no_Tool_Bar-TeamForge_Header_when_I_open_the_tab_for_it_in_TeamForge..html
+DEBUG:root:Downloading 28660303
+DEBUG:root:Writing into How_do_I_Capture_the_installer_output_in_a_file?.html
+DEBUG:root:Downloading 28660053
+DEBUG:root:Writing into My_installer_is_failing_with_a_Connection_Refused_error._What_might_be_Wrong?.html
+DEBUG:root:Downloading 28740066
+DEBUG:root:Writing into Build_notifier_error_message.html
+DEBUG:root:Downloading 27827857
+DEBUG:root:Writing into Build_TeamForge_Orchestrate_Adapter.html
+DEBUG:root:Downloading 27719268
+DEBUG:root:Writing into Use_TeamForge_Orchestrate.html
+DEBUG:root:Downloading 25930287
+DEBUG:root:Writing into Test_Results_for_the_build_data_object.html
+DEBUG:root:Downloading 25680848
+DEBUG:root:Writing into Need_Orchestrate_Adapter_Source_Code.html
+DEBUG:root:Downloading 25506137
+DEBUG:root:Writing into Can_i_use_Orchestrate_without_TeamForge_?.html
+DEBUG:root:Downloading 25159998
+DEBUG:root:Writing into How_do_I_connect_to_multiple_ReviewBoard_Instances?.html
+DEBUG:root:Downloading 25061406
+DEBUG:root:Writing into I_wanted_to_know_if_it_is_possible_to_set_check-in_alerts_for_the_code_at_the_individual_directory_levels_rather_than_the_entire_code_base?.html
+DEBUG:root:Downloading 25106522
+DEBUG:root:Writing into How_do_I_extend_the_"types"_available_in_my_Orchestrate_instance?.html
+DEBUG:root:Downloading 24976042
+DEBUG:root:Writing into Build_a_TeamForge_Orchestrate_Adapter.html
+DEBUG:root:Downloading 24977618
+DEBUG:root:Writing into Activity_Stream_API.html
+DEBUG:root:Downloading 24974853
+DEBUG:root:Writing into [Message_Queue_API]_-_Builds_API.html
+DEBUG:root:Downloading 24961411
+DEBUG:root:Writing into [Message_Queue_API]_-_Commits_API.html
+DEBUG:root:Downloading 24977598
+DEBUG:root:Writing into [Message_Queue_API]_-_Review_Requests_API.html
+DEBUG:root:Downloading 24971558
+DEBUG:root:Writing into Download_Adapters.html
+DEBUG:root:Downloading 24898607
+DEBUG:root:Writing into SSL_certificate_for_Orchestrate.html
+DEBUG:root:Downloading 24904993
+DEBUG:root:Writing into Are_3_separate_servers_mandatory_for_installing_Orchestrate?.html
+DEBUG:root:Downloading 24737067
+DEBUG:root:Writing into Review_Board_Adapter.html
+DEBUG:root:Downloading 24754478
+DEBUG:root:Writing into Atlassian_Crucible_Adapter.html
+DEBUG:root:Downloading 24739271
+DEBUG:root:Writing into Jetbrains_TeamCity_Adapter.html
+DEBUG:root:Downloading 24752123
+DEBUG:root:Writing into Jenkins_Adapter.html
+DEBUG:root:Downloading 24739221
+DEBUG:root:Writing into Subversion_Adapter.html
+DEBUG:root:Downloading 24736957
+DEBUG:root:Writing into Git_Adapter.html
+DEBUG:root:Downloading 24732501
+DEBUG:root:Writing into TeamForge_Download_Adapter.html
+DEBUG:root:Downloading 24437606
+DEBUG:root:Writing into For_Your_Eyes_Only.html
+DEBUG:root:Cleaning Files
+DEBUG:root:Compressing files into 2013-11-21-18-06.tar.gz
+DEBUG:root:Total files downloaded : 29
+DEBUG:root:Backup filename =  2013-11-21-18-06.tar.gz
+DEBUG:root:Backup completed
+DEBUG:root:sent email to shrinivasan@collab.net
+DEBUG:root:2013-11-21-18-18
+DEBUG:root:backup-start
+DEBUG:root:Downloading 28766153
+DEBUG:root:Writing into Messages_are_being_sent_correctly_from_my_SVN_repository,_but_they_are_"greyed"_out_in_my_Orchestrate_feed..html
+DEBUG:root:Downloading 29122216
+DEBUG:root:Writing into After_installing_Orchestrate_there_is_no_Tool_Bar-TeamForge_Header_when_I_open_the_tab_for_it_in_TeamForge..html
+DEBUG:root:Downloading 28660303
+DEBUG:root:Writing into How_do_I_Capture_the_installer_output_in_a_file?.html
+DEBUG:root:Downloading 28660053
+DEBUG:root:Writing into My_installer_is_failing_with_a_Connection_Refused_error._What_might_be_Wrong?.html
+DEBUG:root:Downloading 28740066
+DEBUG:root:Writing into Build_notifier_error_message.html
+DEBUG:root:Downloading 27827857
+DEBUG:root:Writing into Build_TeamForge_Orchestrate_Adapter.html
+DEBUG:root:Downloading 27719268
+DEBUG:root:Writing into Use_TeamForge_Orchestrate.html
+DEBUG:root:Downloading 25930287
+DEBUG:root:Writing into Test_Results_for_the_build_data_object.html
+DEBUG:root:Downloading 25680848
+DEBUG:root:Writing into Need_Orchestrate_Adapter_Source_Code.html
+DEBUG:root:Downloading 25506137
+DEBUG:root:Writing into Can_i_use_Orchestrate_without_TeamForge_?.html
+DEBUG:root:Downloading 25159998
+DEBUG:root:Writing into How_do_I_connect_to_multiple_ReviewBoard_Instances?.html
+DEBUG:root:Downloading 25061406
+DEBUG:root:Writing into I_wanted_to_know_if_it_is_possible_to_set_check-in_alerts_for_the_code_at_the_individual_directory_levels_rather_than_the_entire_code_base?.html
+DEBUG:root:Downloading 25106522
+DEBUG:root:Writing into How_do_I_extend_the_"types"_available_in_my_Orchestrate_instance?.html
+DEBUG:root:Downloading 24976042
+DEBUG:root:Writing into Build_a_TeamForge_Orchestrate_Adapter.html
+DEBUG:root:Downloading 24977618
+DEBUG:root:Writing into Activity_Stream_API.html
+DEBUG:root:Downloading 24974853
+DEBUG:root:Writing into [Message_Queue_API]_-_Builds_API.html
+DEBUG:root:Downloading 24961411
+DEBUG:root:Writing into [Message_Queue_API]_-_Commits_API.html
+DEBUG:root:Downloading 24977598
+DEBUG:root:Writing into [Message_Queue_API]_-_Review_Requests_API.html
+DEBUG:root:Downloading 24971558
+DEBUG:root:Writing into Download_Adapters.html
+DEBUG:root:Downloading 24898607
+DEBUG:root:Writing into SSL_certificate_for_Orchestrate.html
+DEBUG:root:Downloading 24904993
+DEBUG:root:Writing into Are_3_separate_servers_mandatory_for_installing_Orchestrate?.html
+DEBUG:root:Downloading 24737067
+DEBUG:root:Writing into Review_Board_Adapter.html
+DEBUG:root:Downloading 24754478
+DEBUG:root:Writing into Atlassian_Crucible_Adapter.html
+DEBUG:root:Downloading 24739271
+DEBUG:root:Writing into Jetbrains_TeamCity_Adapter.html
+DEBUG:root:Downloading 24752123
+DEBUG:root:Writing into Jenkins_Adapter.html
+DEBUG:root:Downloading 24739221
+DEBUG:root:Writing into Subversion_Adapter.html
+DEBUG:root:Downloading 24736957
+DEBUG:root:Writing into Git_Adapter.html
+DEBUG:root:Downloading 24732501
+DEBUG:root:Writing into TeamForge_Download_Adapter.html
+DEBUG:root:Downloading 24437606
+DEBUG:root:Writing into For_Your_Eyes_Only.html
+DEBUG:root:Cleaning Files
+DEBUG:root:Compressing files into 2013-11-21-18-18.tar.gz
+DEBUG:root:Total files downloaded : 29
+DEBUG:root:Backup filename =  2013-11-21-18-18.tar.gz
+DEBUG:root:Backup completed
+DEBUG:root:sent email to shrinivasan@collab.net
+DEBUG:root:2014-01-09-19-01
+DEBUG:root:backup-start
+DEBUG:root:Downloading 37515278
+DEBUG:root:Writing into Upgraded_CTF_to_7.1_and_Orchestrate_to_1.1_and_this_broke_the_build_step.html
+DEBUG:root:Downloading 30646036
+DEBUG:root:Writing into TeamForge_Orchestrate_MQ_API_Documentation.html
+DEBUG:root:Downloading 30145293
+DEBUG:root:Writing into Java-Perl_Interface.html
+DEBUG:root:Downloading 28766153
+DEBUG:root:Writing into Messages_are_being_sent_correctly_from_my_SVN_repository,_but_they_are_"greyed"_out_in_my_Orchestrate_feed..html
+DEBUG:root:Downloading 29122216
+DEBUG:root:Writing into After_installing_Orchestrate_there_is_no_Tool_Bar-TeamForge_Header_when_I_open_the_tab_for_it_in_TeamForge..html
+DEBUG:root:Downloading 28660303
+DEBUG:root:Writing into How_do_I_Capture_the_installer_output_in_a_file?.html
+DEBUG:root:Downloading 28660053
+DEBUG:root:Writing into My_installer_is_failing_with_a_Connection_Refused_error._What_might_be_Wrong?.html
+DEBUG:root:Downloading 28740066
+DEBUG:root:Writing into Build_notifier_error_message.html
+DEBUG:root:Downloading 27827857
+DEBUG:root:Writing into Build_TeamForge_Orchestrate_Adapter.html
+DEBUG:root:Downloading 27719268
+DEBUG:root:Writing into Use_TeamForge_Orchestrate.html
+DEBUG:root:Downloading 25930287
+DEBUG:root:Writing into Test_Results_for_the_build_data_object.html
+DEBUG:root:Downloading 25680848
+DEBUG:root:Writing into Need_Orchestrate_Adapter_Source_Code.html
+DEBUG:root:Downloading 25506137
+DEBUG:root:Writing into Can_i_use_Orchestrate_without_TeamForge_?.html
+DEBUG:root:Downloading 25159998
+DEBUG:root:Writing into How_do_I_connect_to_multiple_ReviewBoard_Instances?.html
+DEBUG:root:Downloading 25061406
+DEBUG:root:Writing into I_wanted_to_know_if_it_is_possible_to_set_check-in_alerts_for_the_code_at_the_individual_directory_levels_rather_than_the_entire_code_base?.html
+DEBUG:root:Downloading 25106522
+DEBUG:root:Writing into How_do_I_extend_the_"types"_available_in_my_Orchestrate_instance?.html
+DEBUG:root:Downloading 24976042
+DEBUG:root:Writing into Build_a_TeamForge_Orchestrate_Adapter.html
+DEBUG:root:Downloading 24977618
+DEBUG:root:Writing into Activity_Stream_API.html
+DEBUG:root:Downloading 24974853
+DEBUG:root:Writing into [Message_Queue_API]_-_Builds_API.html
+DEBUG:root:Downloading 24961411
+DEBUG:root:Writing into [Message_Queue_API]_-_Commits_API.html
+DEBUG:root:Downloading 24977598
+DEBUG:root:Writing into [Message_Queue_API]_-_Review_Requests_API.html
+DEBUG:root:Downloading 24971558
+DEBUG:root:Writing into Download_Adapters.html
+DEBUG:root:Downloading 24898607
+DEBUG:root:Writing into SSL_certificate_for_Orchestrate.html
+DEBUG:root:Downloading 24904993
+DEBUG:root:Writing into Are_3_separate_servers_mandatory_for_installing_Orchestrate?.html
+DEBUG:root:Downloading 24737067
+DEBUG:root:Writing into Review_Board_Adapter.html
+DEBUG:root:Downloading 24754478
+DEBUG:root:Writing into Atlassian_Crucible_Adapter.html
+DEBUG:root:Downloading 24739271
+DEBUG:root:Writing into Jetbrains_TeamCity_Adapter.html
+DEBUG:root:Downloading 24752123
+DEBUG:root:Writing into Jenkins_Adapter.html
+DEBUG:root:Downloading 24739221
+DEBUG:root:Writing into Subversion_Adapter.html
+DEBUG:root:Downloading 24736957
+DEBUG:root:Writing into Git_Adapter.html
+DEBUG:root:Downloading 24732501
+DEBUG:root:Writing into TeamForge_Download_Adapter.html
+DEBUG:root:Downloading 24437606
+DEBUG:root:Writing into For_Your_Eyes_Only.html
+DEBUG:root:Cleaning Files
+DEBUG:root:Compressing files into 2014-01-09-19-01.tar.gz
+DEBUG:root:Total files downloaded : 32
+DEBUG:root:Backup filename =  2014-01-09-19-01.tar.gz
+DEBUG:root:Backup completed
+DEBUG:root:sent email to shrinivasan@collab.net

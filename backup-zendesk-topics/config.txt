@@ -1,0 +1,8 @@
+[settings]
+
+site = https://orchestrate.zendesk.com
+username = jeyanthan@collab.net
+password = Collabnet1!
+email_from = shrinivasan@collab.net
+email_to = shrinivasan@collab.net
+

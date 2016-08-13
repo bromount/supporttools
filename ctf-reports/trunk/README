@@ -1,0 +1,76 @@
+ctf-report.py
+============
+
+Author: shrinivasan@collab.net
+
+Related Artifacts :
+
+Request from Mohan: artf155736
+CRI : artf155722
+DTN : artf156952 
+
+
+This script collects the following details from a Hosted CTF server.
+01. Free Disk Space
+02. Total count of all svn.git.cvs repositories
+03. CTF Version
+04. Real HostName
+05. Blackduck availability
+06. Number of Licenses purchased
+07. Number of artifacts
+08. Number of users
+09. Number of projects
+10. Number of documents
+
+Uploads the details to the relevant salesforce account page.
+
+Report    : logs/ctf-details-[timestamp].txt  
+Log File  : logs/ctf-report-[timestamp].log
+
+
+Requirements:
+============
+1. We need python 2.6 or above. ( redhat/centos 6 and above )
+we can use this script on or above CTF 6.2
+
+2. It needs root access or sudo user to run the script as 
+it calls the psql-wrapper script to get details from database, which needs root to run it.
+
+3. An Account page in the salesforce.com with the filed "Domain Name" in "Support Section" updated
+properly with the real domain name of the hosted server.
+
+
+
+How to run?
+===========
+
+1. Edit the configuration file "ctf-reports-config.txt"
+
+Example is given here.
+
+Replace the values if required.
+
+---
+[settings]
+
+teamforge-folder = /opt/collabnet/teamforge
+svnroot = /svnroot
+gitroot = /gitroot
+cvsroot = /cvsroot
+data-mount-point=/
+
+
+
+
+salesforce_username = support@collab.net.fullcopyqa
+salesforce_password = Collabnet1
+salesforce_security_token = FwICqdppRz3dF32qDNGIaaYXJ
+                                                        
+
+
+
+----
+
+2. run the python script as
+
+python ctf-report.py
